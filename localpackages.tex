@@ -1,0 +1,92 @@
+%% -*- coding:utf-8 -*-
+
+
+\usepackage{styles/Beamer/hu-beamer-includes-pdflatex} %,beamer-movement}
+
+
+% no book icon please
+\setbeamertemplate{bibliography item}{}
+
+% Checkmark
+%\usepackage{tikz} % Examples and documentation: http://www.texample.net/tikz
+%\usepackage{bbding}
+\makeatletter
+\newcommand{\dingfamily}{\fontencoding{U}\fontfamily{ding}\selectfont}
+\newcommand{\@chooseSymbol}[1]{{\dingfamily\symbol{#1}}}
+\newcommand{\Checkmark}{\@chooseSymbol{'041}}
+\makeatother
+
+%\fuberlinlogon{0.89cm}
+
+% creates an unggly bibliography
+%\usepackage[T1]{fontenc}
+
+
+\usepackage{jambox}
+
+\usepackage{epsfig}
+\usepackage{tabularx}
+
+%\usepackage{tikz-grid}
+
+%\renewcommand{\trace}{\raisebox{0.2ex}{\_}\rule{0cm}{0.7em}}
+
+
+%\usepackage[T4,T1]{fontenc}
+
+% die machen \! kaputt
+%\usepackage{tipa,tipx,phonetic}
+
+% \TH, \th, \dh, \DH
+\usepackage{wasysym}
+
+\let\TH=\Thorn
+\let\th=\thorn
+
+% Das ʒ muss aus tipa.sty muss auf textyogh umgebogen werden, da war \textezh drin.
+
+
+\let\textezh=\textyogh
+\let\textoopen=\textopeno
+%\let\texteopen=\textopene gibts nicht
+\let\texteopen=\textepsilon
+\let\textgammalatinsmall=\textbabygamma
+\let\ng=\engma
+\let\textvhook=\textscriptv
+
+%\DeclareUnicodeCharacter {720}{\textlengthmark }
+%\DeclareUnicodeCharacter {635}{\textturnrrtail\,}
+
+%% \nodemargin5pt%\treelinewidth2pt\arrowwidth6pt\arrowlength10pt
+%% \selectlanguage{german}
+%% \psset{nodesep=5pt} %,linewidth=0.8pt,arrowscale=2}
+%% \psset{linewidth=0.5pt}
+
+\usepackage[customcolors]{hf-tikz}
+
+% for subnodes in trees
+% is in hu-beamer-...
+%% \usepackage{tcolorbox}
+%% \tcbuselibrary{skins}
+%% \newtcbox{\mybox}[1][]{empty,shrink tight,nobeforeafter,on line,before upper=\vphantom{gM},remember as=#1,top=2pt,bottom=2pt}
+
+
+%\beamertemplateemptyfootbar
+
+%\hypersetup{pdfauthor={Stefan Müller (unter Benutzung von Material von Peter Gallmann, FSU Jena)}}
+%\hypersetup{pdftitle={Head-Driven Phrase Structure Grammar für das Deutsche}}
+
+
+%\subject{Generative Grammatik für das Deutsche}
+
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\let\mc=\multicolumn
+
+
+\newcommand{\sigle}[1]{\tiny{#1}}
+
+
+
+%\mode<beamer>{\beamertemplatebackfindforwardnavigationsymbolshorizontal}

@@ -1,0 +1,243 @@
+%% -*- coding:utf-8 -*-
+\author{Stefan Müller}
+
+\subtitle{Valenz, Argumentanordnung und Adjunktstellung}
+
+\section{Valenz, Argumentanordnung und Adjunktstellung}
+
+
+\huberlintitlepage[22pt]
+
+
+\subsection{Valenz}
+
+
+\frame{
+\frametitle{Literaturhinweis}
+
+
+
+Zu diesem Abschnitt gibt es das Kapitel~3 in \citew{MuellerGermanic}.
+
+Müller, Stefan, \citeyear{MuellerGermanic}. \emph{Germanic Syntax}. Berlin: Language Science
+Press. In Vorbereitung. 
+
+
+
+}
+
+
+\frame{
+\frametitle{Grundannahmen: Valenz}
+
+\vfill
+\centerfit{
+\begin{forest}
+sm edges
+[{S \eliste}
+  [{NP[\type{nom}]} [niemand] ]
+  [{V$'$\sliste{ NP[\type{nom}] } }
+    [{NP[\type{acc}]} [ihn] ]
+    [{V \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt]] ] ]
+\end{forest}}
+
+\vfill
+\pause
+\begin{itemize}
+\item Valenzanforderung ist in einer Liste repräsentiert
+\pause
+\item Ein Element der Liste wird mit dem Kopf kombiniert.\\
+      Liste mit restlichen Elementen wird nach oben gegeben.
+\end{itemize}
+
+}
+
+
+\subsection{Scrambling}
+
+\frame{
+\frametitle{Scrambling: Konstituentenstellung im Deutschen}
+
+\vfill
+\centerfit{
+\begin{forest}
+sm edges
+[{S \eliste}
+   [{NP[\type{acc}]} [ihn] ]
+   [{V$'$\sliste{ NP[\type{acc}] } }
+      [{NP[\type{nom}]} [niemand] ]
+      [{V \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt] ] ] ]
+\end{forest}}
+\vfill
+\pause
+\begin{itemize}
+\item Ein beliebiges Element der Liste kann mit Kopf kombiniert werden.\\
+      $\to$ auch Abfolge Acc $<$ Nom analysierbar.\\
+      Liste mit restlichen Elementen wird nach oben gegeben.
+\end{itemize}
+
+}
+
+
+
+\subsection{SVO: Dänisch/Englisch}
+
+\frame{
+\frametitle{Dänisch, Englisch, \ldots}
+
+\vfill
+
+\centerfit{\begin{forest}
+sm edges
+[{V[\spr \eliste, \comps \eliste]}, name=S
+   [{NP[\type{nom}]} [nobody] ]
+   [V\feattab{
+      \spr \sliste{ NP[\type{nom}] }, \comps \sliste{} }, name=VP
+     [V\feattab{
+         \spr \sliste{ NP[\type{nom}] },\\
+         \comps \sliste{ NP[\type{acc}]}} [knows] ]
+        [{NP[\type{acc}]} [him] ] ] ]
+\node [right=4cm] at (S)
+    {
+        = S
+    };
+\node [right=4cm] at (VP)
+    {
+        = VP
+    };
+\end{forest}}
+
+
+\vfill
+
+\begin{itemize}
+\item Englisch ist eine SVO-Sprache:\\
+      Komplemente rechts des Verbs, Subjekt links
+%\item Komplemente können nicht einfach umgestellt werden.
+\item Komplemente bilden mit dem Verb zusammen eine Phrase (VP = \comps \sliste{}).
+
+      Diese wird mit dem Subjekt kombiniert.
+\end{itemize}
+
+\vfill
+
+}
+
+
+\frame{
+\frametitle{Kein Scrambling}
+
+\begin{itemize}
+\item Dänisch, Englisch:\\
+      Elemente aus Valenzliste müssen von links nach rechts abgebunden werden.
+
+\pause
+\item Deutsch, Niederländisch:\\
+      Elemente können in beliebiger Reihenfolge abgebunden werden.
+
+%\pause
+%\item 
+\end{itemize}
+
+}
+%% \frame{
+%% \frametitle{Regeln: Englisch und Deutsch}
+
+%% \begin{itemize}
+%% \item Englisch:
+%% \ea
+%% H[\comps \ibox{B}] $\to$ H[\comps \ibox{B} $\oplus$ \sliste{ \ibox{1} } ] ~~~\ibox{1}
+%% \z
+
+%% `$\oplus$' zerlegt Liste in zwei Teillisten.
+
+%% \pause
+
+%% \item Deutsch:
+%% \ea
+%% H[\comps \ibox{A} $\oplus$ \ibox{B}] $\to$ H[\comps \ibox{A} $\oplus$ \sliste{ \ibox{1} } $\oplus$ \ibox{B} ] ~~~\ibox{1}
+%% \z
+
+%% \pause
+
+%% \item Das Englische unterscheidet sich vom Deutschen dadurch,\\
+%%       dass \ibox{A} die leere Liste ist.
+
+%% $\to$ Englisch ist restriktiver.
+
+%% \end{itemize}
+
+
+%% }
+
+
+\frame{
+\frametitle{Deutsch}
+
+
+
+\centerfit{\begin{forest}
+sm edges
+[{V[\spr \eliste, \comps \eliste]}, name=S
+        [{NP[\type{nom}]} [niemand;nobody] ]
+        [{V\feattab{
+              \spr \sliste{ }, \comps \sliste{ NP[\type{nom}] } }}, name = Vs
+          [{NP[\type{acc}]} [ihn;him] ] 
+          [V\feattab{
+              \spr \sliste{  },\\
+              \comps \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt;knows] ]
+] ]
+\node [right=4cm] at (S)
+    {
+        = S
+    };
+\node [right=4cm] at (Vs)
+    {
+        = V$'$
+    };
+\end{forest}}
+
+Das Subjekt ist bei finiten Verben in der \compsl \citep{Pollard90a,Kiss95a}.
+
+Abkürzungen: \begin{tabular}[t]{@{}l@{ = }l}
+             S  & [\spr \eliste, \comps \eliste]\\
+             VP & [\spr \sliste{ NP[\type{nom}] }, \comps \sliste{}]\\
+             V$'$ & alle anderen V-Projektionen (außer Verbalkomplexen)\\
+             \end{tabular}
+
+}
+
+
+
+\frame{
+\frametitle{Übungsaufgaben}
+
+
+\begin{enumerate}
+\item Geben Sie die Valenzlisten für folgende Wörter an:
+\eal
+\ex lachen
+\ex essen
+\ex übergießen
+\ex bezichtigen
+\ex er
+\ex der
+\zl
+\item Zeichnen Sie die Bäume für folgende Beispiele:
+\eal
+\ex weil der Mann ihm ein Buch schenkt
+\ex because the man gave the book to him
+\ex
+\gll at Bjarne læste bogen\\
+     dass Bjarne las Buch.{\sc def}\\
+\glt `dass Bjarne das Buch las'
+\zl
+\end{enumerate}
+
+
+
+
+
+
+
+} 

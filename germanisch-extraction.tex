@@ -1,0 +1,291 @@
+%% -*- coding:utf-8 -*-
+\subsection{Verbzweitstellung und Voranstellung im Englischen}
+
+
+\frame{
+\frametitle{Extraktion}
+
+
+\begin{itemize}
+\item Auch in Sprachen mit relativ fester Konstituentenstellung ist es mitunter möglich, Konstituenten
+umzustellen:
+\eal
+\ex This book, I read yesterday.
+\ex Yesterday, I read this book.
+\zl
+
+\pause
+
+\item Die germanischen (V2-)Sprachen stellen irgendeine Konstituente vor das finite Verb:
+\eal
+\ex Ich habe das Buch gestern gelesen.
+\ex Das Buch habe ich gestern gelesen.
+\ex Gestern habe ich das Buch gelesen.
+\ex Gelesen habe ich das Buch gestern,\\
+    gekauft hatte ich es aber schon vor einem Monat.
+\ex Das Buch gelesen habe ich gestern.
+\zl
+
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Extraktion ist nicht satzgebunden}
+
+\begin{itemize}
+\item Extraktion kann über Satzgrenzen hinweggehen:
+\eal
+\ex Chris, David saw.
+\ex Chris, we think that David saw.
+\ex Chris, we think Anna claims that David saw.
+\zl
+
+\pause
+
+\item Im Deutschen wohl eher in den süddeutschen Varietäten, aber:
+
+\eal
+\label{bsp-Fernabhaengigkeit}
+\ex\label{bsp-um-zwei-millionen}
+{}[Um zwei Millionen Mark]$_i$ soll er versucht haben,\\
+{}[eine Versicherung \_$_i$ zu betrügen].\footnote{
+         taz, 04.05.2001, S.\,20.
+}
+\ex
+"`Wer$_i$, glaubt\iw{glauben} er, daß er \_$_i$ ist?"' erregte sich ein Politiker vom Nil.\footnote{
+        Spiegel, 8/1999, S.\,18.
+}
+\ex\label{ex-wen-glaubst-du-dass}
+Wen$_i$ glaubst du, daß ich \_$_i$ gesehen habe.\footnote{
+    \citew[\page84]{Scherpenisse86a}.
+    }
+\ex {}[Gegen ihn]$_i$ falle es den Republikanern hingegen schwerer,\\
+    {}[ [ Angriffe \_$_i$] zu lancieren].\footnote{
+  taz, 08.02.2008, S.\,9.
+}
+\zl
+
+\end{itemize}
+
+
+}
+
+\frame{
+\frametitle{Weitergabe von Information im Baum}
+
+
+%% \centerfit{\begin{tikzpicture}[
+%% level 1+/.style={level distance=3\baselineskip},
+%% frontier/.style={distance from root=12\baselineskip},
+%% connect/.style={semithick,<->,color=green}]
+%% %\draw (-3,-5) to[grid with coordinates] (4,0);
+%% \Tree[.S
+%%         [.\node (NP) {NP}; Chris ]
+%%         [.\node (S/NP) {S/NP};
+%%           [.NP David ] 
+%%           [.\node (VP/NP) {VP/NP};  
+%%             [.V saw ]
+%%             [.\node (NP/NP) {NP/NP}; \trace{} ] ] ] ]
+%% \draw[connect] (NP/NP.north east) [bend right] to (VP/NP.south east);
+%% \draw[connect] (VP/NP.north east) [bend right] to (S/NP.south east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+%% \end{tikzpicture}}
+
+\centerline{%
+\begin{forest}
+sm edges
+[S
+  [\alert<3>{NP} [Chris] ]
+  [S/\alert<2>{NP} 
+    [NP [David] ] 
+    [VP/\alert<2>{NP}  
+      [V [saw] ]
+      [NP/\alert<1>{NP} [\trace] ] ] ] ]
+%% todo to do
+%% \draw[connect] (NP/NP.north east) [bend right] to (VP/NP.south east);
+%% \draw[connect] (VP/NP.north east) [bend right] to (S/NP.south east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+\end{forest}}
+
+\begin{itemize}
+\item Hinten fehlt das Objekt (Lücke, Spur): NP/NP
+\pause
+\item Information über das fehlende Objekt wird an VP- und S-Knoten repräsentiert.
+\pause
+\item Fehlende NP steht vorn. (der so genannte Füller)
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Weitergabe im Baum über größere Entfernungen}
+
+
+%% \centerfit{\scalebox{.7}{%
+%% \begin{tikzpicture}[
+%% level 1+/.style={level distance=3\baselineskip},
+%% frontier/.style={distance from root=21\baselineskip},
+%% connect/.style={semithick,<->,color=green}]
+%% %\draw (-3,-5) to[grid with coordinates] (4,0);
+%% \Tree[.S
+%%         [.\node (NP) {NP}; Chris ]
+%%         [.\node (S/NP1) {S/NP};
+%%           [.NP we ] 
+%%           [.\node (VP/NP1) {VP/NP};  
+%%             [.V think ]
+%%               [.\node (CP/NP) {CP/NP};
+%%                 [.C that ]
+%%                 [.\node (S/NP) {S/NP};
+%%                   [.NP David ] 
+%%                   [.\node (VP/NP) {VP/NP};  
+%%                     [.V saw ]
+%%                     [.\node (NP/NP) {NP/NP}; \trace{} ] ] ] ] ] ] ]
+%% \draw[connect] (NP/NP.north east)  [bend right] to (VP/NP.south east);
+%% \draw[connect] (VP/NP.north east)  [bend right] to (S/NP.south east);
+%% \draw[connect] (S/NP.north east)   [bend right] to (CP/NP.south east);
+%% \draw[connect] (CP/NP.north east)  [bend right] to (VP/NP1.south east);
+%% \draw[connect] (VP/NP1.north east) [bend right] to (S/NP1.south east);
+%% \draw[connect] (S/NP1.north east)  [bend right] to (NP);
+
+%% \end{tikzpicture}}}
+
+
+\centerfit{\scalebox{.7}{%
+\begin{forest}
+sm edges
+[S
+  [NP [Chris] ]
+  [S/NP
+    [NP [we] ] 
+    [VP/NP  
+       [V [think] ]
+       [CP/NP
+         [C [that] ]
+         [S/NP
+            [NP [David] ] 
+            [VP/NP  
+               [V [saw] ]
+               [NP/NP [\trace ] ] ] ] ] ] ] ]
+%% \draw[connect] (NP/NP.north east)  [bend right] to (VP/NP.south east);
+%% \draw[connect] (VP/NP.north east)  [bend right] to (S/NP.south east);
+%% \draw[connect] (S/NP.north east)   [bend right] to (CP/NP.south east);
+%% \draw[connect] (CP/NP.north east)  [bend right] to (VP/NP1.south east);
+%% \draw[connect] (VP/NP1.north east) [bend right] to (S/NP1.south east);
+%% \draw[connect] (S/NP1.north east)  [bend right] to (NP);
+\end{forest}}}
+
+
+}
+
+
+
+\frame[shrink]{
+\frametitle{Extraktion + Verbumstellung = V2: Deutsch (SOV)}
+
+
+
+%% \centerfit{\begin{tikzpicture}[
+%% level 1+/.style={level distance=3\baselineskip},
+%% frontier/.style={distance from root=15\baselineskip},
+%% connect/.style={semithick,<->,color=green}]
+%% %\draw (-3,-5) to[grid with coordinates] (4,0);
+%% \Tree[.S
+%%         [.\node (NP) {NP}; \edge[roof]; {[das Buch]$_i$} ]
+%%         [.\node (S/NP) {S/NP};
+%%           [.{V \sliste{ S/\!/V }} 
+%%             [.V liest$_k$ ] ]
+%%            [.\node (S//V/NP) {S$/\!/$V/NP};
+%%              [.\node (NP/NP) {NP/NP}; \trace$_i${} ]
+%%              [.{V$'$$\!/\!/$V}
+%%                [.NP Jens ]
+%%                [.{V$\!/\!/$V} \_$_k$ ] ] ] ] ] ]
+%% \draw[connect] (NP/NP) [bend right] to (S//V/NP.south east);
+%% \draw[connect] (S//V/NP.north east) [bend right] to (S/NP.east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+%% \end{tikzpicture}}
+
+
+\centerfit{%
+\begin{forest}
+sm edges
+[S
+  [NP [das Buch, roof] ]
+  [S/NP
+     [V \sliste{ S$/\!/$V } 
+        [V [liest$_k$] ] ]
+     [S$/\!/$V/NP
+        [NP/NP [\trace] ]
+        [V$'$$\!/\!/$V
+           [NP [Jens] ]
+           [V$\!/\!/$V [\_$_k$] ] ] ] ] ] ]
+%% \draw[connect] (NP/NP) [bend right] to (S//V/NP.south east);
+%% \draw[connect] (S//V/NP.north east) [bend right] to (S/NP.east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+\end{forest}}
+
+
+}
+
+
+
+
+\frame{
+\frametitle{Extraktion + Verbumstellung = V2: Dänisch (SVO)}
+
+
+\centerfit{\scalebox{.9}{
+\begin{forest}
+sm edges
+[S
+   [NP [bogen$_j$;Buch.def ] ]
+      [S/NP
+         [V \sliste{ S$/\!/$V }
+           [V [læser$_k$;liest] ] ]
+           [S$/\!/$V/NP
+             [NP [Jens;Jens] ]
+             [VP$\!/\!/$V
+               [V$\!/\!/$V  [\_$_k$] ]
+               [NP/NP [\trace$_j$ ] ] ] ] ] ] 
+%% \draw[connect] (NP/NP.north east) [bend right] to (V/V.south east);
+%% \draw[connect] (V/V.north east) [bend right] to (S//V/NP.south east);
+%% \draw[connect] (S//V/NP.north east) [bend right] to (S/NP.east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+\end{forest}
+}}
+
+Das Deutsche unterscheidet sich vom Dänischen in der OV/VO-Stellung und der damit verbundenen
+VP-Bildung, sonst ist bzgl.\ V2 alles gleich.
+
+}
+
+
+
+
+
+%% \frame{
+%% \frametitle{Weitergabe von Information im Baum}
+
+%% \centerfit{\begin{tikzpicture}[
+%% level 1+/.style={level distance=3\baselineskip},
+%% frontier/.style={distance from root=15\baselineskip},
+%% connect/.style={semithick,<->,color=green}]
+%% %\draw (-3,-5) to[grid with coordinates] (4,0);
+%% \Tree[.S
+%%         [.\node (NP) {NP}; wen ]
+%%         [.\node (S/NP) {S/NP};
+%%           [.{V \sliste{ S/\!/V }} 
+%%             [.V glaubst$_k$ ] ]
+%%            [.\node (S//V/NP) {S$/\!/$V/NP};
+%%              [.\node (NP/NP) {NP/NP}; \trace{} ]
+%%              [.{V$'$$\!/\!/$V}
+%%                [.NP Jens ]
+%%                [.{V$\!/\!/$V} \_$_k$ ] ] ] ] ] ]
+%% \draw[connect] (NP/NP) [bend right] to (S//V/NP.south east);
+%% \draw[connect] (S//V/NP.north east) [bend right] to (S/NP.east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+%% \end{tikzpicture}}
+
+%% }

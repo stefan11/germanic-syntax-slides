@@ -1,0 +1,597 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   $RCSfile: hpsg-slides.tex,v $
+%%  $Revision: 1.3 $
+%%      $Date: 2006/05/17 12:19:28 $
+%%     Author: Stefan Mueller (DFKI)
+%%    Purpose: 
+%%   Language: LaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% $Log: hpsg-slides.tex,v $
+%% Revision 1.3  2006/05/17 12:19:28  stefan
+%% *** empty log message ***
+%%
+%% Revision 1.2  2004/08/14 15:44:45  stefan
+%% konstituentenreihenfolge
+%%
+%% Revision 1.1  2004/06/21 19:14:48  stefan
+%% alte Version vor LaTeX-Beamer
+%%
+%% Revision 1.1  2002/01/09 20:06:23  stefan
+%% Initial revision
+%%
+%% Revision 1.1  2001/10/21 17:01:35  stefan
+%% Initial revision
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[xcolor=dvipsnames,10pt]{beamer}
+
+
+\usepackage{hu-beamer-includes-pdflatex}%,beamer-movement}
+
+
+
+% Checkmark
+%\usepackage{tikz} % Examples and documentation: http://www.texample.net/tikz
+%\usepackage{bbding}
+\makeatletter
+\newcommand{\dingfamily}{\fontencoding{U}\fontfamily{ding}\selectfont}
+\newcommand{\@chooseSymbol}[1]{{\dingfamily\symbol{#1}}}
+\newcommand{\Checkmark}{\@chooseSymbol{'041}}
+\makeatother
+
+%\fuberlinlogon{0.89cm}
+
+% creates an unggly bibliography
+%\usepackage[T1]{fontenc}
+
+
+\usepackage{jambox}
+
+\usepackage{epsfig}
+\usepackage{tabularx}
+
+\usepackage{tikz-grid}
+
+%\renewcommand{\trace}{\raisebox{0.2ex}{\_}\rule{0cm}{0.7em}}
+
+
+%\usepackage[T4,T1]{fontenc}
+
+% die machen \! kaputt
+%\usepackage{tipa,tipx,phonetic}
+
+% \TH, \th, \dh, \DH
+\usepackage{wasysym}
+
+\let\TH=\Thorn
+\let\th=\thorn
+
+% Das ʒ muss aus tipa.sty muss auf textyogh umgebogen werden, da war \textezh drin.
+
+
+\let\textezh=\textyogh
+\let\textoopen=\textopeno
+%\let\texteopen=\textopene gibts nicht
+\let\texteopen=\textepsilon
+\let\textgammalatinsmall=\textbabygamma
+\let\ng=\engma
+\let\textvhook=\textscriptv
+
+%\DeclareUnicodeCharacter {720}{\textlengthmark }
+%\DeclareUnicodeCharacter {635}{\textturnrrtail\,}
+
+%% \nodemargin5pt%\treelinewidth2pt\arrowwidth6pt\arrowlength10pt
+%% \selectlanguage{german}
+%% \psset{nodesep=5pt} %,linewidth=0.8pt,arrowscale=2}
+%% \psset{linewidth=0.5pt}
+
+\usepackage[customcolors]{hf-tikz}
+
+% for subnodes in trees
+% is in hu-beamer-...
+%% \usepackage{tcolorbox}
+%% \tcbuselibrary{skins}
+%% \newtcbox{\mybox}[1][]{empty,shrink tight,nobeforeafter,on line,before upper=\vphantom{gM},remember as=#1,top=2pt,bottom=2pt}
+
+
+%\beamertemplateemptyfootbar
+
+%\hypersetup{pdfauthor={Stefan Müller (unter Benutzung von Material von Peter Gallmann, FSU Jena)}}
+%\hypersetup{pdftitle={Head-Driven Phrase Structure Grammar für das Deutsche}}
+
+
+%\subject{Generative Grammatik für das Deutsche}
+
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\let\mc=\multicolumn
+
+
+\newcommand{\sigle}[1]{\tiny{#1}}
+
+
+
+%\mode<beamer>{\beamertemplatebackfindforwardnavigationsymbolshorizontal}
+
+\title{Besprechung der Evaluationsergebnisse}
+
+%\includeonly{organisatorisches-germanisch-vl}
+%\includeonly{germanisch-phaenomene}
+%\includeonly{germanisch-valenz-scrambling}
+%\includeonly{germanisch-verbalkomplex}
+%\includeonly{germanisch-verbstellung}
+%\includeonly{germanisch-extraction}
+%\includeonly{germanisch-mehr-vf}
+%\includeonly{germanisch-subjekt}
+%\includeonly{germanisch-passiv}
+%\includeonly{germanisch-expletives}
+
+\begin{document} 
+\hypersetup{bookmarksopen=false}
+
+\huberlintitlepage
+
+%\part{Einleitung}
+
+
+
+%\beamertemplatecopyrightfootframenumber
+
+\exewidth{(35)}
+
+
+\frame{
+\frametitle{Bluff}
+
+\begin{itemize}
+\item Anforderungen für die aktive Teilnahme:\\
+      zwei Fragen (wenn keine Frage, dann "`keine Frage"' schreiben)
+\item Nachfrage: "`Aber wir unterschreiben die Scheine doch selbst."'
+\item Ich: "`Ja, trotzdem."'
+\item Ich hatte nichts in der Hand und habe trotzdem etwas verlangt.\\
+Das war Rumgeeier und Bluff.
+
+\bigskip
+
+\item Nach Gespräch mit Frau Schlachter und Absicherung bei Frau Kabelitz war ich der Annahme, ich könnte die Scheine
+  selbst unterschreiben.
+
+\item Missverständnis Fachschaft: Annahme, ich hätte Gespräch erfunden und so geblufft.
+
+\item Dazu passend: Mail von mir, dass Sie nicht alle einzeln mit Frau Kabelitz bzw.\ Frau
+  Schlachter reden sollten. Das war zu diesem Zeitpunkt schon mehrfach passiert (Zeugen). Auch mit Hubert
+  Truckenbrot.
+
+\item Ich wollte die Kolleginnen vor durch mich verursachter Mehrarbeit schützen.
+\end{itemize}
+
+
+}
+
+
+\frame{
+\frametitle{Die Niderschrift von der Smaragdenen Felswand}
+
+
+
+Ferner hat der Zen-Meister Huan-djian von Yün-djü oder Wolkenheim bei der Unterweisung einmal gesagt:
+"`Wenn der Löwe einen Elefanten reißt, so nimmt er seine ganze Kraft zusammen; und wenn er einen Hasen
+reißt, so nimmt er seine ganze Kraft zusammen."' Nun war da ein Mönch der fragte: "`Nun möchte
+ich nur wissen, was für eine Kraft das ist, die der Löwe ganz zusammennimmt."' Yün-djü antwortete:
+"`Es ist die \alert{Kraft der Wahrheit ohne Falsch}."'\footnote{
+aus Bi-Yän-Lu, Meister Yüan-wu's Niederschrift von der Smaragdenen Felswand, Ullstein Materialien (TB, 3 Bände in einem Band), Hanser Verlag, 3 Bände, gebunden)
+}
+
+
+}
+
+
+\frame{
+\frametitle{Bewertung BA-Deutsch}
+
+\centerline{
+\includegraphics[width=0.85\textwidth]{Evaluation/Bewertung-allgemein-BA-Deutsch}
+}
+}
+
+\frame{
+\frametitle{Bewertung Linguistik}
+
+\centerline{
+\includegraphics[width=0.85\textwidth]{Evaluation/Bewertung-allgemein-Linguistik}
+}
+}
+
+
+\frame{
+\frametitle{Positives BA-Deutsch}
+
+\includegraphics[width=\textwidth]{Evaluation/Positives-BA-Deutsch}
+
+}
+
+\frame{
+\frametitle{Positives Linguistik}
+
+\includegraphics[width=\textwidth]{Evaluation/Positives-Linguistik}
+
+}
+
+\frame{
+\frametitle{Verbesserungsvorschläge BA-Deutsch}
+
+\includegraphics[width=\textwidth]{Evaluation/Verbesserungsvorschlaege-BA-Deutsch}
+
+}
+
+\frame{
+\frametitle{Verbesserungsvorschläge BA-Deutsch (II)}
+
+\includegraphics[width=\textwidth]{Evaluation/Verbesserungsvorschlaege-BA-Deutsch-2}
+
+}
+\frame{
+\frametitle{Verbesserungsvorschläge Linguistik}
+
+\includegraphics[width=0.85\textwidth]{Evaluation/Verbesserungsvorschlaege-Linguistik}
+
+}
+
+%% \frame{
+%% \frametitle{Ärger}
+
+
+
+
+
+%% }
+
+\frame{
+\frametitle{Sarkasmus und Ironie}
+
+\begin{itemize}
+\item Ich bitte um Entschuldigung.
+\pause
+\item Ich werde nie wieder ironisch sein!
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Aufreger Streik: Beteiligung an studentischen und universitäten Belangen}
+
+\begin{itemize}
+\item 
+
+Mikro war an und lag auf dem Tisch.
+
+\item Ich konnte nicht verstehen, wie jemand sich von einem Link mit Informationen zu einem
+  aktuellen Vorgang an der Uni belästigt fühlen kann.
+
+\item Ich habe überreagiert.
+
+\end{itemize}
+
+
+}
+
+\frame{
+\frametitle{Machtmißbrauch}
+
+Das ist Machtmißbrauch:
+\begin{itemize}
+\item Noten gegen Sex
+\item Veröffentlichung von Arbeitsergebnissen unter dem Namen des Vorgesetzten
+\item Erzwungene Koautorenschaft der Arbeitsgruppenleiterin bzw. des Arbeitsgruppenleiters
+\end{itemize}
+
+\pause
+
+Das ist kein Machtmißbrauch:
+\begin{itemize}
+\item Man unterschreibt einen Schein, wenn mit der Prüfungsordnung vereinbar.
+\end{itemize}
+
+\pause
+Das ist Pech:
+\begin{itemize}
+\item Man fragt die falschen Leute.
+\end{itemize}
+
+\pause
+PS: Ich unterschreibe nicht mal mit Titel, Ihr Stefan Müller.
+
+
+
+}
+
+
+
+
+\frame{
+\frametitle{Das brauche ich als Lehrerin bzw. Lehrer nicht!}
+
+\begin{itemize}
+\item Stellen Sie sich andere Fächer vor:\\
+      Mathematik, Physik, Chemie, Biologie, Informatik.
+
+\begin{itemize}
+\item Mathematik: Wieso soll ich mich mit Höherer Algebra und Differentialrechnung beschäftigen? Das
+  kommt in der Schule eh nicht dran.
+
+\item Informatik: Wieso soll ich mich mit Schaltkreisentwurf beschäftigen?\\ Werde ich in der Schule
+  doch nicht machen.
+
+\item Biologie: Wieso soll ich mich mit Kreuzspinne und Kreuzschnabel beschäftigen?\\ Das steht doch nicht im Lehrplan.
+
+\end{itemize}
+
+\pause
+\item Wenn Sie nur unmittelbar Schulrelevantes lernen wollen,\\
+      wäre die Uni eine Wiederholung Ihres Schulstoffes. Wie öde!
+
+\pause
+\item Es gibt Menschen, die sind wissbegierig und andere, die sind es nicht.
+
+\item Wie wollen Sie andere, heranwachsende Menschen dazu bringen,\\
+      nach Wissen zu gieren?
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Michael Hahn, früher Sindelfingen, jetzt Stanford}
+
+%\vfill
+\medskip
+\includegraphics[width=0.76\textwidth]{Evaluation/Michael-Hahn-HPSG2013}
+
+{\tiny Michael Hahn, 2013 auf der Internationalen Konferenz für HPSG. CC-BY-NC-ND Stefan Müller, LingPhot.}
+\vfill
+}
+
+
+\frame{
+\frametitle{Für LehrerInnen und WissenschaftlerInnen gleichermaßen}
+
+\begin{itemize}[<+->]
+\item Patrick Blackburn im Vortrag \emph{How to give a good talk}:\\
+ Es muss klar sein, dass es sich nur um die Spitze des Eisbergs handelt.\\
+Der Hauptteil befindet sich unter dem Wasser!
+
+\item Kampfsportarten: Für einen sauberen Tritt Richtung Kopf müssen sie dehnbarer sein als es die
+  Tritthöhe verlangt.
+\end{itemize}
+
+}
+
+
+
+
+\frame{
+\frametitle{Tochter}
+
+\begin{itemize}
+\item Fachschaft: Ihre zehnjährige Tochter ist in der Diskussion irrelevant.
+\pause
+\item Was sagt der Clown? "`Ich hab ja noch Reserve."'
+\pause
+\item Mein Sohn geht aufs Gymnasium.
+\pause
+\item Auch dort gibt es Subjekte und Objekte, Aktiv und Passiv.
+\pause
+\item Sneak Preview: In den kommenden Lehrplänen wird Valenz eine Rolle spielen (Marc Felfe).
+\pause
+
+\item Fachschaft besteht aus guten und engagierten StudentInnen,\\
+ weshalb sie Anmerkungen bzgl. Kenntnisstand als Beleidigungen auffassen.
+
+\pause
+\item Aber: Ca. 2015 haben in der großen Einführungsvorlesung an der FU\\
+      (450 TeilnehmerInnen) 80\,\% der Anwesenden für \emph{mir} als Subjekt gestimmt:
+\ea
+Mir graut vor der Prüfung.
+\z
+\pause
+\item Im Jahr danach nach vorausgegangener Besprechung des Beispiels wieder 80\,\%.
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Ziele (ergänzte Folie in der Veranstaltung)}
+
+
+% \begin{itemize}[<+->]
+% \item Vermittlung grundlegender Vorstellungen über Grammatik
+% \item Vorstellung zweier Grammatiktheorien und deren Herangehensweisen
+% \item Vergleich der Sprachen Deutsch, Dänisch, Niederländisch
+% \end{itemize}
+
+\begin{itemize}
+\item Überblick über die germanischen Sprachen
+\item Detailliertere sprachvergleichende Diskussion ausgewählter syntaktischer Phänomene
+\end{itemize}
+
+Lehramtsrelevante Teilziele
+\begin{itemize}
+\item Wiederholung und Festigung grundlegender Begriffe:
+
+\begin{itemize}
+\item Wortarten
+\item Kasus und andere morphosyntaktische Merkmale
+\item Grammatische Funktionen
+\item syntaktische Struktur des Deutschen und der Nachbarsprachen
+      
+      Hauptsätze/Nebensätze/Fragen
+
+\item Valenz (Unterscheidung Argument/Adjunkt)
+\item Aktiv/Passiv
+\end{itemize}
+\item Ansonsten: Blick über den Schul-Tellerrand
+\end{itemize}
+
+
+}
+
+
+\frame{
+\frametitle{Warum soll ich ein Buch auf Englisch lesen?}
+
+\begin{itemize}
+\item "`Es wäre besser, wenn deutsche syntaktische Phänomene auf Deutsch erklärt werden."'
+\item Sie studieren an einem Institut für "`(Deutsche Sprache) und Linguistik"'. 
+\item Das ist etwas Tolles! Es gibt Professuren für Allgemeine Sprachwissenschaft.
+\item Wenn es darum geht, unsere kognitiven Fähigkeiten zu verstehen (was uns vom Affen
+  unterscheidet), dann müssen wir Sprache allgemein betrachten und verstehen.
+\item Deutsch ist als Wissenschaftssprache tot. (Ulrich Ammon)
+\item Die deutsche Fachliteratur ist fünf Jahre hinterher und minderwertig.
+\item Sie brauchen die Kenntnis der Fachsprache.
+\item Englischsprachige Bücher, die offen entstehen (Open Science, Open Review, Open Access), werden
+  besser als deutsche Bezahl-Bücher.
+
+Sie haben mehr Nutzer, es gibt mehr Feedback.
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Andere Evaluationsergebnisse: Wir können auch anders!}
+
+\centerline{
+\includegraphics[width=0.85\textwidth]{Evaluation/Grammatiktheorie-2018}
+}
+}
+
+\frame{
+\frametitle{Andere Evaluationsergebnisse: Wir können auch anders!}
+
+
+Evaluation HU WS2016 (Grundkurs Linguistik): 
+
+\includegraphics[width=.9\textwidth]{Evaluation/netter-kompetenter-Dozent-GK2016WS}
+
+\pause
+
+
+Evaluation HU WS2016 (HPSG Master): 
+
+\includegraphics[width=.9\textwidth]{Evaluation/nett-und-humorvoll}
+
+}
+
+\frame{
+\frametitle{Andere Evaluationsergebnisse: Wir können auch anders!}
+
+Evaluation Jena SS2018 (Grammatikimplementation Master):
+\includegraphics[width=.9\textwidth]{Evaluation/2018-entspannte-Arbeitsatmosphaere}
+
+}
+
+\frame{
+\frametitle{Wie geht es weiter?}
+
+\begin{itemize}[<+->]
+\item Fragen sind optional.
+\item Fragen helfen mir zu verstehen, wo noch Erklärungen hinzugefügt werden können bzw.\ müssen.
+\item Es wird zu jedem Thema einen Satz Multiple-Choice-Aufgaben zum Üben geben.
+
+\item Es wird (noch mehr) Übungsaufgaben im Buch geben.
+\item Das Buch wird auch ansonsten vervollständigt und überarbeitet.
+
+\bigskip
+
+\item Ich werde in alle Kommissionen zu neuen Studienordnungen gehen.
+\item Kommen Sie auch! 
+\item Engagieren Sie sich in der Fachschaft! 
+\item Machen Sie in der universitären Selsbtverwaltung mit (Berufungskommissionen usw.)!
+
+\end{itemize}
+
+
+}
+
+\frame{
+\frametitle{Angebot}
+
+\begin{itemize}
+\item Lassen Sie uns miteinander reden!
+\item Ich habe das der Fachschaft mehrfach angeboten.
+\item In kleinerem oder größerem Kreis.
+\item Hier oder da.
+\end{itemize}
+
+
+}
+
+
+\frame{
+\frametitle{Wie geht es weiter?}
+
+\centerline{\fontsize{60}{48} \selectfont Ho!}
+
+}
+
+
+
+
+\appendix
+% muß immer geladen werden, wegen Referenzen
+\input{hu-literatur}
+
+
+\end{document}
+
+
+% Local variables:
+% mode: lazy-lock
+% End:
+
+
+
+
+Fragen:
+
+1. Kann die Definition für strukturellen und lexikalischen Kasus für andere Sprachen, auch außerhalb der germanischen Sprachen, übernommen werden oder müsste man sie von Grund auf neu definieren? 
+
+2. Wie könnte man feststellen, ob ein Kasus einer Sprache, die noch nicht sehr gut beschrieben ist, ein struktureller oder lexikalischer Kasus ist? 
+
+3. Welche Schritte sind notwendig um das Kasussystem einer Sprache zu definieren. Wie geht man vor? 
+
+4. Wie geht man als Student damit um, wenn bezüglich eines Merkmals oder linguistischen Phänomens eine Kontroverse Meinung herrscht, wie z. B. bei der Einordnung des Dativs (lexikalisch/strukturell).
+
+
+
+
+1.	Im Satz (85) ist ein Subjekt Haraldi oder Sigga?
+Laut der Regel in Isländisch steht Subjekt direkt nach dem finiten Verb, egal in welchem Kasus (Haraldi in Dat.). Aber in diesem Satz gibt es auch eine Nominalgruppe  (Sigga).
+2.	Wird Objektskasus nur in den Sätzen mit Passiv beobachtet?
+  
+
+
+
+1. Wenn die HPSG-Theorie eine lexikonbasierte Theorie ist und die
+Syntaxstruktur vom Verb abhängen sollte, warum sollte man unterscheiden
+zwischen strukturellem und lexikalischem Kasus?
+
+2. Sind die semantische Kasus hier eine Subkategorie wie struktureller und
+lexikalischer Kasus oder eine Tiefstruktur unter den syntaktischen Kasus?
+Gibt es Position oder Beschreibung für semantische Kasus in Fillmores Case
+Grammar wie agentive, objective, benefactive, locative, usw. in HPSG? 3.
+Da ich Deutsch als Fremdsprache lernen, bedeutet die Grammatik für mich
+die Regeln zu befolgen. Eine der Regeln ist, dass Objektive in der
+folgenden Reihenfolge angeordnet werden: Akkusativpronomen < Dativpronomen
+< Dativnomen < Akkusativnomen.
+Also ist das Scrambling auf Seite 40 eine ungrammatische Ausnahme der
+Regel oder ein häufiges Phänomen, oder ist die Regel nur eine
+Standardvariante? Was ist das Ziel von HPSG und die andere
+Grammatiktheorien speziell? Wie unterscheidet sich die Grammatik für
+formale Beschreibung von Sprachlehre?
+
+
+
+

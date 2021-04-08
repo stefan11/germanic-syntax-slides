@@ -1,0 +1,521 @@
+%% -*- coding:utf-8 -*-
+
+
+\subtitle{Verbalkomplexbildung in den SOV-Sprachen}
+
+\section{Verbalkomplexbildung in den SOV-Sprachen}
+
+
+\huberlintitlepage[22pt]
+
+
+
+\frame{
+\frametitle{Literaturhinweis}
+
+
+
+Zu diesem Abschnitt gibt es das Kapitel~4 in \citew{MuellerGermanic}.
+
+Müller, Stefan, \citeyear{MuellerGermanic}. \emph{Germanic Syntax}. Berlin: Language Science
+Press. In Vorbereitung. 
+
+
+
+}
+
+
+\frame{
+\frametitle{Verbalkomplexbildung}
+
+\begin{itemize}
+\item Deutsch, Niederländisch erlauben Verbalkomplexbildung:
+\ea
+weil \highlight{es}<1> \highlight{ihr}<2> \highlight{jemand}<3> \highlight{zu lesen}<1> \highlight{versprochen}<2> \highlight{hat}<3> \citep{Haider90b}
+\z
+
+\pause
+\pause
+\pause
+Die Verben am Ende verhalten sich wie ein einfaches Verb. 
+
+Umordnung der Argumente ist möglich.
+
+
+\pause
+\item Niederländisch:
+\eal
+\ex
+\gll dat Jan het boek wil lezen\\
+     dass Jan das Buch will lesen\\
+\glt `dass Jan das Buch lesen will'
+% that John the book wants read
+% 'that John wants to read the book' 
+\ex
+\gll dat Jan Marie het boek laat lezen\\
+     dass Jan Maria das Buch läßt lesen\\
+%that John Mary the book lets read
+%'that John lets Mary read the book'
+\ex 
+\gll dat Jan Marie het boek wil laten lezen\\
+     dass Jan Marie das Buch will lassen lesen\\
+\glt `dass Jan Maria das Buch lesen lassen will'
+%that John Mary the book wants let read 'that John wants to let Mary read the book'
+\zl
+
+\pause
+\item Englisch, Dänisch, \ldots{} erlauben keine Umordnung von Konstituenten
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Variation}
+
+
+\begin{itemize}
+\item Bei den Abfolgen im Verbalkomplex gibt es extreme Variation. 
+
+\pause
+\item Standardsprachlich: übergeordnetes Verb steht rechts: V$_3$ V$_2$ V$_1$
+\ea
+weil es ihm jemand zu lesen versprochen hat \citep{Haider90b}
+\z
+\pause
+\item In den Dialekten gibt es aber die buntesten Abfolgen.
+
+
+Z.B. folgende \citep[376]{Mueller99a}:
+\eal
+\ex Ich hätte stapelweise Akten kön\-nen haben.
+\ex weil ich mir das nich hab' lassen gefallen
+\ex wenn se mir hier würden rausschmeißen, \ldots
+\zl
+(Interviewpartner in:\\
+\emph{Insekten und andere Nachbarn -- ein Haus in Berlin}, ARD 15.11.1995)
+
+
+
+\end{itemize}
+
+
+}
+
+\hfsetfillcolor{green!50!lime!30}
+\hfsetbordercolor{green!40!black}
+
+\frame{
+\frametitle{Argumentanziehung}
+
+
+\begin{forest}
+sm edges
+[V\feattab{
+%              \vform \type{fin},\\
+              \highlight<4>{\sliste{ NP[\type{nom}], NP[\type{acc}] }} } 
+        [{\highlight<1,3>{V}\feattab{
+%              \vform \type{bse},\\
+              \sliste{ \highlight<2,4>{NP[\type{nom}], NP[\type{acc}]}} }}, name=lesen [lesen] ]
+        [V\feattab{
+%              \vform \type{fin},\\
+              \sliste{ \visible<2->{\highlight<2>{NP[\type{nom}], NP[\type{acc}]},} \highlight<1,3>{V}}}, name=wird [wird] ]
+]
+\only<2>{\draw[semithick,->] (lesen)..controls +(south east:2) and +(south west:2)..(wird);}
+\end{forest}
+
+%% \begin{forest}
+%% sm edges
+%% [V\feattab{
+%% %              \vform \type{fin},\\
+%%               \sliste{ NP[\type{nom}], NP[\type{acc}] } } 
+%%         [\highlight<1>{V}\feattab{
+%% %              \vform \type{bse},\\
+%%               \sliste{ NP[\type{nom}], NP[\type{acc}]} }, name=lesen [lesen] ]
+%%         [V\feattab{
+%% %              \vform \type{fin},\\
+%%               \sliste{ NP[\type{nom}], NP[\type{acc}], \highlight<1>{V}}}, name=wird [wird] ]
+%% ]
+%% \draw[semithick,->] (lesen)..controls +(south east:2) and +(south west:2)..(wird);
+%% \end{forest}
+
+\begin{itemize}
+\item \emph{wird} verlangt Infinitiv ohne \emph{zu} \visible<2->{und dessen Argumente\\
+      \citep{Geach70a,HN94a}}
+\pause
+\pause
+\item Verb wird gesättigt und ist am Mutterknoten nicht mehr in der Valenzliste
+\pause
+\item Kombination aus \emph{lesen} und \emph{wird} verhält sich wie einfaches Verb und kann mit den
+  Argumenten in beliebiger Reihenfolge kombiniert werden.
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Verbalkomplexbildung und Scrambling: Normalstellung}
+
+\centerfit{
+\begin{forest}
+sm edges
+[V\feattab{
+              \sliste{ }}
+        [{NP[\type{nom}]} [keiner] ]
+        [V\feattab{
+              \sliste{ NP[\type{nom}] }}
+          [{NP[\type{acc}]} [das Buch, roof] ]
+          [V\feattab{
+%              \vform \type{fin},\\
+              \sliste{ NP[\type{nom}], NP[\type{acc}]}} 
+             [V\feattab{
+%              \vform \type{bse},\\
+              \sliste{ NP[\type{nom}], NP[\type{acc}]}} [lesen] ]
+             [V\feattab{
+%              \vform \type{fin},\\
+                \sliste{ NP[\type{nom}], NP[\type{acc}], V }} [wird] ] ] ] ]
+\end{forest}}
+
+
+}
+
+\frame{
+\frametitle{Verbalkomplexbildung und Scrambling: Acc $<$ Nom}
+
+\centerfit{\begin{forest}
+sm edges
+[V\feattab{
+              \sliste{ }}
+        [{NP[\type{acc}]} [das Buch, roof] ]
+        [V\feattab{
+              \sliste{ NP[\type{acc}] }}
+          [{NP[\type{nom}]} [keiner] ]
+          [V\feattab{
+%              \vform \type{fin},\\
+              \sliste{ NP[\type{nom}], NP[\type{acc}] }} 
+             [V\feattab{
+%              \vform \type{bse},\\
+              \sliste{ NP[\type{nom}], NP[\type{acc}]}} [lesen] ]
+             [V\feattab{
+%              \vform \type{fin},\\
+                \sliste{ NP[\type{nom}], NP[\type{acc}], V }} [wird] ] ] ] ]
+\end{forest}}
+
+
+}
+
+\subsection{Argumentanziehung im Detail}
+
+\frame{
+
+
+\ea
+\emph{lesen} infinite Form:\\
+\ms{
+subj  & \sliste{ NP[\type{nom}] }\\
+comps & \sliste{ NP[\type{acc}] }\\
+}
+\z
+
+Subjekte können nur mit finiten Verben kombiniert werden:
+\eal
+\ex[]{
+Das Buch lesen wollte ein Mann.
+}
+\ex[*]{
+Ein Mann lesen wollte das Buch.
+}
+\zl
+
+\pause
+\ea
+\emph{werden} infinite Form:\\
+\ms{
+subj  & \ibox{1}\\
+comps & \ibox{2} $\oplus$ \sliste{ V[ \vform \type{bse}, %\textsc{lex}+, 
+                                   \subj \ibox{1}, \comps \ibox{2} ] }\\
+}
+\z
+
+Das Hilfsverb \emph{werden} verlangt einen Infinitiv ohne zu (\vform \type{bse}).
+
+%\pause
+%\textsc{lex}+ sorgt dafür, dass das verbale Komplement ein Wort ist.
+
+\pause
+
+Das Subjekt \iboxb{1} und die anderen Argumente \iboxb{2} werden übernommen.
+
+
+}
+
+
+\frame{
+\frametitle{Argumentanziehung im Detail}
+
+%% \begin{tikzpicture}
+%% \tikzset{level 1+/.style={level distance=4\baselineskip}}
+%% \tikzset{level 2/.style={level distance=4\baselineskip}}
+%% \tikzset{frontier/.style={distance from root=9\baselineskip}}
+%% \Tree[.V\feattab{
+%%               \vform \type{fin},\\
+%%               \comps \highlight{\ibox{1} $\oplus$ \ibox{2}}<3> } 
+%%         [.{\highlight{\ibox{3} V}<1>\feattab{
+%%               \highlight{\vform \type{bse}}<1>,\\
+%%               \subj  \highlight{\ibox{1} \sliste{ NP[\type{nom}] }}<2,3>, \\ 
+%%               \comps \highlight{\ibox{2} \sliste{ NP[\type{acc}] }}<2,3> }} lesen ]
+%%         [.V\feattab{
+%%               \vform \type{fin},\\
+%%               \comps \highlight{\ibox{1} $\oplus$ \ibox{2}}<2> $\oplus$ \sliste{ \highlight{\ibox{3}}<1> } } wird ]
+%% ]
+%% \end{tikzpicture}
+
+%% \begin{tikzpicture}
+%% \tikzset{level 1+/.style={level distance=4\baselineskip}}
+%% \tikzset{level 2/.style={level distance=4\baselineskip}}
+%% \tikzset{frontier/.style={distance from root=9\baselineskip}}
+%% \Tree[.V\feattab{
+%%               \vform \type{fin},\\
+%%               \comps \highlight{\ibox{1} $\oplus$ \ibox{2}}<3> } 
+%%         [.{\highlight{\ibox{3} V}<1>\feattab{
+%%               \highlight{\vform \type{bse}}<1>,\\
+%%               \subj  \highlight{\ibox{1} \sliste{ NP[\type{nom}] }}<2,3>, \\ 
+%%               \comps \highlight{\ibox{2} \sliste{ NP[\type{acc}] }}<2,3> }} lesen ]
+%%         [.V\feattab{
+%%               \vform \type{fin},\\
+%%               \comps \highlight{\ibox{1} $\oplus$ \ibox{2}}<2> $\oplus$ \sliste{ \highlight{\ibox{3}}<1> } } wird ]
+%% ]
+%% \end{tikzpicture}
+
+\begin{forest}
+sm edges
+[V\feattab{
+              \vform \type{fin},\\
+              \comps \ibox{1} $\oplus$ \ibox{2} } 
+        [{\ibox{3} V}\feattab{
+              \vform \type{bse},\\
+              \subj  \ibox{1} \sliste{ NP[\type{nom}] }, \\ 
+              \comps \ibox{2} \sliste{ NP[\type{acc}] } } [lesen] ]
+        [V\feattab{
+              \vform \type{fin},\\
+              \comps \ibox{1} $\oplus$ \ibox{2} $\oplus$ \sliste{ \ibox{3} } } [wird] ] ]
+\end{forest}
+
+
+\begin{itemize}
+\item Hilfsverb verlangt Infinitiv ohne \emph{zu} \iboxb{3}.
+\pause
+\item Subjekt \iboxb{1} und Komplemente \iboxb{2} werden übernommen.
+\pause
+\item \emph{lesen wird} hat dieselben Argumente wie \emph{liest}
+\end{itemize}
+
+
+
+}
+
+\frame{
+\frametitle{Komplexere Komplexe}
+
+
+%% %\centerfit{%
+%% \begin{tikzpicture}
+%% \tikzset{level 1+/.style={level distance=4\baselineskip}}
+%% \tikzset{level 2+/.style={level distance=5\baselineskip}}
+%% \tikzset{frontier/.style={distance from root=14\baselineskip}}
+%% \Tree[.V\feattab{
+%%               \vform \type{fin},\\
+%%               \comps \highlight{\ibox{1} $\oplus$ \ibox{2}}<3> } 
+%%         [.{\ibox{4} V\feattab{
+%%               \vform \type{bse},\\
+%%               \subj  \ibox{1},\\
+%%               \comps \highlight{\ibox{2}}<3> }} 
+%%            [.{\highlight{\ibox{3} V}<1>\feattab{
+%%               \highlight{\vform \type{bse}}<1>,\\
+%%               \subj  \highlight{\ibox{1} \sliste{ NP[\type{nom}] }}<2,3>, \\ 
+%%               \comps \highlight{\ibox{2} \sliste{ NP[\type{acc}] }}<2,3> }} lesen ]
+%%            [.V\feattab{
+%%               \vform \type{bse},\\
+%%               \subj  \ibox{1},\\
+%%               \comps \ibox{2} $\oplus$ \sliste{
+%%                 \highlight{\ibox{3}}<1> } } können ] ]
+%%         [.V\feattab{
+%%               \vform \type{fin},\\
+%%               \comps \highlight{\ibox{1} $\oplus$ \ibox{2}}<2> $\oplus$ \sliste{
+%%                 \highlight{\ibox{4}}<1> } } wird ] 
+%% ]
+%% \end{tikzpicture}}
+
+
+
+\centerline{\scalebox{0.9}{
+\begin{forest}
+sm edges
+[V\feattab{
+              \vform \type{fin},\\
+              \comps \ibox{1} $\oplus$ \ibox{2} } 
+        [{\ibox{4} V\feattab{
+              \vform \type{bse},\\
+              \subj  \ibox{1},\\
+              \comps \ibox{2} }} 
+           [{\ibox{3} V\feattab{
+              \vform \type{bse},\\
+              \subj  \ibox{1} \sliste{ NP[\type{nom}] }, \\ 
+              \comps \ibox{2} \sliste{ NP[\type{acc}] } }} [lesen] ]
+           [V\feattab{
+              \vform \type{bse},\\
+              \subj  \ibox{1},\\
+              \comps \ibox{2} $\oplus$ \sliste{
+                \ibox{3} } } [können] ] ]
+        [V\feattab{
+              \vform \type{fin},\\
+              \comps \ibox{1} $\oplus$ \ibox{2} $\oplus$ \sliste{
+                \ibox{4} } } [wird] ] 
+]
+\end{forest}}}
+
+Das geht auch zu dritt, Hauptsache, einer übernimmt die Verantwortung
+
+
+
+}
+
+
+\frame{
+\frametitle{Oder auch mal andersrum}
+
+
+
+
+
+%\centerline{\scalebox{0.7}{
+%% \centerfit{%
+%% \begin{tikzpicture}
+%% \tikzset{level 1+/.style={level distance=4\baselineskip}}
+%% \tikzset{level 2+/.style={level distance=5\baselineskip}}
+%% \tikzset{frontier/.style={distance from root=14\baselineskip}}
+%% \Tree[.V\feattab{
+%%               \vform \type{fin},\\
+%%               \comps \highlight{\ibox{1} $\oplus$ \ibox{2}}<3> } 
+%%         [.V\feattab{
+%%               \vform \type{fin},\\
+%%               \comps \highlight{\ibox{1} $\oplus$ \ibox{2}}<2> $\oplus$ \sliste{
+%%                 \highlight{\ibox{4}}<1> } } wird ]
+%%         [.{\ibox{4} V\feattab{
+%%               \vform \type{bse},\\
+%%               \subj  \ibox{1},\\
+%%               \comps \highlight{\ibox{2}}<3> }} 
+%%            [.{\highlight{\ibox{3} V}<1>\feattab{
+%%               \highlight{\vform \type{bse}}<1>,\\
+%%               \subj  \highlight{\ibox{1} \sliste{ NP[\type{nom}] }}<2,3>, \\ 
+%%               \comps \highlight{\ibox{2} \sliste{ NP[\type{acc}] }}<2,3> }} lesen ]
+%%            [.V\feattab{
+%%               \vform \type{bse},\\
+%%               \subj  \ibox{1},\\
+%%               \comps \ibox{2} $\oplus$ \sliste{
+%%                 \highlight{\ibox{3}}<1> } } können ] ] 
+%% ]
+%% \end{tikzpicture}}
+%% %}
+
+\centerline{%
+\begin{forest}
+sm edges
+[V\feattab{
+              \vform \type{fin},\\
+              \comps \ibox{1} $\oplus$ \ibox{2} } 
+        [V\feattab{
+              \vform \type{fin},\\
+              \comps \ibox{1} $\oplus$ \ibox{2} $\oplus$ \sliste{
+                \ibox{4} } } [wird] ]
+        [{\ibox{4} V\feattab{
+              \vform \type{bse},\\
+              \subj  \ibox{1},\\
+              \comps \ibox{2} }} 
+           [{\ibox{3} V\feattab{
+              \vform \type{bse},\\
+              \subj  \ibox{1} \sliste{ NP[\type{nom}] }, \\ 
+              \comps \ibox{2} \sliste{ NP[\type{acc}] } }} [lesen] ]
+           [V\feattab{
+              \vform \type{bse},\\
+              \subj  \ibox{1},\\
+              \comps \ibox{2} $\oplus$ \sliste{
+                \ibox{3} } } [können] ] ] 
+]
+\end{forest}}
+
+
+}
+
+\subsection{Keine Verbalkomplexe bei VO-Sprachen}
+
+\frame{
+\frametitle{English, Dänisch, \ldots}
+
+
+
+\begin{itemize}
+\item Normalerweise muss ein Argument vollständig sein,\\
+      wenn es mit seinem Kopf kombiniert wird.
+\pause
+\item Verbalkomplexe sind anders: Wörter werden direkt verbunden.
+\pause
+\item Englisch und Dänisch haben nur die normale Regel, im Deutschen, Niederländischen gibt es
+  zusätzlich die Verbalkomplexregel.
+
+\pause
+\item Die Hilfsverben betten in den SVO-Sprachen eine Verbphrase ein:
+\ea
+\gll Peter [has [read the book]].\\
+     Peter \spacebr{}hat \spacebr{}gelesen das Buch\\
+\z
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Verbalkomplexe ohne Verbalkomplexbildung?}
+
+\begin{itemize}
+\item Vorschläge, Hilfsverben auch mit einer VP zu kombinieren \citep{Wurmbrand2003b}:
+\ea
+dass keiner [[das Buch lesen] wird]
+\z
+\pause
+\item Wie funktioniert dann Scrambling?
+\ea
+dass [das Buch]$_i$ keiner [[ \_$_i$ lesen] wird]
+\z
+
+\pause
+\item Analysen, die Scrambling als Bewegung analysieren sind problematisch, da sie das Vorhandensein
+  zusätzlicher Lesarten bei der Umstellung von NPen mit Quantoren vorhersagen (\citealp[\page 146]{Kiss2001a}; \citealp[Abschnitt~2.6]{Fanselow2001a}).
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Übungsaufgaben}
+
+
+\begin{enumerate}
+\item Skizzieren Sie die Analyse der Verbalkomplexe für die folgenden Beispiele:
+\eal
+\ex dass er darüber lachen wird
+\ex dass er darüber wird lachen müssen
+\ex dass er über diesen Witz wird haben lachen müssen
+\zl
+\item Suchen Sie in der Zeitung oder in Korpora (COSMAS, COW) zwei Verbalkomplexe mit mindestens
+  drei Verben und analysieren Sie diese.
+
+\item Suchen Sie in Korpora Verbalkomplex mit mehr als vier Verben. Dokumentieren Sie Ihr Vorgehen.
+\end{enumerate}
+
+}
+
+
+%      <!-- Local IspellDict: de_DE -->
+
+
+

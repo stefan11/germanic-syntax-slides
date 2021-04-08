@@ -1,0 +1,227 @@
+%% -*- coding:utf-8 -*-
+
+\subtitle{Eingebettete Sätze}
+
+\section{Eingebettete Sätze}
+
+\huberlintitlepage[22pt]
+
+\subsubsection{Sätze mit Komplementierer}
+
+\frame{
+\frametitle{Deutsch: Komplementierer + Verbletzt, ohne Inversion}
+
+\vfill
+\centerfit{\begin{forest}
+sm edges
+[CP
+       [C [dass] ]
+       [S
+        [{NP[\type{nom}]} [niemand] ]
+        [V$'$
+          [{NP[\type{acc}]} [ihn] ]
+          [V [kennt] ]
+           ] ] ]
+\end{forest}}
+
+
+}
+
+
+\frame{
+\frametitle{Englisch: Komplementierer + SVO}
+
+
+\vfill
+
+
+\centerfit{\begin{forest}
+sm edges
+[CP
+       [C [that] ]
+       [S
+        [{NP[\type{nom}]} [nobody] ]
+        [VP
+          [V  [knows] ]
+          [{NP[\type{acc}]} [him] ] ] ] ]
+\end{forest}}
+
+
+
+
+
+}
+
+
+\frame{
+\frametitle{Jiddisch: Komplementierer + V2}
+
+
+
+\centerfit{\scalebox{.6}{\begin{forest}
+sm edges
+[CP
+        [C [az;dass] ]
+        [S
+          [{Adv} [haynt$_i$;heute] ]
+          [{S/Adv}
+            [{V \sliste{ S/$\!$/V }} 
+              [V [hot$_k$;hat] ] ]
+            [{S$/\!/$V/Adv}
+              [NP [Max;Max] ]
+              [{VP$\!/\!/$V/Adv}
+                [{V$\!/\!/$V}  [\_$_k$] ]
+                [VP/Adv 
+                  [VP
+                    [V [geleyent;gelesen] ]
+                    [NP [dos bukh;das Buch,roof] ] ]
+                  [Adv/Adv [\_$_i$] ] ] ] ] ] ] ]
+%% \draw[connect] (Adv/Adv.north east)   [bend right] to (VP/Adv.south east);
+%% \draw[connect] (VP/Adv.north east)    [bend right] to (V/V/Adv.south east);
+%% \draw[connect] (V/V/Adv.north east)   [bend right] to (S//V/Adv.south east);
+%% \draw[connect] (S//V/Adv.north east)  [bend right] to (S/Adv.east);
+%% \draw[connect] (S/Adv.north east)     [bend right] to (Adv);
+\end{forest}}}
+
+
+
+\ea
+\gll Ikh meyn  az   haynt hot Max geleyent dos bukh.\footnotemark\\
+     ich   denke dass heute hat Max gelesen   das Buch\\
+\footnotetext{\citew[p.\,58]{Diesing90a}.}
+\glt `Ich denke, dass Max heute das Buch gelesen hat.'
+\z
+
+}
+
+
+\subsubsection{Positionionale Expletiva}
+
+\frame{
+\frametitle{Positionale Expletiva}
+
+\begin{itemize}
+\item Deutsch, Dänisch, Jiddish, \ldots{} erlauben Expletiva vor dem finiten Verb:
+
+\ea[]{
+Es ritten drei Reiter zum Tor hinaus.
+}
+\z
+
+
+
+\end{itemize}
+
+}
+
+
+\subsubsection{Interrogativnebensätze}
+
+\frame{
+\frametitle{Deutsch: \emph{w} + SOV}
+
+\vfill
+
+\centerfit{\begin{forest}
+sm edges
+[S
+       [{NP[\snom]} [wer] ]
+       [S/NP 
+         [NP/NP [\trace] ]
+         [V$'$
+           [{NP[\sacc]}  [das Buch,roof] ]
+           [V [liest] ] ] ] ]
+\end{forest}}
+
+}
+
+\frame{
+\frametitle{Danish: \emph{w}-Subjekt + Expl + VO}
+
+\vfill
+
+\centerfit{\scalebox{0.9}{\begin{forest}
+sm edges
+[S
+       [{NP[\snom]} [hvem;wer] ]
+       [{S/NP[\snom]}
+         [{NP[\lnom]} [det;\textsc{expl}] ]
+         [{VP/NP[\snom]}
+           [{V$'$/NP[\snom]}
+             [V [læser;liest] ]
+             [{NP[\snom]/NP[\snom]} [\trace] ] ]
+           [{NP[\sacc]} [bogen;Buch.\textsc{def} ] ] ] ] ]
+\end{forest}}}
+
+
+
+}
+
+
+\frame{
+\frametitle{Jiddish: \emph{w}-Subjekt + V2 mit Expletivum im VF}
+
+
+\vfill
+
+\centerfit{\scalebox{0.65}{\begin{forest}
+sm edges
+[S
+       [{NP[\snom]} [ver$_i$;wer] ]
+       [{S/NP[\snom]}
+         [{NP[\lnom]} [es$_j$;\textsc{expl}] ]
+         [{S/NP[\snom]/NP[\lnom]}
+           [{V \sliste{S//V}}
+             [V [leyent$_k$;liest] ] ]
+           [{S//V/NP[\snom]/NP[\lnom]}
+             [{NP[\lnom]/NP[\lnom]} [\trace$_j$] ] 
+             [{VP//V/NP[\snom]}
+               [{V$'$//V} 
+                 [V//V [\trace$_k$] ]
+                 [{NP[\snom]/NP[\snom]} [\trace$_i$] ] ]
+               [{NP[\sacc]} [bogen;Buch.\textsc{def}] ] ] ] ] ] ]
+\end{forest}}}
+
+
+}
+
+
+\frame{
+\frametitle{Expletiva im Deutschen und Jiddischen}
+
+
+\begin{itemize}
+\item Expletiva können im Deutschen nicht im Mittelfeld stehen:
+\eal
+\ex[]{
+Es arbeiten noch drei Männer.
+}
+\ex[*]{
+dass es noch drei Männer arbeiten
+}
+\zl
+\pause
+\item Beschränkung, die verlangt, dass diese Elemente extrahiert sein müssen.
+
+\pause
+\item Aber:
+\ea[*]{
+Es$_i$ glaube ich, dass \_$_i$ noch drei Männer arbeiten.
+}
+\z
+\pause
+\item Voranstellung von Expletivpronomina über Satzgrenzen muss ohnehin ausgeschlossen werden:
+\ea[*]{
+Es$_i$ glaube ich, dass \_$_i$ regnet.
+}
+\z
+
+
+\end{itemize}
+
+
+
+
+
+
+}

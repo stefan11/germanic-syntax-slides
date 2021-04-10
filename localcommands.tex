@@ -1,0 +1,32 @@
+%% -*- coding:utf-8 -*-
+\newcommand{\danish}{\jambox{(\ili{Danish})}}
+\newcommand{\dutch}{\jambox{(\ili{Dutch})}}
+\newcommand{\english}{\jambox{(\ili{English})}}
+\newcommand{\german}{\jambox{(\ili{German})}}
+\newcommand{\yiddish}{\jambox{(\ili{Yiddish})}}
+\newcommand{\icelandic}{\jambox{(\ili{Icelandic})}}
+
+
+\let\mc=\multicolumn
+
+
+\newcommand{\sigle}[1]{\tiny{#1}}
+
+\newcommand{\DAT}{\textsc{dat}}
+
+\newcommand{\ili}[1]{#1}
+
+
+% Dateien in geteilte-Folien werden in verschiedenen Veranstaltungen benutzt.
+% Was genau angezeigt wird, wird über toggles gesteuert.
+\newtoggle{psgbegriffe}\togglefalse{psgbegriffe}
+
+\newtoggle{hpsgvorlesung}\togglefalse{hpsgvorlesung}
+\newtoggle{gb-intro}\togglefalse{gb-intro}
+%\newtoggle{syntaxvorlesungen}\toggletrue{syntaxvorlesungen}
+
+%\newtoggle{konstituentenprobleme}\toggletrue{konstituentenprobleme}
+%\newtoggle{konstituentenprobleme-hinweis}\togglefalse{konstituentenprobleme-hinweis}
+\newtoggle{einfsprachwiss-exclude}\toggletrue{einfsprachwiss-exclude}
+\newtoggle{einfsprachwiss-include}\togglefalse{einfsprachwiss-include}
+

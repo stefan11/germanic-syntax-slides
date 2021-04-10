@@ -7,8 +7,22 @@
 
 \section{Phänomene}
 
-
 \huberlintitlepage[22pt]
+
+\outline{
+
+\begin{itemize}
+\item {Überblick über die germanischen Sprachen}
+\item \alert{Phänomene}
+\item Phrasenstrukturgrammatiken und \xbart
+\item Valenz, Argumentanordnung und Adjunkte
+\item Verbalkomplexbildung in den SOV-Sprachen
+\item Verbstellung: Verberst- und Verbzweitstellung
+\item Passiv
+\item Eingebettete Sätze
+\end{itemize}
+
+}
 
 
 
@@ -33,8 +47,18 @@ Modell Ihrer Wahl (\zb Government \& Binding)!
 \frametitle{Literaturhinweis}
 
 
+Grundbegriffe (Wortarten, grammatische Funktionen, topologische Felder, \ldots): Kapitel~1 in \citew{MuellerGT-Eng}.
+\begin{refsection}
 
-Zu diesem Abschnitt gibt es das Kapitel~2 in \citew{MuellerGermanic}.
+\nocite{MuellerGT-Eng}
+
+\printbibliography[heading=none,notkeyword=this]
+
+\end{refsection}
+
+\pause
+
+Zu Phänomenen im Germanischen: Kapitel~2 in \citew{MuellerGermanic}.
 
 
 \begin{refsection}
@@ -44,6 +68,8 @@ Zu diesem Abschnitt gibt es das Kapitel~2 in \citew{MuellerGermanic}.
 \printbibliography[heading=none,notkeyword=this]
 
 \end{refsection}
+
+
 
 
 
@@ -68,13 +94,13 @@ Zu diesem Abschnitt gibt es das Kapitel~2 in \citew{MuellerGermanic}.
 \item Subjektbedingung
 \item Passiv
 \begin{itemize}
-\item Persönliches Passiv
-\item Unpersönliches Passiv
+\item persönliches Passiv
+\item unpersönliches Passiv
 \item Objekte ditransitiver Verben
 \end{itemize}
 \item Expletivpronomina
 \begin{itemize}
-\item Markierung Satztyp in nicht engebetteten Sätzen (V2)
+\item Markierung Satztyp in nicht eingebetteten Sätzen (V2)
 \item Markierung Satztyp in eingebetteten Sätzen (V3)
 \end{itemize}
 \end{itemize}
@@ -109,78 +135,6 @@ Zu diesem Abschnitt gibt es das Kapitel~2 in \citew{MuellerGermanic}.
 Klingt wie einer, ist aber kein Widerspruch.
 
 \end{itemize}
-}
-
-\subsection{V2}
-
-\frame{
-\frametitle{V2}
-
-\begin{itemize}
-\item Das Deutsche ist eine V2-Sprache:\\
-      Das finite Verb steht in Aussagesätzen und \emph{w}"=Fragen an zweiter Stelle.
-\item Davor kann eine beliebige Konsitutente stehen:
-\eal
-\ex Der Mann gibt der Frau morgen das Buch.
-\ex Der Frau gibt der Mann morgen das Buch.
-\ex Das Buch gibt der Mann der Frau morgen.
-\ex Morgen gibt der Mann der Frau das Buch.
-\zl
-\eal
-\ex Wer gibt der Frau morgen das Buch?
-\ex Wem gibt der Mann morgen das Buch?
-\ex Was gibt der Mann der Frau morgen?
-\ex Wann gibt der Mann der Frau das Buch?
-\zl
-\end{itemize}
-
-}
-
-\frame{
-\frametitle{V2 vs.\ Nicht-V2}
-
-\begin{itemize}
-\item Bis auf das Englische sind die germanischen Sprachen V2-Sprachen:
-\eal
-\ex Bagels mag ich.\jambox{(Deutsch)}
-\ex Bagels, I like.\jambox{(Englisch)}
-\zl 
-
-
-\eal
-\ex Gestern traf ich einen interessanten Mann.\jambox{(Deutsch)}
-\ex Yesterday, I met an interesting man.\jambox{(Englisch)}
-\zl 
-
-\item Es gibt Voranstellung im Englischen, diese erfolgt aber immer vor das Subjekt und das Verb.
-
-\end{itemize}
-
-}
-
-\frame{
-\frametitle{V2 ist selten}
-
-V2 ist selten \citep[\page 343]{Holmberg2015a}.
-
-\begin{itemize}
-\item germanische Sprachen (außer Englisch, \citealp{HP86a-ed})
-\item modernes Bretonisch \citep{BK2000a-u}
-\item Estnisch
-\item Altfranzösisch \parencites[Section~1.3]{Adams1987a-u}[Section~2.1.2]{Roberts93a-u}[Chapter~2]{Vance97a-u},
-  Altitalienisch, Altspanisch \citep[Section~3.3.2]{Fontana97a-u}, 
-\item Rätoromanisch \citep{Poletto2002a-u,Anderson2006a-u},
-\item das Kashmiri (Indien, Pakistan, \citealp[Chapter~4]{Bhatt99a-u})
-\item Inguschisch (autonomen Republik Inguschetien, Russische Föderation)
-\item die austronesischen Sprachen Taiof und Sisiqa, \citep[\page 495]{Ross2004a-u} % wieder aus der englischen Wikipedia verschwunden
-\item die brasilianische Indianersprache Karitiana aus der Tupí-Familie \citep{Storto2003a-u} und 
-% Ist vielleicht nur X2 sowas wie die australischen Sprachen (Bayer2010)
-%\item die uto-aztekische Sprache Tohono O'odham\\
-%      (Südwesten der USA sowie im Norden Mexikos).
-\end{itemize}
-
-
-
 }
 
 
@@ -295,24 +249,57 @@ auxiliary verb, the language is shown on the map as lacking a dominant order.
 }
 
 \frame{
+\frametitle{Hilfsverben zählen nicht, or do they?}
+
+\eal
+\ex Kim sieht den Fuchs.
+\ex Kim hat den Fuchs gesehen.
+\zl
+Für Dreyer ist (\mex{0}a) SVO und (\mex{0}b) SAuxOV.\\
+Aux wird ignoriert, so dass das Muster als SOV zählt.
+\pause
+
+Aber was ist mit (\mex{1})?
+\eal
+\ex Kim scheint den Fuchs zu sehen. \hfill(SVOV?)
+\pause
+
+\ex Kim scheint den Fuchs gesehen zu haben.
+\zl
+
+Es ist einfach das finite Verb, das aus Gründen der Satztypmarkierung anders plaziert wird.
+
+
+}
+
+\frame[shrink=5]{
 \frametitle{OV vs.\ VO}
 
-Verben stehen nach dem Objekt:
+OV: Verben stehen nach dem Objekt:
 
-\ea
-dass er ihn gesehen$_3$ haben$_2$ muss$_1$\jambox{(Deutsch, SOV)}
-\z
+\eal
+\ex dass sie ihn sieht$_1$   \jambox{(Deutsch, SOV)}
+\ex dass sie ihn gesehen$_2$ hat$_1$
+\ex dass sie ihn gesehen$_3$ haben$_2$ muss$_1$
+\zl
 
 Einbettende Verben werden nach eingebetteten angeordnet.
 
 \pause
 
-Verben stehen vor dem Objekt:
+VO: Verben stehen vor dem Objekt:
 
-\ea 
-\gll at han må$_1$ have$_2$ set$_3$ ham\\
-     dass er muss haben gesehen ihn\\\jambox{(Dänisch, SVO)}
-\z
+\eal
+\ex
+\gll at   hun ser$_1$ ham\\
+     dass sie  sieht   ihn\\\jambox{(Dänisch, SVO)}
+\ex
+\gll at   hun have$_1$ set$_2$ ham\\
+     dass sie  hat      gesehen ihn\\
+\ex
+\gll at hun må$_1$ have$_2$ set$_3$ ham\\
+     dass sie muss haben gesehen ihn\\
+\zl
 
 OV: Deutsch, Niederländisch, Afrikaans, \ldots
 
@@ -320,8 +307,113 @@ VO: Englisch, Dänisch, Norwegisch, Schwedisch, \ldots
 
 }
 
+\frame{
+\frametitle{Partikelverben und Resultativkonstruktionen}
+
+%[Section~15.2]
+\citet{Haider2020a}: Weitere Unterschiede zwischen VO- und OV-Sprachen:
+
+Partikelverben:
+\eal
+\ex Kim will \alert{look up} the information.      \hfill(Verb < Partikel)
+\ex Kim wird die Information \alert{nachschlagen}. \hfill(Partikel < Verb)
+\zl
+\pause
+
+Resultativkonstruktionen:
+\eal
+\ex Kim will \alert{fish} the pond \alert{empty}.       \hfill(Verb < Pred)
+\ex Kim wird den Teich \alert{leer} \alert{fischen}.    \hfill(Pred < Verb)
+\zl
 
 
+
+}
+
+\subsection{V2}
+
+\frame{
+\frametitle{V2}
+
+\begin{itemize}
+\item Das Deutsche ist eine V2-Sprache:\\
+      Das finite Verb steht in Aussagesätzen und \emph{w}"=Fragen an zweiter Stelle.
+\item Davor kann eine beliebige Konsitutente stehen:
+\eal
+\ex Das Kind  gibt dem Eichhörnchen jetzt eine Nuss.
+\ex Dem Eichhörnchen gibt das Kind jetzt eine Nuss.
+\ex Eine Nuss gibt das Kind dem Eichhörnchen jetzt.
+\ex Jetzt gibt das Kind dem Eichhörnchen eine Nuss.
+\zl
+\eal
+\ex Wer gibt dem Eichhörnchen jetzt eine Nuss?
+\ex Wem gibt das Kind jetzt eine Nuss?
+\ex Was gibt das Kind dem Eichhörnchen jetzt?
+\ex Wann gibt das Kind dem Eichhörnchen eine Nuss?
+\zl
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{V2 vs.\ Nicht-V2}
+
+\begin{itemize}
+\item Bis auf das Englische sind die germanischen Sprachen V2-Sprachen:
+\eal
+\ex Bagels mag ich.\jambox{(Deutsch)}
+\ex Bagels, I like.\jambox{(Englisch)}
+\zl 
+
+
+\eal
+\ex Gestern gab ich dem Eichhörnchen eine Nuss.\jambox{(Deutsch)}
+\ex Yesterday, I gave the squirrel a nut.\jambox{(Englisch)}
+\zl 
+
+\item Es gibt Voranstellung im Englischen, diese erfolgt aber immer vor das Subjekt und das Verb.
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Nicht extrahierbare Elemente}
+
+In den V2-Sprachen können fast alle Argumente vorangestellt werden. 
+
+Im Englischen (sprecherabhängig) nicht alle Objekte voranstellbar \citep[\page 258]{Hudson92a-u}:
+
+\eal
+\judgewidth{\%}
+\ex[]{
+We give children sweets.
+}
+\ex[]{
+These sweets, we give children \_.
+}
+\ex[\%]{
+These children, we give \_ sweets.
+}
+\zl
+
+}
+
+\frame{
+\frametitle{Voranstellung über Satzgrenzen hinweg}
+
+
+
+\ea
+{}[Über dieses Thema]$_i$ habe ich sie gebeten, [[einen Vortrag \_$_i$~] zu halten]?\footnote{
+Nach \citew[\page 21]{HN89b}.
+}
+\z
+
+Analyse von V2 kann also nicht einfach Umstellung von Satzgenossen sein.
+
+
+}
 
 
 \frame{
@@ -331,17 +423,82 @@ VO: Englisch, Dänisch, Norwegisch, Schwedisch, \ldots
 \item V2 ist unabhängig von VO/OV. Dänisch ist SVO und V2.
 \eal
 \ex 
-\gll Max har læst bogen.\\
-     Max hat gelesen buch.{\sc def}\\\jambox{(Dänisch)}
+\gll Gert har læst bogen.\\
+     Gert hat gelesen Buch.{\sc def}\\\jambox{(Dänisch)}
 \ex
-\gll Bogen har Max læst.\\
-     Buch.{\sc def} hat Max gelesen\\\jambox{(Dänisch)}
+\gll Bogen har Gert læst.\\
+     Buch.{\sc def} hat Gert gelesen\\\jambox{(Dänisch)}
 \zl
 
 
 \end{itemize}
 
 }
+
+\frame{
+\frametitle{Englisch als Residual V2}
+
+Im Englischen gibt es Reste von V2-Strukturen in Fragen:
+\eal
+\ex Which book did Sandy read?
+\ex Which book did Sandy give to Kim?
+\ex To whom did Sandy give the book?
+\zl
+
+\citet[\page 375]{Rizzi1990a-u}:  \emph{residual V2 language}
+
+
+
+}
+
+
+\frame{
+\frametitle{Satztypen}
+
+Satztypen werden über Verbstellung kodiert. Neben Aussagesätzen und \emph{w}-Fragesätzen gibt es
+auch V2-Imperative:
+
+\ea
+Jetzt gib ihr das Buch!
+\z
+\pause
+
+Ansonsten: Entscheidungsfragen und Imperative als V1:
+\eal
+\ex Gibt er ihr das Buch?
+\ex Gib ihr das Buch!
+\zl
+
+} 
+
+
+\frame{
+\frametitle{V2 ist selten}
+
+V2 ist selten \citep[\page 343]{Holmberg2015a}.
+
+\begin{itemize}
+\item germanische Sprachen (außer Englisch, \citealp{HP86a-ed})
+\item modernes Bretonisch \citep{BK2000a-u}
+\item Estnisch
+\item Altfranzösisch \parencites[Section~1.3]{Adams1987a-u}[Section~2.1.2]{Roberts93a-u}[Chapter~2]{Vance97a-u},
+  Altitalienisch, Altspanisch \citep[Section~3.3.2]{Fontana97a-u}, 
+\item Rätoromanisch \citep{Poletto2002a-u,Anderson2006a-u},
+\item das Kashmiri (Indien, Pakistan, \citealp[Chapter~4]{Bhatt99a-u})
+\item Inguschisch (autonomen Republik Inguschetien, Russische Föderation)
+\item die austronesischen Sprachen Taiof und Sisiqa, \citep[\page 495]{Ross2004a-u} % wieder aus der englischen Wikipedia verschwunden
+\item die Sprache brasilianischer Ureinwohner*innen Karitiana aus der Tupí-Familie \citep{Storto2003a-u} 
+% Ist vielleicht nur X2 sowas wie die australischen Sprachen (Bayer2010)
+%\item die uto-aztekische Sprache Tohono O'odham\\
+%      (Südwesten der USA sowie im Norden Mexikos).
+\end{itemize}
+
+
+
+}
+
+
+
 
 
 \subsection{Scrambling}
@@ -352,20 +509,22 @@ VO: Englisch, Dänisch, Norwegisch, Schwedisch, \ldots
 Germanische OV-Sprachen (Deutsch, \ldots):\\
 prinzipiell alle Abfolgen von Argumenten möglich:
 \eal
-\ex {}[weil] \rot{der Mann} \gruen{der Frau} \blau{das Buch} gibt
-\ex {}[weil] \rot{der Mann} \blau{das Buch} \gruen{der Frau} gibt
-\ex {}[weil] \blau{das Buch} \rot{der Mann} \gruen{der Frau} gibt
-\ex {}[weil] \blau{das Buch} \gruen{der Frau} \rot{der Mann} gibt
-\ex {}[weil] \gruen{der Frau} \rot{der Mann} \blau{das Buch} gibt
-\ex {}[weil] \gruen{der Frau} \blau{das Buch} \rot{der Mann} gibt
+\ex {}[weil] \rot{das Kind} \gruen{dem Eichhörnchen} \blau{die Nuss} gibt
+\ex {}[weil] \rot{das Kind} \blau{die Nuss} \gruen{dem Eichhörnchen} gibt
+\ex {}[weil] \blau{die Nuss} \rot{das Kind} \gruen{dem Eichhörnchen} gibt
+\ex {}[weil] \blau{die Nuss} \gruen{dem Eichhörnchen} \rot{das Kind} gibt
+\ex {}[weil] \gruen{dem Eichhörnchen} \rot{das Kind} \blau{die Nuss} gibt
+\ex {}[weil] \gruen{dem Eichhörnchen} \blau{die Nuss} \rot{das Kind} gibt
 \zl
 
 \pause
 
-Germanishce VO-Sprachen (Englisch, \ldots): Argumente haben eine feste Stellung.
-\ea
-because \rot{the man} gives \gruen{the woman} \blau{the book}
-\z
+Germanische VO-Sprachen (Englisch, \ldots): Argumente haben eine feste Stellung.
+\eal
+\ex because \rot{the child} gives \gruen{the squirrel} \blau{the nut}
+\ex because \rot{the child} gives \blau{the nut} \gruen{to the squirrel} 
+\zl
+\emph{Dative Shift} erfordert Umkategorisierung. Markierung durch Präposition.
 
 
 }
@@ -376,26 +535,26 @@ because \rot{the man} gives \gruen{the woman} \blau{the book}
 \frametitle{Stellung der Adverbialien}
 
 
-Deutsch, \ldots: Stellung der Adverbien frei:
+Deutsch, Niederländisch, \ldots: Stellung der Adverbien frei:
 \eal
-\ex weil der Mann der Frau das Buch \blau{gestern} gab
-\ex weil der Mann der Frau \blau{gestern} das Buch gab
-\ex weil der Mann \blau{gestern} der Frau das Buch gab
-\ex weil \blau{gestern} der Mann der Frau das Buch gab
+\ex weil das Kind dem Eichhörnchen die Nuss \blauit{gestern} gab
+\ex weil das Kind dem Eichhörnchen \blauit{gestern} die Nuss gab
+\ex weil das Kind \blauit{gestern} dem Eichhörnchen die Nuss gab
+\ex weil \blauit{gestern} das Kind dem Eichhörnchen die Nuss gab
 \zl
 
 \pause
 
 Dänisch, Englisch, \ldots: Adverbien stehen vor oder nach der VP:
 \eal
-\ex because the man \blau{often} [\gruen{gave the woman the book}]
-\ex because the man [\gruen{gave the woman the book}] \blau{often}
+\ex because the child \blauit{often} [\gruen{gave the squirrel the nut}]
+\ex because the child [\gruen{gave the squirrel the nut}] \blauit{often}
 \zl
 
 \pause
 Extremfall verschachtelte VPen \citep[§ 8.20, 495]{QGLS85a-u}:
 \ea
-It [certainly [\sub{VP} may [possibly [\sub{VP} have [indeed [\sub{VP} been\\ {}[badly [\sub{VP} formulated]]]]]]]].
+It [\blauit{certainly} [\sub{VP} may [\blauit{possibly} [\sub{VP} have [\blauit{indeed} [\sub{VP} been\\ {}[\blauit{badly} [\sub{VP} formulated]]]]]]]].
 \z
 
 }
@@ -412,14 +571,14 @@ It [certainly [\sub{VP} may [possibly [\sub{VP} have [indeed [\sub{VP} been\\ {}
 \item Deutsch, Niederländisch, \ldots: V-letzt:
 
 \ea
-Ich weiß, dass Max das Buch heute gelesen hat.
+Ich weiß, dass Aicke das Buch heute gelesen hat.
 \z
 
 \pause
 Stellung der anderen Konstituenten ist frei:
 \eal
-\ex Ich weiß, dass das Buch Max heute gelesen hat.
-\ex Ich weiß, dass das Buch heute Max gelesen hat.
+\ex Ich weiß, dass das Buch Aicke heute gelesen hat.
+\ex Ich weiß, dass das Buch heute Aicke gelesen hat.
 \zl
 
 \end{itemize}
@@ -433,7 +592,7 @@ Stellung der anderen Konstituenten ist frei:
 \begin{itemize}
 \item Englisch: eingebettete Sätze SVO
 \ea[]{
-I  know that Max has read the book yesterday.
+I  know that Kim has read the book yesterday.
 }
 \z
 
@@ -461,14 +620,14 @@ I  know that Max has read the book yesterday.
 \begin{itemize}
 \item Dänisch: eingebettete Sätze SVO oder V2
 \ea[]{
-\gll Jeg  ved, at   Max ikke  har læst  bogen          {i dag}.\\
-     ich weiß dass Max nicht hat gelesen Buch.{\sc def} heute\\\jambox{(SVO)}
+\gll Jeg  ved, at   Gert ikke  har læst  bogen          {i dag}.\\
+     ich weiß dass Gert nicht hat gelesen Buch.{\sc def} heute\\\jambox{(SVO)}
 }
 \z
 Negation hilft, Verbstellung zu bestimmen:
 \ea[]{
-\gll Jeg  ved, at   Max har ikke  læst  bogen          {i dag}.\\
-     ich weiß dass Max hat nicht gelesen Buch.{\sc def} heute\\\jambox{(V2)}
+\gll Jeg  ved, at   Gert har ikke  læst  bogen          {i dag}.\\
+     ich weiß dass Gert hat nicht gelesen Buch.{\sc def} heute\\\jambox{(V2)}
 }
 \z
 
@@ -478,23 +637,23 @@ Negation hilft, Verbstellung zu bestimmen:
 Andere Konstituenten in Initial-Stellungen sind möglich, \dash klares V2:
 \eal
 \ex[]{
-\gll Jeg  ved, at   {i dag} har Max ikke læst bogen.\\
-     ich weiß dass heute   hat Max nicht gelesen Buch.{\sc def}\\
+\gll Jeg  ved, at   {i dag} har Gert ikke læst bogen.\\
+     ich weiß dass heute   hat Gert nicht gelesen Buch.{\sc def}\\
 }
 \ex[]{
-\gll Jeg ved, at   bogen          har Max ikke  læst {i dag}.\\
-     ich weiß dass Buch.{\sc def} hat Max nicht gelesen heute\\
+\gll Jeg ved, at   bogen          har Gert ikke  læst {i dag}.\\
+     ich weiß dass Buch.{\sc def} hat Gert nicht gelesen heute\\
 }
 \zl
 
 %% \ex[*]{
-%% \gll Jeg  ved, at   {i dag} Max har læst bogen.\\
-%%      ich weiß dass heute   Max hat gelesen Buch.{\sc def}\\
+%% \gll Jeg  ved, at   {i dag} Gert har læst bogen.\\
+%%      ich weiß dass heute   Gert hat gelesen Buch.{\sc def}\\
 %% }
 %%
 %% \ex[*]{
-%% \gll Jeg  ved, at   bogen          Max har læst {i dag}.\\
-%%      ich weiß dass Buch.{\sc def} Max hat gelesen heute\\
+%% \gll Jeg  ved, at   bogen          Gert har læst {i dag}.\\
+%%      ich weiß dass Buch.{\sc def} Gert hat gelesen heute\\
 %% }
 %% \zl
 
@@ -523,6 +682,16 @@ Andere Konstituenten in Initial-Stellungen sind möglich, \dash klares V2:
 
 \zl
 
+\pause
+Isländisch:
+\ea 
+\gll Engum         datt í hug,  að   vert  væri að reyna til     að kynnast honum.\footnotemark\\
+     no.one.\DAT{} fell to mind that worth was  to try   \PREP{} to know    him\\\icelandic
+\footnotetext{\citew[\page 75]{Maling90a-u}.}
+\glt `It didn't occur to anyone that t was worth trying to get to know him.'
+\z
+
+
 
 \end{itemize}
 
@@ -540,22 +709,25 @@ Andere Konstituenten in Initial-Stellungen sind möglich, \dash klares V2:
 
 \eal
 \ex Ich weiß, wer heute das Buch gelesen hat.
-\ex Ich weiß, was Max heute gelesen hat.
+\ex Ich weiß, was Aicke heute gelesen hat.
 \zl
 
 Interrogativnebensätze beginnen mit einer \emph{w}-Phrase.
 
 \pause
-\item Stellung der anderen Konstituenten ist frei:
-\eal
-\ex Ich weiß, was heute jeder gelesen hat.
-\zl
-
-\pause
 \item Die \emph{w}-Phrase kann von weit her kommen:
 \ea
-Ich frage mich, \gruen{wem}$_i$ du versuchen willst, [ \_$_i$ das zu erklären ].
+Ich weiß nicht, [\gruen{über welches Thema}]$_i$ sie versprochen hat,\\
+{}[[einen Vortrag \_$_i$] zu halten].
 \z
+
+\pause
+\item Stellung der anderen Konstituenten ist frei:
+\eal
+\ex Ich weiß, was keiner diesem Eichhörnchen geben würde.
+\ex Ich weiß, was diesem Eichhörnchen keiner geben würde.
+\zl
+
 
 
 \end{itemize}
@@ -572,13 +744,13 @@ Ich frage mich, \gruen{wem}$_i$ du versuchen willst, [ \_$_i$ das zu erklären ]
 
 \eal
 \ex
-\gll Jeg ved, hvad Max har givet ham.\\
-     ich weiß was Max  hat gegeben ihm\\
-\glt `Ich weiß, was Max ihm gegeben hat.'
+\gll Jeg ved, hvad Gert har givet ham.\\
+     ich weiß was Gert  hat gegeben ihm\\
+\glt `Ich weiß, was Gert ihm gegeben hat.'
 \ex
-\gll Jeg ved, hvem Max har givet   bogen.\\
-     ich weiß wem  Max hat gegeben Buch.{\sc def}\\
-\glt `Ich weiß, wem Max das Buch gegeben hat.'
+\gll Jeg ved, hvem Gert har givet   bogen.\\
+     ich weiß wem  Gert hat gegeben Buch.{\sc def}\\
+\glt `Ich weiß, wem Gert das Buch gegeben hat.'
 \zl
 
 \end{itemize}
@@ -608,8 +780,8 @@ Ich frage mich, \gruen{wem}$_i$ du versuchen willst, [ \_$_i$ das zu erklären ]
 
 \ea
 \gll Ir veyst efsher [avu            do    voynt Roznblat   der goldshmid]?\footnotemark\\
-     you know maybe  \spacebr{}where there lives Rosenblatt the goldsmith\\
-\glt `Do you perhaps know where Rosenblatt the goldsmith lives?' 
+     Sie wissen vielleicht  \spacebr{}wo da wohnt Roznblat der Goldschmied\\
+\glt `Wissen Sie vielleicht, wo Roznblat der Goldschmied wohnt?' 
 \footnotetext{
 \citew[S.\,65]{Diesing90a}. Zitiert aus Olsvanger, \emph{Royte Pomerantsn}, 1949
 }
@@ -633,7 +805,7 @@ Ich frage mich, \gruen{wem}$_i$ du versuchen willst, [ \_$_i$ das zu erklären ]
 
 \eal
 \ex Drei Reiter ritten zum Tor hinaus.
-\ex Es ritten drei Reiter zum Tor hinaus.
+\ex \rot{Es} ritten drei Reiter zum Tor hinaus.
 \zl
 \end{itemize}
 
@@ -657,13 +829,21 @@ Ich frage mich, \gruen{wem}$_i$ du versuchen willst, [ \_$_i$ das zu erklären ]
      Polizei.{\sc def} weiß nicht wer hat plaziert Bombe.{\sc def}\\
 }
 \zl
-%% \pause
-%% In Fragesätzen kann das Fragepronomen weit weg von seinem Kopf stehen:
-%% \ea
-%% Ich frage mich, \gruen{wem}$_i$ du versuchen willst, \_$_i$ das zu erklären.
-%% \z
-%% In (\mex{-1}) wäre so eine Voranstellung des Fragepronomens nicht sichtbar, deshalb wird ein
-%% Expletivum eingesetzt.
+
+\pause
+
+Expletivum macht Extraktion sichtbar:
+\eal
+\ex[*]{ 
+\gll [\gruen{hvem}$_i$     [\trace$_i$ havde placeret bomben]]\\
+     \spacebr{}wer {}          hat   plaziert Bombe.\textsc{def}\\\danish
+}
+\ex[]{
+\gll [\gruen{hvem}$_i$     [\rot{der}                    havde \trace$_i$ placeret bomben]]\\
+     \spacebr{}who \spacebr{}\textsc{expl} hat   {}         plaziert Bombe.\textsc{def}\\
+}
+\zl
+
 
 \end{itemize}
 
@@ -688,11 +868,11 @@ Ich frage mich, \gruen{wem}$_i$ du versuchen willst, [ \_$_i$ das zu erklären ]
 
 \eal
 \ex[]{
-\gll ikh hob  zi  gefregt ver es         iz beser  far ir\\
+\gll ikh hob  zi  gefregt \gruen{ver} \rot{es}         iz beser  far ir\\
      I   have her asked   who {\sc expl} is better for her\\
 \glt `I have asked her who is better for her.'}
 \ex[]{
-\gll ikh hob  im  gefregt vemen es        kenen ale dayne khaverim\\
+\gll ikh hob  im  gefregt \gruen{vemen} \rot{es}        kenen ale dayne khaverim\\
      I   have him asked   whom {\sc expl} know  all your friends\\
 \glt `I asked him whom all your friends know.'}
 \zl
@@ -713,14 +893,14 @@ Ich frage mich, \gruen{wem}$_i$ du versuchen willst, [ \_$_i$ das zu erklären ]
 Somebody promised him [to read a book].
 \z
 \ea
-weil    jemand   [ihm [das Buch zu lesen] versprochen] hat\\
+weil    jemand   [ihr [das Buch zu lesen] versprochen] hat\\
 \z
 
 \pause
 
 \item Deutsch, Niederländisch erlauben Verbalkomplexbildung:
 \ea
-weil \highlight{es}<1> \highlight{ihm}<2> \highlight{jemand}<3> \highlight{zu lesen}<1> \highlight{versprochen}<2> \highlight{hat}<3>. \citep{Haider90b}
+weil \highlight{es}<2> \highlight{ihr}<3> \highlight{jemand}<4> \highlight{zu lesen}<2> \highlight{versprochen}<3> \highlight{hat}<4>. \citep{Haider90b}
 \z
 
 \pause
@@ -734,11 +914,12 @@ Umordnung der Argumente ist möglich.
 \item Englisch, Dänisch, \ldots{} erlauben keine Umordnung von Konstituenten
 
 \eal
+\judgewidth{\#}
 \ex[*]{
-Somebody promised a book him to read.
+Somebody promised a book her to read.
 }
 \ex[\#]{
-Somebody promised to read him a book.
+Somebody promised to read her a book.
 }
 \zl
 

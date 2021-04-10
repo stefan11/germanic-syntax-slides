@@ -49,7 +49,7 @@ public: germanisch-slides.pdf germanisch-handout.pdf germanisch-handout-1up.pdf
 
 
 # germanisch-handout-1up.pdf
-o-public: germanisch-slides.pdf germanisch-handout.pdf germanisch-handout-ueberblick.pdf 
+o-public: germanisch-slides.pdf germanisch-handout.pdf germanisch-handout-ueberblick.pdf germanisch-handout-phaenomene.pdf germanisch-handout-valenz-scrambling.pdf
 	scp -p $? hpsg.hu-berlin.de:/home/stefan/public_html/PS/
 
 

@@ -1,26 +1,9 @@
 STYLE-PATH= ${HOME}/Library/texmf/tex/latex/
 LANGSCI-PATH=~/Documents/Dienstlich/Projekte/LangSci/Git-HUB/latex/
 
-SOURCE= germanisch-include.tex germanisch-slides.tex germanisch-handout.tex ${STYLE-PATH}hu-beamer-includes-pdflatex.sty\
-	organisatorisches-germanisch-vl.tex \
-	germanisch-ueberblick.tex \
-	germanisch-deutsch.tex \
-	germanisch-englisch.tex \
-	germanisch-niederlaendisch.tex \
-	germanisch-afrikaans.tex \
-	germanischtax.tex
+SOURCE= $(wildcard *.tex)
 
-SOURCE2= organisatorisches-syntax-vl-ba-hu.tex\
-	 germanisch-ueberblick.tex \
-         germanisch-phaenomene.tex \
-	germanisch-verbalkomplex.tex\
-	germanisch-passiv.tex\
-	germanisch-expletives.tex\
-	germanisch-include.tex
-
-
-#$(SOURCE2) 
-%.pdf: %.tex $(SOURCE2) 
+%.pdf: %.tex $(SOURCE) 
 	xelatex $*
 	biber $*
 	xelatex $* 
@@ -49,7 +32,7 @@ public: germanisch-slides.pdf germanisch-handout.pdf germanisch-handout-1up.pdf
 
 
 # germanisch-handout-1up.pdf
-o-public: germanisch-slides.pdf germanisch-handout.pdf germanisch-handout-ueberblick.pdf germanisch-handout-phaenomene.pdf germanisch-handout-valenz-scrambling.pdf
+o-public: germanisch-slides.pdf germanisch-handout.pdf 01-germanisch-handout-ueberblick.pdf 02-germanisch-handout-phaenomene.pdf 03-germanisch-handout-psg-xbar.pdf 04-germanisch-handout-valenz-scrambling.pdf
 	scp -p $? hpsg.hu-berlin.de:/home/stefan/public_html/PS/
 
 

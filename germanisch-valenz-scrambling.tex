@@ -25,18 +25,291 @@
 }
 
 
-\subsection{Valenz}
-
 
 \frame{
 \frametitle{Literaturhinweis}
 
 
 
-Zu diesem Abschnitt gibt es das Kapitel~3 in \citew{MuellerGermanic}.
+Zu diesem Abschnitt lesen Sie bitte \citew[Kapitel~4]{MuellerGermanic}.
 
-Müller, Stefan, \citeyear{MuellerGermanic}. \emph{Germanic Syntax}. Berlin: Language Science
-Press. In Vorbereitung. 
+\begin{refsection}
+
+\nocite{MuellerGermanic}
+
+\printbibliography[heading=none,notkeyword=this]
+
+\end{refsection}
+
+
+
+}
+
+\subsection{Valenz}
+
+
+
+\frame{
+\frametitle{Vorhandensein bestimmter Konstituenten}
+
+Die Wortfolgen in (\mex{1}) sind keine wohlgeformten Sätze:
+\eal
+\ex[*]{
+\dass der        Delphin erwartet
+}
+\ex[*]{
+\dass des        Kindes       der       Delphin den        Ball dem        Kind  gibt
+}
+\zl
+Bei (\mex{0}a) fehlt etwas, bei (\mex{0}b) ist etwas zu viel.
+
+
+}
+
+\frame{
+\frametitle{Valenz in der Chemie und in der Linguistik}
+
+
+\citet{Tesniere59a-de} übernimmt das Konzept der Valenz aus der Chemie:
+
+
+\vfill
+
+\centerline{
+\begin{forest}
+[O
+  [H] 
+  [H] ]
+\end{forest}
+\hspace{5em}
+\begin{forest}
+[kennen
+ [Aicke]
+ [Conny] ]
+\end{forest}
+}
+
+\vfill
+
+}
+
+\frame{
+\frametitle{Argumente}
+
+NPen in (\mex{1}) sind Argumente der jeweiligen Verben:
+\eal
+\ex[]{
+%\gll
+\dass der        Delphin den        Menschen erwartet\\
+%     \that{}  the.\NOM{} dolphin den.\ACC{} human   expects\\
+%\glt `that the dolphin expects the human'
+}
+\ex[]{
+%\gll 
+{}[dass] der        Delphin dem        Kind  den        Ball gibt\\
+%     \that{}  the.\NOM{} dolphin the.\DAT{} child the.\ACC{} ball gives\\
+%\glt `that the dolphin gives the child the ball'
+}
+\zl
+
+Meistens füllen syntaktische Argumente auch eine semantische Rolle (\zb Gebender, Agens, Actor,
+\ldots).\nocite{Dowty91a,VanValin99a-u}
+
+\citet[Chapter~48]{Tesniere2015a-u}: 
+
+Theaterszene: Was wird minimal gebraucht, um einen Geben-Vorgang zu spielen?
+
+\begin{itemize}
+\item einen Geber*in
+\item etwas Gegebenes
+\item einen Empfänger*in
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Adjunkte}
+
+\begin{itemize}
+\item Zusätzlich zu den Argumenten können Adjunkte im Satz vorkommen:
+
+\eal
+\ex
+%\gll
+\dass{} der        Delphin dem        Kind  \alert{schnell} den        Ball gibt\\
+% \that{} the.\NOM{} dolphin the.\DAT{} child quickly the.\ACC{} ball gives\\
+%\glt `that the dolphin gives the child the ball quickly'
+\ex that the dolphin gives the child the ball \alert{quickly}
+\zl
+
+\pause
+
+\item Adjunkte tragen zusätzliche Information bei, füllen aber keine semantische Rolle.
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Optionale Argumente}
+
+Argumente können fast immer weggelassen werden, wenn der Kontext entsprechende Information enthält.
+
+\eal
+\ex 
+%\gll 
+Sie gibt Geld.
+%     she gives money\\
+%\glt `She gives money.'
+\ex 
+%\gll 
+Sie gibt den Armen.
+%     she gives the poor\\
+%\glt `She gives to the poor.'
+\ex\label{ex-sie-gibt} 
+%\gll 
+Sie gibt.
+%     she gives\\
+\ex 
+%\gll 
+Gib!
+%     give\\
+\zl
+
+Im Kontext eines Skat-Spiels ist klar, was gegeben wird und wer die Empfänger sind.
+
+Bei einigen wenigen Verben kann man die Argumente nicht weglassen:
+\eal
+\ex verschlingen
+\ex erwarten
+\zl
+
+Argumente können optional sein, Adjunkte sind es immer.
+
+
+}
+
+\frame{
+\frametitle{Chemie und optionale Elemente}
+
+Die Analogie zu chemischen Verbindungen ist hilfreich, aber die optionalen Argumente sind verwirrend:
+\eal
+\ex Kirby helps Sandy.
+\ex Kirby helps.
+\zl
+
+\hfill
+\begin{forest}
+[O
+  [H] 
+  [H] ]
+\end{forest}
+\hspace{5em}
+\begin{forest}
+[helps
+ [Kirby]
+ [Sandy] ]
+\end{forest}
+\hfill\mbox{}
+
+Lösung: Unterscheidung zwischen syntaktischer und semantischer Valenz.
+
+Die Theateranalogie hilft uns, semantische Argumente zu finden,\\
+die Analogie zur Chemie taugt eher für syntaktische Argumente. 
+
+Man muss ein spezielles, syntaktisch einstelliges Verb für (\mex{0}b) annehmen.
+
+}
+
+\frame{
+\frametitle{Shoppen statt Drama}
+
+\begin{itemize}
+\item Vergleich mit Einkauf besser:\\
+Wir wollen Nudeln mit Tofu und Tomatensoße machen.
+
+Für Tomatensoße brauchen wir Zwiebeln.
+
+\item Alle Zutaten kommen auf die Einkaufsliste.
+
+\item Im Laden merken wir, dass es keinen Tofu gibt.
+
+\item Macht nichts, geht auch ohne: Tofu ist optional.
+
+\item Nudeln gibt es. 10.000 Sorten.
+
+\item Tomaten und Zwiebeln. Fertig.
+
+\item Ach. Gummibärchen. Wie? Standen nicht auf der Liste?
+
+Gummibären sind Adjunkte!
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Nudeln, Tomaten, Zwiebeln und Syntax}
+
+\begin{itemize}
+\item Es gibt mehrere Wege, sicherzustellen, dass alles, was gebraucht wird, da ist.
+
+\item Phrasenstrukturen wie bei GPSG (siehe vorige Sitzung)
+
+\ea
+\label{ditrans-schema-two}
+\begin{tabular}[t]{@{}l@{ }l@{ }l}
+S  & $\to$ & NP[\type{nom}] NP[\type{dat}] NP[\type{acc}] V[\type{ditransitive}]\\
+\end{tabular}
+\z
+
+\pause
+\item Diese wurden dann aber für lexikon-orientierte Ansätze aufgegeben.\\
+  \parencites{Jacobson87b}[Section~5.5]{MuellerGT-Eng1}{MWArgSt}
+\pause
+\item Gründe: 
+\begin{itemize}
+\item Voranstellung von Teilphrasen (Partial VP Fronting)\\ \citep{Nerbonne86a,Johnson86a} 
+\pause
+\item Interaktionen mit Morphologie \citep[Section~5.5.1]{MuellerGT-Eng1}
+\end{itemize}
+\pause
+\item Come Back der phrasalen Ansätze in Construction Grammar \citep{Goldberg95a}, diese
+  funktionieren aber nicht.
+
+\parencites{Mueller2006d,MuellerPersian,MuellerUnifying,MWArgSt,MWArgStReply,MuellerFCG,MuellerLFGphrasal,MuellerPotentialStructure,MuellerGT-Eng4,MuellerCxG}
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Valenzlisten}
+
+\begin{itemize}
+\item Argumente werden in Listen repräsentiert:
+\ea
+\label{valence-specifications-German}
+\begin{tabular}[t]{@{}l@{~}l@{~}l}
+a. & \emph{schläft} `sleeps':        & \sliste{ NP[\type{nom}] }\\
+b. & \emph{kennt} `knows':           & \sliste{ NP[\type{nom}], NP[\type{acc}] }\\
+%b. & \emph{unterstützt} `supports':  & \sliste{ NP[\type{nom}], NP[\type{acc}] }\\
+c. & \emph{hilft} `helps':           & \sliste{ NP[\type{nom}], NP[\type{dat}] }\\
+d. & \emph{gibt} `gives':            & \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }\\
+e. & \emph{wartet} `waits':          & \sliste{ NP[\type{nom}], PP[\type{auf}] }\\
+\end{tabular}
+\z
+
+NP[\type{nom}] ist dann so was wie \emph{Nudeln}.\\
+Es gibt ganz viele verschiedene Möglichkeiten, diese Valenzanforderung zu befriedigen: \emph{sie},
+\emph{das Kind}, \emph{der lachende Delphin}, \ldots
+
+\pause
+\item Elemente der Listen sind in einer bestimmten Reihenfolge angeordnet. Diese entsprechen der
+  Reihenfolge im Englischen und der unmarkierten Reihenfolge im Deutschen \citep{Hoehle82a}. 
+
+
+\end{itemize}
 
 
 
@@ -44,15 +317,16 @@ Press. In Vorbereitung.
 
 
 \frame{
-\frametitle{Grundannahmen: Valenz}
+\frametitle{Valenzgesteuerter Strukturaufbau}
 
 \vfill
 \centerfit{
 \begin{forest}
 sm edges
-[{S \eliste}
-  [{NP[\type{nom}]} [niemand] ]
-  [{V$'$\sliste{ NP[\type{nom}] } }
+[{S \eliste},visible on=5-
+  [{NP[\type{nom}]},visible on=4- 
+    [niemand,visible on=4-] ]
+  [{V$'$\sliste{ NP[\type{nom}] } },visible on=3-
     [{NP[\type{acc}]} [ihn] ]
     [{V \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt]] ] ]
 \end{forest}}
@@ -64,7 +338,67 @@ sm edges
 \pause
 \item Ein Element der Liste wird mit dem Kopf kombiniert.\\
       Liste mit restlichen Elementen wird nach oben gegeben.
+\pause\pause\pause
+\item Wie einkaufen mit App:\\
+      Ein Element nach dem anderen wird aus der Liste entfernt.
+%\pause
+%\item Wichtig: Die Theorie sagt nichts darüber aus welcher
 \end{itemize}
+
+}
+
+\frame{
+\frametitle{Beschränkungsbasierte Theorien und Psycholinguistik}
+
+\centerfit{
+\begin{forest}
+sm edges
+[{S \eliste},visible on=4-
+  [{NP[\type{nom}]},visible on=3- 
+    [niemand,visible on=3-] ]
+  [{V$'$\sliste{ NP[\type{nom}] } },visible on=4-
+    [{NP[\type{acc}]},visible on=5- 
+      [ihn,visible on=5-] ]
+    [{V \sliste{ NP[\type{nom}], NP[\type{acc}]}},visible on=6- [kennt,visible on=7-]] ] ]
+\end{forest}}
+
+\begin{itemize}
+\item Erklärungen im Folgenden immer von unten nach oben.
+\pause
+\item Das ist in Theorien wie HPSG aber nicht zwingend. 
+
+Sehr wichtig aus psycholinguistischer Sicht, denn Verarbeitung ist inkrementell.
+\pause
+
+\end{itemize}
+
+
+
+
+}
+
+
+\frame{
+\frametitle{Optionale Argumente?}
+
+\begin{itemize}
+\item Es gibt mehrere Möglichkeiten, mit optionalen Argumenten umzugehen.
+\item Die offensichtlichste: Wir haben alternative Lexikoneinträge.
+% \ea
+% \begin{tabular}[t]{@{}l@{~}l@{~}l}
+% a. & \emph{gibt} `gives':            & \sliste{ NP[\type{nom}] }\\
+% b. & \emph{wartet} `waits':          & \sliste{ NP[\type{nom}] }\\
+% \end{tabular}
+% \z
+\ea
+\begin{tabular}[t]{@{}l@{~}l@{~}l}
+a. & \emph{gibt}:            & \sliste{ NP[\type{nom}] }\\
+b. & \emph{wartet}:          & \sliste{ NP[\type{nom}] }\\
+\end{tabular}
+\z
+\end{itemize}
+
+
 
 }
 
@@ -98,10 +432,32 @@ sm edges
 
 \subsection{SVO: Dänisch/Englisch}
 
+
+\frame{
+\frametitle{VP in SVO-Sprachen}
+
+\begin{itemize}
+\item Verben und Objekte bilden eine Wortgruppe:
+\eal
+\ex John promised to read the book and [\alert{read the book}], he will.
+\ex He will [\alert{read the book}].
+\ex Kim [[\alert{sold the car}] and [\alert{bought a bicycle}]]. 
+\ex He often [\alert{reads the book}].
+%\ex He [reads the book] often.
+\ex \ldots{} [often [\alert{read the book}] slowly], he will.
+\zl
+\pause
+\item Gut zu erfassen mit zwei Valenzlisten:\\
+      eine für Komplemente (\comps für \textsc{complements}) und eine für das Subjekt (\textsc{spr} für \textsc{specifier}).
+\end{itemize}
+
+
+}
+
 \frame{
 \frametitle{Dänisch, Englisch, \ldots}
 
-\vfill
+~\vfill
 
 \centerfit{\begin{forest}
 sm edges
@@ -156,6 +512,37 @@ sm edges
 \end{itemize}
 
 }
+
+
+\frame{
+\frametitle{SVO: Ditransitive Verben: Abbindung von \comps von links}
+
+
+\centerline{
+\begin{forest}
+sm edges
+[{V[\spr \eliste, \comps \eliste]}, visible on=6-
+   [{NP[\type{nom}]}, visible on=5- 
+     [Kim, visible on=5-] ]
+   [V\feattab{
+      \spr \sliste{ NP[\type{nom}] }, \comps \sliste{}}, visible on=4-
+     [V\feattab{
+         \spr \sliste{ NP[\type{nom}] },\\
+         \comps \sliste{ PP[\type{to}] }}, visible on=2-
+       [V\feattab{
+           \spr \sliste{ NP[\type{nom}] },\\
+           \comps \sliste{ NP[\type{acc}], PP[\type{to}] }} [gave] ]
+         [{NP[\type{acc}]} 
+            [a book, roof] ] ]
+       [{PP[\type{to}]}, visible on=3- 
+         [to Sandy, roof, visible on=3-] ] ] ]
+\end{forest}}
+
+Bei kopffinalen Sprachen ohne Scrambling Abbindung von rechts.
+
+
+}
+
 %% \frame{
 %% \frametitle{Regeln: Englisch und Deutsch}
 
@@ -195,13 +582,13 @@ sm edges
 \centerfit{\begin{forest}
 sm edges
 [{V[\spr \eliste, \comps \eliste]}, name=S
-        [{NP[\type{nom}]} [niemand;nobody] ]
+        [{NP[\type{nom}]} [niemand] ]
         [{V\feattab{
               \spr \sliste{ }, \comps \sliste{ NP[\type{nom}] } }}, name = Vs
-          [{NP[\type{acc}]} [ihn;him] ] 
+          [{NP[\type{acc}]} [ihn] ] 
           [V\feattab{
               \spr \sliste{  },\\
-              \comps \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt;knows] ]
+              \comps \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt] ]
 ] ]
 \node [right=4cm] at (S)
     {
@@ -223,6 +610,505 @@ Abkürzungen: \begin{tabular}[t]{@{}l@{ = }l}
 
 }
 
+\subsection{Immediate Dominance Schemata}
+
+\frame{
+\frametitle{Immediate Dominance Schemata}
+
+\begin{itemize}
+\item In vielen theoretischen Arbeiten werden einfach Baumstrukturen gezeigt.
+\item Diese sind aber nicht einfach da. Es gibt Regeln oder Schemata, die sie lizenzieren.
+\item \ZB \xbar-Schemata oder Regel für Phrasenstrukturen oder Dependenzstrukturen.
+\item Regeln für HPSG:
+\ea\label{schema-head-spr-and-head-comps-preliminary}
+Specifier-Head Schema and Head-Complement Schema (preliminary)
+\begin{tabular}[t]{@{}l@{ }l@{}}
+H[\spr \ibox{1}]   & $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eliste]\hspace{1em}\ibox{2}  \\
+H[\comps \ibox{1}] & $\to$ H[\comps \sliste{ \ibox{2} } $\oplus$ \ibox{1}]\hspace{1em}\ibox{2} \\
+\end{tabular}
+\z
+\pause
+\item H steht für \emph{head}. Die entsprechende Phrase ist der oder enthält den Kopf.
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Schemata als Teilbäumchen}
+
+\begin{itemize}
+\item Schemata lassen sich auch als Teilbäumchen darstellen.
+\ea\label{schema-head-spr-and-head-comps-preliminary}
+Specifier-Head Schema (preliminary)\\
+H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eliste]\hspace{1em}\ibox{2}
+\z
+
+\item Specifier-Head Schema in Baum-Notation:\\
+\begin{forest}
+[H\feattab{\spr \ibox{1}}%,\\
+           %\comps \eliste}
+  [\ibox{2}]
+  [H\feattab{\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} },\\
+             \comps \eliste}
+  ]]
+\end{forest}
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{\texttt{append} ($\oplus$)}
+
+\begin{itemize}
+\item \texttt{append} verknüpft zwei Listen: \sliste{ \normalfont a } $\oplus$ \sliste{ \normalfont b } =
+\sliste{ \normalfont a, b }. 
+\item Die Verknüpfung einer Liste L mit der leeren Liste ergibt die Liste L.
+
+\item Beispiel: \texttt{append} teilt die Liste \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}
+    ] } wie folgt:
+\eal
+\ex \oneline{\eliste{} $\oplus$ \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] } = \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }}
+\ex \oneline{\sliste{ NP[\type{nom}] } $\oplus$ \sliste{ NP[\type{dat}], NP[\type{acc}] } = \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }}
+\ex \oneline{\sliste{ NP[\type{nom}], NP[\type{dat}] } $\oplus$ \sliste{ NP[\type{acc}] } = \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }}
+\ex \oneline{\sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] } $\oplus$ \eliste{} = \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }}
+\zl
+
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Zerlegung der Valenzliste}
+
+\begin{itemize}
+\item Specifier-Head Schema in Baum-Notation:\\
+\begin{forest}
+[H\feattab{\spr \ibox{1}}%,\\
+           %\comps \eliste}
+  [\ibox{2}]
+  [H\feattab{\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} },\\
+             \comps \eliste}
+  ]]
+\end{forest}
+
+
+\item Schema zerlegt Liste in beliebige Liste \iboxb{1} und eine einelementige Liste (\sliste{ \ibox{2} }).
+
+\item Für unser Beispiel wäre das (\mex{0}c):
+\ea
+\oneline{\sliste{ NP[\type{nom}], NP[\type{dat}] } $\oplus$ \sliste{ NP[\type{acc}] } = \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }}
+\z
+
+\ibox{1} = \sliste{ NP[\type{nom}], NP[\type{dat}] } und \ibox{2} = NP[\type{acc}]
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Listenzerlegung in Spezifikator-Kopf-Strukturen}
+
+\begin{itemize}
+\item \sprl hat für gewöhnlich nur ein Element: NP[\type{nom}]/Subjekt für Verben in SVO-Sprachen oder
+  Determiner, wenn der Kopf ein Nomen ist.
+
+\begin{forest}
+[H\feattab{\spr \ibox{1}}%,\\
+           %\comps \eliste}
+  [\ibox{2}]
+  [H\feattab{\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} },\\
+             \comps \eliste}
+  ]]
+\end{forest}
+
+\pause
+\item \ibox{1} ist leere Liste, \ibox{2} ist NP[\type{nom}] bzw.\ Det. 
+
+
+\eal
+\ex \eliste{} $\oplus$ \sliste{ NP[\type{nom}] } = \sliste{ NP[\type{nom}] }
+\ex \eliste{} $\oplus$ \sliste{ Det } = \sliste{ Det }
+\zl
+
+\end{itemize}
+
+}
+
+\exewidth{(235)}
+
+\frame{
+\frametitle{Kopf hat Wünsche. Schema regelt Passgenauigkeit}
+
+\begin{itemize}
+\item Beschreibung der Tochter muss mit der einzusetzenden Tochter kompatibel sein.
+
+\vfill
+\centerline{
+\begin{forest}
+[H\feattab{\spr \ibox{1}}%,\\
+           %\comps \eliste}
+  [\alert{\ibox{2}}]
+  [H\feattab{\spr \ibox{1} $\oplus$ \sliste{ \alert{\ibox{2}} },\\
+             \comps \eliste}
+  ]]
+\end{forest}}
+
+\vfill
+\ibox{2} wird vom Kopf bestimmt. Linke Tochter muss dazu passen.
+\pause
+\vfill
+\hfill
+\scalebox{.8}{%
+\begin{forest}
+sm edges
+[V\feattab{\spr \eliste,\\
+           \comps \eliste}
+  [{\ibox{1} NP[\type{nom}]} [she]]
+  [V\feattab{\spr \sliste{ \ibox{1} NP[\type{nom}] },\\
+             \comps \eliste} [sleeps]]]
+\end{forest}}
+\hfill
+\scalebox{.8}{%
+\begin{forest}
+sm edges
+[V\feattab{\spr \eliste,\\
+           \comps \eliste}
+  [{\ibox{1} NP[\type{nom}]} [the brown squirrel,roof]]
+  [V\feattab{\spr \sliste{ \ibox{1} NP[\type{nom}] },\\
+             \comps \eliste} [sleeps]]]
+\end{forest}}\hfill\mbox{}
+\vfill
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Die \compsl im Spezifikatorschema}
+
+
+\begin{itemize}
+\item Die \compsl ist leer. 
+\vfill
+\centerline{
+\begin{forest}
+[H\feattab{\spr \ibox{1}}%,\\
+           %\comps \eliste}
+  [\ibox{2}]
+  [H\feattab{\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} },\\
+             \comps \eliste}
+  ]]
+\end{forest}}
+\vfill
+Erst alle Komplemente mit einem Kopf kombiniert, dann der Spezifikator.
+\eal
+\ex {}[a [picture [of Kim]]]
+\ex {}[The dolphin [attacked [the shark]]]
+\zl
+
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Nominalstrukturen}
+
+\begin{itemize}
+\item Neben NP + VP-Strukturen wird das Spezifikator-Schema auch in Nominalstrukturen verwendet.
+
+\vfill
+\centerline{
+\begin{forest}
+[{N[\spr \eliste, \comps \eliste]}
+  [\ibox{1} Det [the]]
+  [{N[\spr \sliste{ \ibox{1} }, \comps \eliste]} [squirrel]]]
+\end{forest}}
+
+\end{itemize}
+
+\vfill
+
+}
+
+\frame{
+\frametitle{Kopf-Komplement-Strukturen}
+
+\begin{itemize}
+\item So genannte Bilder-Nomina verlangen ein Komplement und sind parallel zu Verben in SVO-Strukuren:
+\ea
+a picture of Kim
+\z
+
+\centerline{%
+\begin{forest}
+[{H[\comps \ibox{1}]}
+  [{H[\comps  \sliste{ \ibox{2} } $\oplus$ \ibox{1}  ]}]
+  [\ibox{2}]]
+\end{forest}}
+
+\pause
+\item Kombination ditransitives Verb in Teilschritten:
+\begin{itemize}
+\item \emph{gave} und \emph{the child} 
+\item \emph{gave the child} und \emph{a book}
+\end{itemize}
+\ea
+\label{ex-nobody-gives-him-the-book}
+Nobody [[gave [the child]] [a book]].
+\z
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Satz mit ditransitivem Verb}
+
+\centerfit{%
+\begin{forest}
+sm edges
+[{V[\spr \eliste, \comps \eliste]}, visible on=6-
+   [{\ibox{1} NP[\type{nom}]}, visible on=5- 
+     [nobody, visible on=5-] ]
+   [V\feattab{
+      \spr \sliste{ \ibox{1} NP[\type{nom}] }, \comps \sliste{}}, visible on=4-
+     [V\feattab{
+         \spr \sliste{ NP[\type{nom}] },\\
+         \comps \sliste{ \ibox{2} NP[\type{acc}] }}, visible on=2- 
+        [V\feattab{
+           \spr \sliste{ NP[\type{nom}] },\\
+           \comps \sliste{ \ibox{3} NP[\type{acc}], \ibox{2} NP[\type{acc}]}} [gave] ]
+        [{\ibox{3} NP[\type{acc}]} [the child,roof] ] ]
+     [{\ibox{2} NP[\type{acc}]}, visible on=3- 
+       [a book,roof, visible on=3- ] ] ] ]
+\end{forest}}
+
+Schemata lizenzieren Teilbäume.
+
+}
+
+
+\frame{
+\frametitle{Fehlende Details}
+
+
+\begin{itemize}
+\item Bisher zur Vereinfachung einige Spezifikation von \spr und \comps weggelassen.
+
+\centerline{%
+\begin{forest}
+[{H[\comps \ibox{1}]}
+  [{H[\comps  \sliste{ \ibox{2} } $\oplus$ \ibox{1}  ]}]
+  [\ibox{2}]]
+\end{forest}}
+
+\pause
+\item Wenn der \spr-Wert nicht beschränkt ist, kann er irgendwelche Werte haben.
+
+\pause
+\item Zum Beispiel eine Liste mit zwei Genitiven und einem Akkusativ.\\
+Damit könnten wir dann (\mex{1}) analysieren:
+
+\ea[*]{
+his his him gave the child a book
+}
+\z
+\pause
+\item Müssen \spr und \comps-Werte am Mutterknoten beschränken:
+
+\ea\label{schema-head-spr-and-head-comps}
+Specifier-Head Schema and Head-Complement Schema (final)
+\begin{tabular}[t]{@{}l@{~}l@{ }l@{}}
+a. & H[\spr \ibox{1}, \comps \alert{\ibox{2}}] & $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{3} }, \comps \alert{\ibox{2}} \eliste]\hspace{1em}\ibox{3}  \\
+b. & H[\spr \alert{\ibox{1}}, \comps \ibox{2}] & $\to$ H[\spr \alert{\ibox{1}}, \comps \ibox{2} $\oplus$ \sliste{ \ibox{3} }]\hspace{1em}\ibox{3} \\
+\end{tabular}
+\z
+
+\end{itemize}
+}
+
+\frame{
+\frametitle{Endgültige Versionen der Schemata}
+
+\begin{itemize}
+\item Specifier-Head-Schema und Head-Complement-Schema:
+\vfill
+\hfill
+\begin{forest}
+[H\feattab{\spr \ibox{1},\\
+           \comps \eliste}
+  [\ibox{2}]
+  [H\feattab{\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} },\\
+              \comps \eliste}]]
+\end{forest}
+\hfill
+\begin{forest}
+[H\feattab{\spr \ibox{1},\\
+           \comps \ibox{2}}
+  [H\feattab{\spr \ibox{1},\\
+             \comps  \sliste{ \ibox{3} } $\oplus$ \ibox{2}  ]}]
+  [\ibox{3}]]
+\end{forest}
+\hfill\mbox{}
+\vfill
+\end{itemize}
+
+}
+
+
+\subsection{Scrambling and free VO/OV order}
+
+\frame{
+
+\frametitle{Scrambling}
+
+\begin{itemize}
+\item Bisher ein Element vom Anfang oder Ende der \compsl mit Kopf verbunden.
+\pause
+\item Das funktioniert für das Englische, aber keine Erklärung für Scrambling.
+
+\begin{figure}
+\begin{forest}
+[{H[\comps \rot{\ibox{1}} $\oplus$ \blau{\ibox{2}}]}
+  [\gruen{\ibox{3}}]
+  [{H[\comps  \rot{\ibox{1}} $\oplus$ \sliste{ \gruen{\ibox{3}} } $\oplus$ \blau{\ibox{2}}  ]}]]
+\end{forest}
+\end{figure}
+
+\item Länge von \ibox{1} und \ibox{2} ist nicht beschränkt. Für ditransitives Verb:
+
+\eal
+\ex \rot{\eliste{}} $\oplus$ \sliste{ \gruen{NP[\type{nom}]} } $\oplus$ \blau{\sliste{ NP[\type{dat}], NP[\type{acc}] }}
+\pause
+\ex \rot{\sliste{ NP[\type{nom}] }} $\oplus$ \sliste{ \gruen{NP[\type{dat}]} } $\oplus$ \blau{\sliste{ NP[\type{acc}] }} 
+\pause
+\ex \rot{\sliste{ NP[\type{nom}], NP[\type{dat}] }} $\oplus$ \sliste{ \gruen{NP[\type{acc}]} } $\oplus$ \blau{\eliste} 
+\zl
+%So \ibox{3} in Figure~\ref{fig-head-comp-free} would be \npnom in (\mex{0}a), \npdat in (\mex{0}b) and \npacc in (\mex{0}c).
+
+\pause
+\item \ibox{1} = leere Liste $\to$ VO-Sprachen mit fester Stellung wie Englisch
+\pause
+\item \ibox{2} = leere Liste $\to$ OV-Sprache mit fester Stellung
+\pause
+\item keine Restriktionen für \ibox{1} und \ibox{2} $\to$ beliebige Anordnung
+
+\end{itemize}
+
+}
+
+\subsection{Linearisierungsregeln}
+
+\frame{
+\frametitle{Linearisierungsregeln}
+
+\begin{itemize}
+\item Die Schemata sind sehr abstrakt. Ähneln den \xbar-Regeln.
+\pause
+\item Allerdings ist Reihenfolge nicht festgelegt. In Schemata wie (\mex{1}), kann a vor b und b vor
+  a stehen.
+\ea
+m $\to$ a b
+\z
+\pause
+\item Head-Complement-Schema kann beide Abfolgen:\\
+      Kopf Komplement und Komplement Kopf
+
+\eal
+\ex
+%\gll 
+dem Kind  ein Buch gibt\\
+%     the child the book gives\\
+\ex gives the child the book
+\zl
+
+
+\item Töchter ohne Beschränkungen machen Unfug:
+
+
+\eal
+\ex[]{
+%\gll 
+\dass{} niemand dem Kind  ein Buch vorliest\\
+%     \that{} nobody  the child a book \partic.reads\\
+%\glt `that nobody reads a book to the child'
+}
+\ex[*]{ 
+%\gll 
+\dass{} dem Kind  niemand vorliest ein Buch\\
+%     \that{} the child nobody  \partic.reads a book\\
+}
+\ex[*]{
+%\gll 
+\dass{} niemand vorliest dem Kind   ein Buch\\
+%     \that{} nobody  \partic.reads the child a book\\
+}
+\zl
+\end{itemize}
+
+
+}
+
+\frame{
+\frametitle{Unerwünschte Struktur}
+
+% \begin{forest}
+% sm edges
+% [{V[\comps \sliste{ }]},s sep+=1em
+%   [{V[\comps \sliste{ \ibox{1} }]}
+%     [\ibox{2} \npdat [dem Kind;the child,roof]]
+%     [{V[\comps \sliste{ \ibox{2}, \ibox{1} }]} [\ibox{3} \npnom [niemand;nobody]]
+%        [{V[\comps \sliste{ \ibox{3}, \ibox{2}, \ibox{1} }]}  [vorliest;\textsc{part}.reads]]]]
+%   [\ibox{1} \npacc [ein Buch;a book,roof]]]]
+% \end{forest}
+
+% \begin{forest}
+% sm edges
+% [{V[\comps \sliste{ }]}
+%   [{V[\comps \sliste{ \ibox{1} }]},s sep+=1em
+%     [{V[\comps \sliste{ \ibox{2}, \ibox{1} }]} [\ibox{3} \npnom [niemand;nobody]]
+%        [{V[\comps \sliste{ \ibox{3}, \ibox{2}, \ibox{1} }]}  [vorliest;\textsc{part}.reads]]]
+%     [\ibox{2} \npdat [dem Kind;the child,roof]]] 
+%   [\ibox{1} \npacc [ein Buch;a book,roof]]]]
+% \end{forest}
+\vfill
+\centerline{%
+\begin{forest}
+sm edges
+[{V[\comps \sliste{ }]}
+  [{V[\comps \sliste{ \ibox{1} }]},s sep+=1em
+    [{V[\comps \sliste{ \ibox{2}, \ibox{1} }]} [\ibox{3} \npnom [niemand]]
+       [{V[\comps \sliste{ \ibox{3}, \ibox{2}, \ibox{1} }]}  [vorliest]]]
+    [\ibox{2} \npdat [dem Kind,roof]]] 
+  [\ibox{1} \npacc [ein Buch,roof]]]]
+\end{forest}}
+\vfill
+
+}
+
+\frame{
+\frametitle{Linearisierungsregeln für Kopf und Komplement}
+
+\begin{itemize}
+\item Regeln:
+\eal
+\label{lp-regeln}
+\ex HEAD [\textsc{initial}+] $<$ COMPLEMENT
+\ex COMPLEMENT $<$  HEAD [\textsc{initial}$-$]
+\zl
+\item Deutsche Verben (SOV): \textsc{initial}$-$\\
+      Englische Verben (SVO): \textsc{initial}$+$
+
+\pause
+\item Deutsche und Englische Nomina: \textsc{initial}$+$
+
+\end{itemize}
+
+}
 
 
 \frame{
@@ -260,159 +1146,266 @@ Abkürzungen: \begin{tabular}[t]{@{}l@{ = }l}
 \frametitle{Adjunkte}
 
 \begin{itemize}
-\item Argumente werden von ihrem Kopf ausgewählt
+\item Argumente werden von ihrem Kopf ausgewählt.
 \pause
-\item Adjunkte wählen sich ihren Kopf
+\item Adjunkte wählen sich ihren Kopf.
 \pause
 \item Deutsch, Niederländisch, \ldots:\\
-      Adjunkte im Satz gehen an irgendeine Verbprojektion (Verb in Endstellung)
+      Adjunkte im Satz gehen an irgendeine Verbprojektion (Verb in Endstellung).
 \pause
-\item English, Dänisch, \ldots: Adjunkte gehen an VP (\citet{Wechsler2015a})
+\item English, Dänisch, \ldots: Adjunkte gehen an VP.
 
 \eal
-\ex Kim will have been [promptly [removing the evidence]].
-\ex Kim will have been [[removing the evidence] promptly].
+\ex that everybody reads the book promptly
+\ex that everybody promptly reads the book
 \zl
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Das \modm}
+
+\begin{itemize}
+\item Analog zu \spr und \comps gibt es \textsc{mod}:\\
+
+\ea
+\begin{tabular}[t]{@{}l@{}}
+Lexical item for \emph{brown}:\\
+\ms{
+  phon & \phonliste{ brown }\\
+  mod  & \nbar\\
+  spr  & \eliste\\
+  comps & \eliste }
+\end{tabular}
+\hfill\begin{forest}
+sm edges
+[{\nbar}, baseline
+  [{Adj[\textsc{mod} \ibox{2}]} [brown]]
+  [{\ibox{2} \nbar} [squirrel]]]
+\end{forest}\hfill\mbox{}
+\z
+
 \pause
+\item \modw ist eine Beschreibung oder \textit{none}.
+
+
+
+\end{itemize}
+
+
+}
+
+\frame{
+\frametitle{Das Kopf-Adjunkt-Schema}
+
+\centerline{%
+\begin{forest}
+[{H[\spr \ibox{1}, \comps \ibox{2}]}
+  [{[\textsc{mod} \ibox{3}, \spr \eliste, \comps \eliste]}]
+  [{\ibox{3} H[\spr \ibox{1}, \comps  \ibox{2}]}]]
+\end{forest}}
+
+\pause
+\begin{itemize}
 \item Wie das \spr- oder \comps-Merkmal gibt es auch ein \modm.\\
-      Wert von {\sc mod} ist eine Beschreibung des zu modifizierenden Kopfes:
+       Wert von {\sc mod} ist eine Beschreibung des zu modifizierenden Kopfes:
 \begin{itemize}
 \item Deutsch: {\sc mod} V[{\sc ini}$-$]
 \item Englisch: {\sc mod} VP
 \end{itemize}
+\end{itemize}
+
+
+}
+
+\frame{
+\frametitle{Freie Position der Adjunkte im Deutschen}
+
+\vfill
+\centerfit{
+\begin{forest}
+sm edges
+[{V[\spr \eliste, \comps \eliste]}, schema
+        [{Adv[\textsc{mod} \ibox{3} V]} [morgen] ]
+        [{\ibox{3} V[\spr \eliste, \comps \eliste]}
+          [{\ibox{1} NP[\type{nom}]} [Aicke] ]
+          [V\feattab{
+              \spr \sliste{ }, \comps \sliste{ \ibox{1} } }
+            [{\ibox{2} NP[\type{acc}]} [das Buch, roof] ] 
+            [V\feattab{
+              \spr \sliste{  },\\
+              \comps \sliste{ \ibox{1}, \ibox{2} }} [liest] ] ]
+] ]
+\end{forest}}
+
+
+%\centerline{{}[dass] morgen Aicke das Buch liest}
+
+\vfill
+
+}
+
+
+\frame{
+\frametitle{Freie Position der Adjunkte im Deutschen}
+
+\vfill
+
+
+\centerfit{%
+\begin{forest}
+sm edges
+[{V[\spr \eliste, \comps \eliste]},s sep+=1.5em
+          [{\ibox{1} NP[\type{nom}]} [Aicke] ]
+          [V\feattab{
+              \spr \sliste{ }, \comps \sliste{ \ibox{1} } }, schema
+            [{Adv[\textsc{mod} \ibox{3} V]} [morgen] ]
+            [\ibox{3} V\feattab{
+                \spr \sliste{ }, \comps \sliste{ \ibox{1} } }
+              [{\ibox{2} NP[\type{acc}]} [das Buch, roof] ] 
+              [V\feattab{
+                \spr \sliste{  },\\
+                \comps \sliste{ \ibox{1}, \ibox{2} }} [liest] ] ]
+] ]
+\end{forest}}
+
+%\centerline{{}[dass] Aicke morgen das Buch liest}
+\vfill
+
+
+}
+
+
+
+\frame{
+\frametitle{Freie Position der Adjunkte im Deutschen}
+
+\vfill
+
+\centerfit{%
+\begin{forest}
+sm edges
+[{V[\spr \eliste, \comps \eliste]}
+    [{\ibox{1} NP[\type{nom}]} [Aicke] ]
+      [V\feattab{
+         \spr \sliste{ }, \comps \sliste{ \ibox{1} } }, s sep+=1em
+         [{\ibox{2} NP[\type{acc}]} [das Buch, roof] ] 
+           [V\feattab{
+              \spr \sliste{  },\\
+              \comps \sliste{ \ibox{1}, \ibox{2} }}, schema 
+             [{Adv[\textsc{mod} \ibox{3} V]} [morgen] ]
+             [\ibox{3} V\feattab{
+                 \spr \sliste{  },\\
+                 \comps \sliste{ \ibox{1}, \ibox{2} }} [liest] ] ] ] ]
+\end{forest}}
+
+%\centerline{{}[dass] Aicke das Buch morgen liest}
+
+\vfill
+
+}
+
+\frame{
+\frametitle{Feste Position der Adjunkte im Englischen}
+
+
+\vfill
+
+\centerfit{%
+\begin{forest}
+sm edges
+[{V[\spr \eliste, \comps \eliste]}, s sep+=1.5em % puts more space between the NP[nom] and the VP,
+                                    % otherwise the box would overlap
+          [{\ibox{1} NP[\type{nom}]} [Kim] ]
+          [V\feattab{
+              \spr \sliste{ \ibox{1} }, \comps \sliste{  } }, schema
+            [{Adv[\textsc{mod} \ibox{3}]} [often] ]
+            [\ibox{3} V\feattab{
+                \spr \sliste{ \ibox{1} }, \comps \sliste{  } }
+              [V\feattab{
+                \spr \sliste{ \ibox{1} },\\
+                \comps \sliste{  \ibox{2} }} [reads] ]
+              [{\ibox{2} NP[\type{acc}]} [books] ] ]
+] ]
+\end{forest}}
+
+\vfill
+
+}
+
+\frame{
+\frametitle{Feste Position der Adjunkte im Englischen}
+
+\vfill
+
+\centerfit{%
+\begin{forest}
+sm edges
+[{V[\spr \eliste, \comps \eliste]},s sep+=1em
+          [{\ibox{1} NP[\type{nom}]} [Kim] ]
+          [V\feattab{
+              \spr \sliste{ \ibox{1} }, \comps \sliste{  } }, schema
+            [\ibox{3} V\feattab{
+                \spr \sliste{ \ibox{1} }, \comps \sliste{  } }
+              [V\feattab{
+                \spr \sliste{ \ibox{1} },\\
+                \comps \sliste{ \ibox{2} }} [reads] ]
+              [{\ibox{2} NP[\type{acc}]} [books] ] 
+               ]
+            [{Adv[\textsc{mod} \ibox{3}]} [often] ]
+] ]
+\end{forest}}
+
+\vfill
+
+
+}
+
+
+\frame{
+\frametitle{Details}
+
+\begin{itemize}
+\item Adjunkte ändern nichts an der Valenz/Sättigung.\\ 
+(Ob ich Gummibärchen einpacke o.\ nicht, beeinflusst meine Einkaufsliste nicht.)
+
+\vfill
+\centerline{%
+\begin{forest}
+[{H[\spr \rot<1>{\ibox{1}}, \comps \gruen<1>{\ibox{2}}]}
+  [{[\textsc{mod} \ibox{3},  \gruen<3>{\spr \eliste}, \gruen<2>{\comps \eliste}]}]
+  [{\ibox{3} H[\spr \rot<1>{\ibox{1}}, \comps  \gruen<1>{\ibox{2}}]}]]
+\end{forest}}
+
+\vfill
+
+\pause
+\item Adjunkte müssen vollständig sein. Sonst:
+\ea[*]{
+Sandy read the book in.
+}
+\z
+
+\pause
+\eal
+\ex[]{
+%\gll 
+dass Aicke eine Stunde liest
+%     that Aicke an   hour reads\\\german
+%\glt `Aicke is reading for an hour.'
+}
+\ex[*]{
+%\gll 
+dass Aicke Stunde liest
+%     that Aicke hour reads\\
+%\glt `Aicke is reading for an hour.'
+}
+\zl
 
 \end{itemize}
 
 }
-
-\frame{
-\frametitle{Freie Position der Adjunkte im Deutschen}
-
-
-
-\scalebox{0.9}{\begin{forest}
-sm edges
-[{V[\spr \eliste, \comps \eliste]}
-        [Adv [morgen] ]
-        [{V[\spr \eliste, \comps \eliste]}
-          [{NP[\type{nom}]} [jeder] ]
-          [V\feattab{
-              \spr \sliste{ }, \comps \sliste{ NP[\type{nom}] } }
-            [{NP[\type{acc}]} [das Buch, roof] ] 
-            [V\feattab{
-              \spr \sliste{  },\\
-              \comps \sliste{ NP[\type{nom}], NP[\type{acc}]}} [liest] ] ]
-] ]
-\end{forest}}
-
-{}[dass] morgen jeder das Buch liest
-
-
-}
-
-
-\frame{
-\frametitle{Freie Position der Adjunkte im Deutschen}
-
-
-
-\scalebox{0.9}{\begin{forest}
-sm edges
-[{V[\spr \eliste, \comps \eliste]}
-          [{NP[\type{nom}]} [jeder] ]
-          [V\feattab{
-              \spr \sliste{ }, \comps \sliste{ NP[\type{nom}] } }
-            [Adv [morgen] ]
-            [V\feattab{
-                \spr \sliste{ }, \comps \sliste{ NP[\type{nom}] } }
-              [{NP[\type{acc}]} [das Buch, roof] ] 
-              [V\feattab{
-                \spr \sliste{  },\\
-                \comps \sliste{ NP[\type{nom}], NP[\type{acc}]}} [liest] ] ]
-] ]
-\end{forest}}
-
-{}[dass] jeder morgen das Buch liest
-
-
-}
-
-
-
-\frame{
-\frametitle{Freie Position der Adjunkte im Deutschen}
-
-
-
-\scalebox{0.9}{\begin{forest}
-sm edges
-[{V[\spr \eliste, \comps \eliste]}
-    [{NP[\type{nom}]} [jeder] ]
-      [V\feattab{
-         \spr \sliste{ }, \comps \sliste{ NP[\type{nom}] } }
-         [{NP[\type{acc}]} [das Buch, roof] ] 
-           [V\feattab{
-              \spr \sliste{  },\\
-              \comps \sliste{ NP[\type{nom}], NP[\type{acc}]}} 
-             [Adv [morgen] ]
-               [V\feattab{
-                 \spr \sliste{  },\\
-                 \comps \sliste{ NP[\type{nom}], NP[\type{acc}]}} [liest] ] ] ] ]
-\end{forest}}
-
-{}[dass] jeder das Buch morgen liest
-
-
-}
-
-\frame{
-\frametitle{Feste Position der Adjunkte im Englischen}
-
-
-
-\scalebox{0.9}{\begin{forest}
-sm edges
-[{V[\spr \eliste, \comps \eliste]}
-          [{NP[\type{nom}]} [Peter] ]
-          [V\feattab{
-              \spr \sliste{ NP[\type{nom}] }, \comps \sliste{  } }
-            [Adv [often] ]
-            [V\feattab{
-                \spr \sliste{ NP[\type{nom}] }, \comps \sliste{  } }
-              [V\feattab{
-                \spr \sliste{ NP[\type{nom}] },\\
-                \comps \sliste{  NP[\type{acc}]}} [reads] ]
-              [{NP[\type{acc}]} [books] ] ]
-] ]
-\end{forest}}
-
-
-}
-
-\frame{
-\frametitle{Feste Position der Adjunkte im Englischen}
-
-
-
-\scalebox{0.9}{\begin{forest}
-sm edges
-[{V[\spr \eliste, \comps \eliste]}
-          [{NP[\type{nom}]} [Peter] ]
-          [V\feattab{
-              \spr \sliste{ NP[\type{nom}] }, \comps \sliste{  } }
-            [V\feattab{
-                \spr \sliste{ NP[\type{nom}] }, \comps \sliste{  } }
-              [V\feattab{
-                \spr \sliste{ NP[\type{nom}] },\\
-                \comps \sliste{  NP[\type{acc}]}} [reads] ]
-              [{NP[\type{acc}]} [books] ] 
-               ]
-            [Adv [often] ]
-] ]
-\end{forest}}
-
-
-}
-
 
 

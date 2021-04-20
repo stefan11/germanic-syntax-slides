@@ -1,12 +1,13 @@
+%% -*- coding:utf-8 -*-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%   $RCSfile: hpsg-include.tex,v $
+%%   $RCSfile: hpsg-handout.tex,v $
 %%  $Revision: 1.3 $
 %%      $Date: 2006/05/17 12:19:27 $
-%%     Author: Stefan Mueller (CL Uni-Bremen)
+%%     Author: Stefan Mueller (DFKI)
 %%    Purpose: 
 %%   Language: LaTeX
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% $Log: hpsg-include.tex,v $
+%% $Log: hpsg-handout.tex,v $
 %% Revision 1.3  2006/05/17 12:19:27  stefan
 %% *** empty log message ***
 %%
@@ -16,7 +17,7 @@
 %% Revision 1.1  2004/06/21 19:14:48  stefan
 %% alte Version vor LaTeX-Beamer
 %%
-%% Revision 1.1  2003/04/22 10:13:29  stefan
+%% Revision 1.1  2002/01/09 20:06:23  stefan
 %% Initial revision
 %%
 %% Revision 1.1  2001/10/21 17:01:35  stefan
@@ -24,6 +25,7 @@
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\documentclass[xcolor=dvipsnames,blackandwhite,slidestop,handout,10pt]{beamer}
 
 \input{localpackages}
 \input{localcommands}
@@ -33,7 +35,6 @@
 
 %\includeonly{organisatorisches-germanisch-vl}
 %\includeonly{germanisch-phaenomene}
-%\includeonly{germanisch-psg}
 %\includeonly{germanisch-valenz-scrambling}
 %\includeonly{germanisch-verbalkomplex}
 %\includeonly{germanisch-verbstellung}
@@ -46,31 +47,23 @@
 \begin{document} 
 \hypersetup{bookmarksopen=false}
 
-\huberlintitlepage
-
-%\part{Einleitung}
-
-
-
-%\beamertemplatecopyrightfootframenumber
-
 \exewidth{(35)}
 
-\include{organisatorisches-syntax-vl-ba-hu}
-\include{germanisch-ueberblick}
+%\include{organisatorisches-syntax-vl-ba-hu}
+%\include{germanisch-ueberblick}
+% \include{germanisch-phaenomene}
+ \include{germanisch-psg}
+% \include{germanisch-valenz-scrambling}
+% \include{germanisch-adjunkte}
+% \include{germanisch-verbalkomplex}
+% \include{germanisch-verbstellung}
+% \include{germanisch-extraction}
+% %% \include{germanisch-mehr-vf}
 
-\include{germanisch-phaenomene}
+% \include{germanisch-passiv}
+% \include{germanisch-expletives}
 
-\include{germanisch-psg}
-
-\include{germanisch-valenz-scrambling}
-\include{germanisch-verbalkomplex}
-\include{germanisch-verbstellung}
-\include{germanisch-extraction}
-%% \include{germanisch-mehr-vf}
-
-\include{germanisch-passiv}
-\include{germanisch-expletives}
+%\include{germanisch-syntax}
 
 
 
@@ -126,4 +119,14 @@ Regel oder ein häufiges Phänomen, oder ist die Regel nur eine
 Standardvariante? Was ist das Ziel von HPSG und die andere
 Grammatiktheorien speziell? Wie unterscheidet sich die Grammatik für
 formale Beschreibung von Sprachlehre?
+
+
+
+
+
+
+
+
+
+
 

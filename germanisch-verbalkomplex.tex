@@ -8,6 +8,20 @@
 
 \huberlintitlepage[22pt]
 
+\outline{
+
+\begin{itemize}
+\item {Überblick über die germanischen Sprachen}
+\item Phänomene
+\item Phrasenstrukturgrammatiken und \xbart
+\item {Valenz, Argumentanordnung und Adjunkte}
+\item \alert{Verbalkomplexbildung in den SOV-Sprachen}
+\item Verbstellung: Verberst- und Verbzweitstellung
+\item Passiv
+\item Eingebettete Sätze
+\end{itemize}
+
+}
 
 
 \frame{
@@ -53,7 +67,7 @@ Umordnung der Argumente ist möglich.
 % 'that John wants to read the book' 
 \ex
 \gll dat Jan Marie het boek laat lezen\\
-     dass Jan Maria das Buch läßt lesen\\
+     dass Jan Maria das Buch lässt lesen\\
 %that John Mary the book lets read
 %'that John lets Mary read the book'
 \ex 
@@ -80,7 +94,7 @@ Umordnung der Argumente ist möglich.
 \pause
 \item Standardsprachlich: übergeordnetes Verb steht rechts: V$_3$ V$_2$ V$_1$
 \ea
-weil es ihm jemand zu lesen versprochen hat \citep{Haider90b}
+weil es ihr jemand zu lesen versprochen hat \citep{Haider90b}
 \z
 \pause
 \item In den Dialekten gibt es aber die buntesten Abfolgen.
@@ -163,7 +177,7 @@ sm edges
               \sliste{ }}
         [{NP[\type{nom}]} [keiner] ]
         [V\feattab{
-              \sliste{ NP[\type{nom}] }}
+              \sliste{ NP[\type{nom}] }}, s sep+=2ex
           [{NP[\type{acc}]} [das Buch, roof] ]
           [V\feattab{
 %              \vform \type{fin},\\
@@ -219,11 +233,22 @@ comps & \sliste{ NP[\type{acc}] }\\
 
 Subjekte können nur mit finiten Verben kombiniert werden:
 \eal
+\judgewidth{?*}
 \ex[]{
-Das Buch lesen wollte ein Mann.
+%\gll 
+{}[Das Buch lesen] wird Aicke morgen.\\
+%     \spacebr{}the book read  will Aicke  tomorrow\\
+%\glt `Aicke will read the book tomorrow.'
 }
 \ex[*]{
-Ein Mann lesen wollte das Buch.
+%\gll 
+{}[Aicke lesen] wird das Buch morgen.\\
+%     \spacebr{}Aicke  read  will the book tomorrow\\
+}
+\ex[?*]{
+%\gll 
+{}[Aicke das Buch lesen] wird morgen.\\
+%     \spacebr{}Aicke  the book read will tomorrow\\
 }
 \zl
 
@@ -231,16 +256,16 @@ Ein Mann lesen wollte das Buch.
 \ea
 \emph{werden} infinite Form:\\
 \ms{
-subj  & \ibox{1}\\
-comps & \ibox{2} $\oplus$ \sliste{ V[ \vform \type{bse}, %\textsc{lex}+, 
-                                   \subj \ibox{1}, \comps \ibox{2} ] }\\
+subj  & \blau<4>{\ibox{1}}\\
+comps & \blau<4>{\ibox{2}} $\oplus$ \sliste{ V[\blau<2>{\vform \type{bse}}, \blau<3>{\textsc{lex}+}, 
+                                   \subj \blau<4>{\ibox{1}}, \comps \blau<4>{\ibox{2}}] }\\
 }
 \z
 
 Das Hilfsverb \emph{werden} verlangt einen Infinitiv ohne zu (\vform \type{bse}).
 
-%\pause
-%\textsc{lex}+ sorgt dafür, dass das verbale Komplement ein Wort ist.
+\pause
+\textsc{lex}+ sorgt dafür, dass das verbale Komplement ein Wort oder Verbalkomplex ist.
 
 \pause
 
@@ -249,6 +274,21 @@ Das Subjekt \iboxb{1} und die anderen Argumente \iboxb{2} werden übernommen.
 
 }
 
+\frame{
+\frametitle{\emph{werden} finite Form}
+
+Finite Verben haben das Subjekt auf der \compsl.
+
+\ea
+\emph{wird} finite Form:\\
+\ms{
+subj  & \blau{\sliste{}}\\
+comps & \blau{\ibox{1}} $\oplus$ \ibox{2} $\oplus$ \sliste{ V[\vform \type{bse}, \textsc{lex}+, \subj \blau{\ibox{1}}, \comps \ibox{2} ] }\\
+}
+\z
+
+
+}
 
 \frame{
 \frametitle{Argumentanziehung im Detail}
@@ -287,20 +327,21 @@ Das Subjekt \iboxb{1} und die anderen Argumente \iboxb{2} werden übernommen.
 %% ]
 %% \end{tikzpicture}
 
+\centerline{%
 \begin{forest}
 sm edges
 [V\feattab{
               \vform \type{fin},\\
-              \comps \ibox{1} $\oplus$ \ibox{2} } 
-        [{\ibox{3} V}\feattab{
-              \vform \type{bse},\\
-              \subj  \ibox{1} \sliste{ NP[\type{nom}] }, \\ 
-              \comps \ibox{2} \sliste{ NP[\type{acc}] } } [lesen] ]
+              \comps \blau<3>{\ibox{1}} $\oplus$ \blau<3>{\ibox{2}} } 
+        [\blau<1>{\ibox{3} V}\feattab{
+              \blau<1>{\vform \type{bse}},\\
+              \subj  \blau<2-3>{\ibox{1}} \sliste{ NP[\type{nom}] }, \\ 
+              \comps \blau<2-3>{\ibox{2}} \sliste{ NP[\type{acc}] } } [lesen] ]
         [V\feattab{
               \vform \type{fin},\\
-              \comps \ibox{1} $\oplus$ \ibox{2} $\oplus$ \sliste{ \ibox{3} } } [wird] ] ]
+              \comps \blau<2>{\ibox{1}} $\oplus$ \blau<2>{\ibox{2}} $\oplus$ \sliste{ \blau<1>{\ibox{3}} } } [wird] ] ]
 \end{forest}
-
+}
 
 \begin{itemize}
 \item Hilfsverb verlangt Infinitiv ohne \emph{zu} \iboxb{3}.
@@ -447,6 +488,28 @@ sm edges
 
 }
 
+\subsubsection{Das Verbalkomplexschema}
+
+\frame{
+\frametitle{Das Verbalkomplexschema}
+
+\centerline{
+\begin{forest}
+[{[\comps \ibox{1}]}
+  [\ibox{2} ]
+  [{[\comps \ibox{1} $\oplus$ \sliste{ \ibox{2} }]}]]
+\end{forest}
+}
+
+\begin{itemize}
+\item Zusätzlich zu Kopf-Komplement-Schema noch ein Verbalkomplexschema
+\pause
+\item Das ist sehr ähnlich, das Ergebnis, ist aber nicht \textsc{lex}$-$.\\
+Somit ist wiederholte Einbettung von Verbalkomplexen möglich.
+\end{itemize}
+
+}
+
 \subsection{Keine Verbalkomplexe bei VO-Sprachen}
 
 \frame{
@@ -466,12 +529,13 @@ sm edges
 \pause
 \item Die Hilfsverben betten in den SVO-Sprachen eine Verbphrase ein:
 \ea
-\gll Peter [has [read the book]].\\
-     Peter \spacebr{}hat \spacebr{}gelesen das Buch\\
+Nobody [will [read the book]].\\
 \z
 \end{itemize}
 
 }
+
+
 
 \frame{
 \frametitle{Verbalkomplexe ohne Verbalkomplexbildung?}
@@ -488,8 +552,8 @@ dass [das Buch]$_i$ keiner [[ \_$_i$ lesen] wird]
 \z
 
 \pause
-\item Analysen, die Scrambling als Bewegung analysieren sind problematisch, da sie das Vorhandensein
-  zusätzlicher Lesarten bei der Umstellung von NPen mit Quantoren vorhersagen (\citealp[\page 146]{Kiss2001a}; \citealp[Abschnitt~2.6]{Fanselow2001a}).
+\item Scrambling als Bewegung ist problematisch:\\
+      zusätzliche Lesarten bei der Umstellung von NPen mit Quantoren vorhergesagt\\(\citealp[\page 146]{Kiss2001a}; \citealp[Abschnitt~2.6]{Fanselow2001a}).
 
 \end{itemize}
 
@@ -511,6 +575,8 @@ dass [das Buch]$_i$ keiner [[ \_$_i$ lesen] wird]
 
 \item Suchen Sie in Korpora Verbalkomplex mit mehr als vier Verben. Dokumentieren Sie Ihr Vorgehen.
 \end{enumerate}
+
+\pause\pause
 
 }
 

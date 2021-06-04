@@ -41,6 +41,13 @@ Zu diesem Abschnitt lesen Sie bitte \citew[Kapitel~4]{MuellerGermanic}.
 
 \end{refsection}
 
+\pause
+
+Die Theorie, die wir behandeln werden, ist Head-Driven Phrase Structure Grammar in einer
+abgerüsteten Version.
+
+Zu HPSG siehe \citew{ps,ps2,Sag97a,MuellerLehrbuch,HPSGHandbook}.
+
 
 
 }
@@ -323,20 +330,21 @@ Es gibt ganz viele verschiedene Möglichkeiten, diese Valenzanforderung zu befri
 \centerfit{
 \begin{forest}
 sm edges
-[{S \eliste},visible on=5-
-  [{NP[\type{nom}]},visible on=4- 
-    [niemand,visible on=4-] ]
-  [{V$'$\sliste{ NP[\type{nom}] } },visible on=3-
-    [{NP[\type{acc}]} [ihn] ]
-    [{V \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt]] ] ]
+[{S \eliste},visible on=6-
+  [{NP[\type{nom}]},visible on=5- 
+    [niemand,visible on=5-] ]
+  [{V$'$\sliste{ \blau<4>{NP[\type{nom}]} } },visible on=3-
+    [\blau<3>{NP[\type{acc}]}, visible on=2-
+      [ihn,visible on=2-] ]
+    [{V \sliste{ \blau<4>{NP[\type{nom}]}, \blau<3>{NP[\type{acc}]}}} [kennt]] ] ]
 \end{forest}}
 
 \vfill
-\pause
 \begin{itemize}
 \item Valenzanforderung ist in einer Liste repräsentiert
 \pause
 \item Ein Element der Liste wird mit dem Kopf kombiniert.\\
+\pause\pause
       Liste mit restlichen Elementen wird nach oben gegeben.
 \pause\pause\pause
 \item Wie einkaufen mit App:\\
@@ -354,12 +362,13 @@ sm edges
 \begin{forest}
 sm edges
 [{S \eliste},visible on=4-
+%  [{[dass]},no edge,visible on=3-]
   [{NP[\type{nom}]},visible on=3- 
     [niemand,visible on=3-] ]
   [{V$'$\sliste{ NP[\type{nom}] } },visible on=4-
     [{NP[\type{acc}]},visible on=5- 
       [ihn,visible on=5-] ]
-    [{V \sliste{ NP[\type{nom}], NP[\type{acc}]}},visible on=6- [kennt,visible on=7-]] ] ]
+    [{V \sliste{ NP[\type{nom}], NP[\type{acc}] }},visible on=6- [kennt,visible on=7-]] ] ]
 \end{forest}}
 
 \begin{itemize}
@@ -368,6 +377,7 @@ sm edges
 \item Das ist in Theorien wie HPSG aber nicht zwingend. 
 
 Sehr wichtig aus psycholinguistischer Sicht, denn Verarbeitung ist inkrementell.
+\parencites{Marslen-Wilson75a,TSKES96a,SW2011a,Wasow2021a}
 \pause
 
 \end{itemize}
@@ -617,7 +627,8 @@ Abkürzungen: \begin{tabular}[t]{@{}l@{ = }l}
 
 \begin{itemize}
 \item In vielen theoretischen Arbeiten werden einfach Baumstrukturen gezeigt.
-\item Diese sind aber nicht einfach da. Es gibt Regeln oder Schemata, die sie lizenzieren.
+\item Diese sind aber nicht einfach da.\\
+      Es gibt Regeln oder Schemata, die sie lizenzieren.
 \item \ZB \xbar-Schemata oder Regel für Phrasenstrukturen oder Dependenzstrukturen.
 \item Regeln für HPSG:
 \ea\label{schema-head-spr-and-head-comps-preliminary}
@@ -634,6 +645,9 @@ H[\comps \ibox{1}] & $\to$ H[\comps \sliste{ \ibox{2} } $\oplus$ \ibox{1}]\hspac
 
 }
 
+
+\subsubsection{Spezifikator-Kopf-Strukturen}
+
 \frame{
 \frametitle{Schemata als Teilbäumchen}
 
@@ -644,7 +658,9 @@ Specifier-Head Schema (preliminary)\\
 H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eliste]\hspace{1em}\ibox{2}
 \z
 
-\item Specifier-Head Schema in Baum-Notation:\\
+\item Specifier-Head Schema in Baum-Notation:
+\vfill
+%\centerline{
 \begin{forest}
 [H\feattab{\spr \ibox{1}}%,\\
            %\comps \eliste}
@@ -653,6 +669,8 @@ H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eli
              \comps \eliste}
   ]]
 \end{forest}
+%}
+\vfill
 
 \end{itemize}
 
@@ -664,14 +682,20 @@ H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eli
 \begin{itemize}
 \item \texttt{append} verknüpft zwei Listen: \sliste{ \normalfont a } $\oplus$ \sliste{ \normalfont b } =
 \sliste{ \normalfont a, b }. 
+
+\pause
 \item Die Verknüpfung einer Liste L mit der leeren Liste ergibt die Liste L.
 
+\pause
 \item Beispiel: \texttt{append} teilt die Liste \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}
     ] } wie folgt:
 \eal
 \ex \oneline{\eliste{} $\oplus$ \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] } = \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }}
+\pause
 \ex \oneline{\sliste{ NP[\type{nom}] } $\oplus$ \sliste{ NP[\type{dat}], NP[\type{acc}] } = \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }}
+\pause
 \ex \oneline{\sliste{ NP[\type{nom}], NP[\type{dat}] } $\oplus$ \sliste{ NP[\type{acc}] } = \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }}
+\pause
 \ex \oneline{\sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] } $\oplus$ \eliste{} = \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }}
 \zl
 
@@ -685,6 +709,7 @@ H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eli
 
 \begin{itemize}
 \item Specifier-Head Schema in Baum-Notation:\\
+\vfill
 \begin{forest}
 [H\feattab{\spr \ibox{1}}%,\\
            %\comps \eliste}
@@ -693,7 +718,7 @@ H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eli
              \comps \eliste}
   ]]
 \end{forest}
-
+\vfill
 
 \item Schema zerlegt Liste in beliebige Liste \iboxb{1} und eine einelementige Liste (\sliste{ \ibox{2} }).
 
@@ -715,6 +740,7 @@ H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eli
 \item \sprl hat für gewöhnlich nur ein Element: NP[\type{nom}]/Subjekt für Verben in SVO-Sprachen oder
   Determiner, wenn der Kopf ein Nomen ist.
 
+\vfill
 \begin{forest}
 [H\feattab{\spr \ibox{1}}%,\\
            %\comps \eliste}
@@ -723,6 +749,8 @@ H[\spr \ibox{1}] $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eli
              \comps \eliste}
   ]]
 \end{forest}
+
+\vfill
 
 \pause
 \item \ibox{1} ist leere Liste, \ibox{2} ist NP[\type{nom}] bzw.\ Det. 
@@ -804,10 +832,10 @@ sm edges
 \end{forest}}
 \vfill
 Erst alle Komplemente mit einem Kopf kombiniert, dann der Spezifikator.
-\eal
-\ex {}[a [picture [of Kim]]]
-\ex {}[The dolphin [attacked [the shark]]]
-\zl
+%\eal
+%\ex {}[a [picture [of Kim]]]
+\ea {}[The dolphin [attacked [the shark]]]
+\z
 
 \end{itemize}
 
@@ -833,6 +861,9 @@ Erst alle Komplemente mit einem Kopf kombiniert, dann der Spezifikator.
 \vfill
 
 }
+
+
+\subsubsection{Kopf-Komplement-Strukturen}
 
 \frame{
 \frametitle{Kopf-Komplement-Strukturen}
@@ -940,10 +971,10 @@ b. & H[\spr \alert{\ibox{1}}, \comps \ibox{2}] & $\to$ H[\spr \alert{\ibox{1}}, 
 \hfill
 \begin{forest}
 [H\feattab{\spr \ibox{1},\\
-           \comps \eliste}
-  [\ibox{2}]
-  [H\feattab{\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} },\\
-              \comps \eliste}]]
+           \comps \ibox{2} }
+  [\ibox{3}]
+  [H\feattab{\spr \ibox{1} $\oplus$ \sliste{ \ibox{3} },\\
+              \comps \ibox{2} \eliste}]]
 \end{forest}
 \hfill
 \begin{forest}
@@ -1408,4 +1439,45 @@ dass Aicke Stunde liest
 
 }
 
+\subsection{Linking}
 
+\frame{
+\frametitle{Linking}
+
+\begin{itemize}
+\item Alle hier behandelten Sprachen haben eine Liste mit Valenzinformation:
+\ea
+\sliste{ NP, NP, NP }
+\z
+\pause
+\item Diese wird Argument Structure genannt (\argst). 
+%\spr und \comps werden davon abgeleitet.
+\pause
+\item Die Kasus unterscheiden sich, das besprechen wir später.
+\pause
+\item Reihenfolge ist aber gleich.
+\eal
+\ex dass das Kind dem Eichhörnchen die Nuss gibt\\
+%    that the child  the squirrel    the nut gives\\
+%\glt `that the child gives the squirrel the nut'
+\ex that the child gives the squirrel the nut
+\zl
+\pause
+\item Verbindung zischen Syntax und Semantik ist für behandelte Sprachen gleich:
+
+\ea
+Lexikoneintrag für \emph{gives}/\emph{gibt}:\\*
+\scalebox{.9}{
+\ms{
+arg-st & \sliste{ NP\ind{1}, NP\ind{2}, NP\ind{3} }\\[2mm]
+cont   & \ms[give]{
+          agens & \ibox{1}\\
+          goal  & \ibox{2}\\
+          trans-obj & \ibox{3}\\
+        }\\
+}}
+\z
+\end{itemize}
+
+
+}

@@ -18,12 +18,12 @@ umzustellen:
 
 \item Die germanischen (V2-)Sprachen stellen irgendeine Konstituente vor das finite Verb:
 \eal
-\ex Ich habe das Buch gestern gelesen.
-\ex Das Buch habe ich gestern gelesen.
-\ex Gestern habe ich das Buch gelesen.
-\ex Gelesen habe ich das Buch gestern,\\
+\ex \alert{Ich} habe das Buch gestern gelesen.
+\ex \alert{Das Buch} habe ich gestern gelesen.
+\ex \alert{Gestern} habe ich das Buch gelesen.
+\ex \alert{Gelesen} habe ich das Buch gestern,\\
     gekauft hatte ich es aber schon vor einem Monat.
-\ex Das Buch gelesen habe ich gestern.
+\ex \alert{Das Buch gelesen} habe ich gestern.
 \zl
 
 \end{itemize}
@@ -93,6 +93,7 @@ Wen$_i$ glaubst du, daß ich \_$_i$ gesehen habe.\footnote{
 %% \draw[connect] (S/NP.north east) [bend right] to (NP);
 %% \end{tikzpicture}}
 
+\medskip
 \centerline{%
 \begin{forest}
 sm edges
@@ -157,18 +158,18 @@ sm edges
 \begin{forest}
 sm edges
 [S
-  [NP [Chris] ]
-  [S/NP
+  [\alert{NP} [Chris] ]
+  [S/\alert{NP}
     [NP [we] ] 
-    [VP/NP  
+    [VP/\alert{NP}  
        [V [think] ]
-       [CP/NP
+       [CP/\alert{NP}
          [C [that] ]
-         [S/NP
+         [S/\alert{NP}
             [NP [David] ] 
-            [VP/NP  
+            [VP/\alert{NP}  
                [V [saw] ]
-               [NP/NP [\trace ] ] ] ] ] ] ] ]
+               [NP/\alert{NP} [\trace ] ] ] ] ] ] ] ]
 %% \draw[connect] (NP/NP.north east)  [bend right] to (VP/NP.south east);
 %% \draw[connect] (VP/NP.north east)  [bend right] to (S/NP.south east);
 %% \draw[connect] (S/NP.north east)   [bend right] to (CP/NP.south east);
@@ -180,6 +181,20 @@ sm edges
 
 }
 
+\frame{
+\frametitle{Schema für Füller-Kopf-Strukturen}
+
+\centerline{
+\begin{forest}
+[{H}
+  [\ibox{1}]
+  [H/\ibox{1}]]
+\end{forest}
+}
+
+
+
+}
 
 
 \frame[shrink]{
@@ -200,7 +215,7 @@ sm edges
 %%            [.\node (S//V/NP) {S$/\!/$V/NP};
 %%              [.\node (NP/NP) {NP/NP}; \trace$_i${} ]
 %%              [.{V$'$$\!/\!/$V}
-%%                [.NP Jens ]
+%%                [.NP Conny ]
 %%                [.{V$\!/\!/$V} \_$_k$ ] ] ] ] ] ]
 %% \draw[connect] (NP/NP) [bend right] to (S//V/NP.south east);
 %% \draw[connect] (S//V/NP.north east) [bend right] to (S/NP.east);
@@ -212,17 +227,17 @@ sm edges
 \begin{forest}
 sm edges
 [S
-  [NP [das Buch, roof] ]
-  [S/NP
-     [V \sliste{ S$/\!/$V } 
-        [V [liest$_k$] ] ]
-     [S$/\!/$V/NP
-        [NP/NP [\trace] ]
-        [V$'$$\!/\!/$V
-           [NP [Jens] ]
-           [V$\!/\!/$V [\_$_k$] ] ] ] ] ] ]
-%% \draw[connect] (NP/NP) [bend right] to (S//V/NP.south east);
-%% \draw[connect] (S//V/NP.north east) [bend right] to (S/NP.east);
+  [\alert<2>{NP$_i$} [das Buch, roof] ]
+  [S/\alert<2>{NP}
+     [V \sliste{ S\alert<1>{$/\!/$V} } 
+        [\alert<1>{V} [liest$_j$] ] ]
+     [S\alert<1>{$/\!/$V}\!\alert<2>{/NP}
+        [NP\alert<2>{/NP} [\trace$_i$] ]
+        [V$'$\alert<1>{$\!/\!/$V}
+           [NP [Conny] ]
+           [V\alert<1>{$\!/\!/$V} [\_$_j$] ] ] ] ] ] ]
+%% \draw[connect] (NP/NP) [bend right] to (S//V\!/NP.south east);
+%% \draw[connect] (S//V\!/NP.north east) [bend right] to (S/NP.east);
 %% \draw[connect] (S/NP.north east) [bend right] to (NP);
 \end{forest}}
 
@@ -240,18 +255,18 @@ sm edges
 \begin{forest}
 sm edges
 [S
-   [NP [bogen$_j$;Buch.def ] ]
+   [NP$_i$ [bogen;Buch.def ] ]
       [S/NP
          [V \sliste{ S$/\!/$V }
-           [V [læser$_k$;liest] ] ]
-           [S$/\!/$V/NP
-             [NP [Jens;Jens] ]
-             [VP$\!/\!/$V
-               [V$\!/\!/$V  [\_$_k$] ]
-               [NP/NP [\trace$_j$ ] ] ] ] ] ] 
+           [V [læser$_j$;liest] ] ]
+           [S$/\!/$V\!/NP
+             [NP [Conny;Conny] ]
+             [VP$\!/\!/$V$\!/$NP
+               [V$\!/\!/$V  [\_$_j$] ]
+               [NP/NP [\trace$_i$ ] ] ] ] ] ] 
 %% \draw[connect] (NP/NP.north east) [bend right] to (V/V.south east);
-%% \draw[connect] (V/V.north east) [bend right] to (S//V/NP.south east);
-%% \draw[connect] (S//V/NP.north east) [bend right] to (S/NP.east);
+%% \draw[connect] (V/V.north east) [bend right] to (S//V\!/NP.south east);
+%% \draw[connect] (S//V\!/NP.north east) [bend right] to (S/NP.east);
 %% \draw[connect] (S/NP.north east) [bend right] to (NP);
 \end{forest}
 }}
@@ -278,14 +293,111 @@ VP-Bildung, sonst ist bzgl.\ V2 alles gleich.
 %%         [.\node (S/NP) {S/NP};
 %%           [.{V \sliste{ S/\!/V }} 
 %%             [.V glaubst$_k$ ] ]
-%%            [.\node (S//V/NP) {S$/\!/$V/NP};
+%%            [.\node (S//V\!/NP) {S$/\!/$V\!/NP};
 %%              [.\node (NP/NP) {NP/NP}; \trace{} ]
 %%              [.{V$'$$\!/\!/$V}
-%%                [.NP Jens ]
+%%                [.NP Conny ]
 %%                [.{V$\!/\!/$V} \_$_k$ ] ] ] ] ] ]
-%% \draw[connect] (NP/NP) [bend right] to (S//V/NP.south east);
-%% \draw[connect] (S//V/NP.north east) [bend right] to (S/NP.east);
+%% \draw[connect] (NP/NP) [bend right] to (S//V\!/NP.south east);
+%% \draw[connect] (S//V\!/NP.north east) [bend right] to (S/NP.east);
 %% \draw[connect] (S/NP.north east) [bend right] to (NP);
 %% \end{tikzpicture}}
 
 %% }
+
+\subsubsection{Vergleich Englisch, Dänisch, Deutsch}
+
+\frame{
+\frametitle{Vergleich Englisch, Dänisch, Deutsch}
+
+Die Sätze sehen gleich aus, haben aber eine ganz andere Struktur:
+\eal
+\ex Conny reads a book.
+\ex Conny læser en bog.
+\ex Conny liest ein Buch.
+\zl
+
+}
+
+
+\frame{
+
+
+\scalebox{.8}{%
+\begin{forest}
+sm edges
+[S
+  [NP [Conny;Conny]]
+  [VP
+    [V [reads;liest]]
+    [NP [a book;ein Buch,baseline,roof]]]]
+\end{forest}}
+\hfill
+\visible<2->{\scalebox{.8}{%
+\begin{forest}
+sm edges
+[S
+   [NP$_i$ [Conny;Conny] ]
+      [S/NP
+         [V \sliste{ S$/\!/$V }
+           [V [læser$_j$;reads] ] ]
+           [S$/\!/$V\!/NP
+             [NP/NP [\trace$_i$ ] ]
+             [VP$\!/\!/$V
+               [V$\!/\!/$V  [\_$_j$] ]
+               [NP [en bog;a book,baseline,roof] ] ] ] ] ] 
+%% \draw[connect] (NP/NP.north east) [bend right] to (V/V.south east);
+%% \draw[connect] (V/V.north east) [bend right] to (S//V\!/NP.south east);
+%% \draw[connect] (S//V\!/NP.north east) [bend right] to (S/NP.east);
+%% \draw[connect] (S/NP.north east) [bend right] to (NP);
+\end{forest}}}
+\hfill
+\visible<3>{\scalebox{.8}{%
+\begin{forest}
+sm edges
+[S
+   [NP$_i$ [Conny] ]
+      [S/NP
+         [V \sliste{ S$/\!/$V }
+           [V [liest$_j$] ] ]
+           [S$/\!/$V\!/NP
+             [NP/NP [\trace$_i$ ] ]
+             [V$'$$\!/\!/$V
+               [NP [ein Buch,baseline,roof] ] 
+               [V$\!/\!/$V  [\_$_j$] ] ] ] ] ] 
+\end{forest}}}
+
+
+
+}
+
+
+\frame{
+\frametitle{V2 in den germanischen Sprachen}
+
+
+
+\begin{itemize}
+\item Alle germanischen Sprachen (außer Englisch) haben V2-Sätze mit Verbvoranstellung +
+  Voranstellung einer Konstituente.
+\pause
+\item Sätze immer gleich analysiert, auch wenn Subjekt das Vorfeld füllt.
+\pause
+\item V1-Sätze sind nicht unbedingt Fragen:
+\eal
+\ex Gibt er ihm das Buch?
+\ex Gib mir das Buch!
+\zl
+
+\item V2-Sätze nicht unbedingt Aussagen:
+\eal
+\ex Wem gibt er das Buch?
+\ex Jetzt gib ihm das Buch!
+\ex Jetzt gibt er ihm das Buch.
+\zl
+
+\end{itemize}
+
+\pause\pause\pause
+
+}

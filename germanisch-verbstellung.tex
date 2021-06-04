@@ -12,7 +12,7 @@
 \frametitle{Literaturhinweis}
 
 
-Zu diesem Abschnitt gibt es das Kapitel~5 in \citew{MuellerGermanic}.
+Zu diesem Abschnitt gibt es das Kapitel~6 in \citew{MuellerGermanic}.
 
 Müller, Stefan, \citeyear{MuellerGermanic}. \emph{Germanic Syntax}. Berlin: Language Science
 Press. In Vorbereitung. 
@@ -151,7 +151,22 @@ an.
 natürlich nicht repräsentativ \ldots
 }
 
+\frame{
+\frametitle{Subjekte in Korpora}
 
+\begin{itemize}
+\item \citet{HK2005a} 38.342 und 22.087 Bäume aus TüBa-D/S und Z
+\pause
+\item gesprochene und geschriebene Sprache (\verbmobil und taz)
+\pause
+\item 50,3\,\% und 52,1\,\% der Sätze enthielten das Subjekt im Vorfeld.
+\pause
+\item Annahme von SVO-Stellung würde also auch nicht helfen, denn man müsste erklären, wie das
+  Subjekt nachgestellt und etwas anderes vorangestellt wird.
+\end{itemize}
+
+
+}
 
 
 \frame{
@@ -161,8 +176,8 @@ natürlich nicht repräsentativ \ldots
 {Bierwisch63a}: Sogenannte Verbzusätze oder Verbpartikel\\
 bilden mit dem Verb eine enge Einheit.
 \eal
-\ex weil er morgen \blau{anfängt}
-\ex Er \blau{fängt} morgen \blau{an}.
+\ex weil er morgen \alert{anfängt}
+\ex Er \alert{fängt} morgen \alert{an}.
 \zl
 Diese Einheit ist nur in der Verbletzstellung zu sehen, was dafür spricht,\\
 diese Stellung als Grundstellung anzusehen.
@@ -174,13 +189,13 @@ diese Stellung als Grundstellung anzusehen.
 \eal
 \judgewidth{?*}
 \ex[]{
-dass niemand dem Mann den Garaus macht
+dass niemand dem Mann \alert{den Garaus macht}
 }
 \ex[?*]{
-dass dem Mann den Garaus niemand macht
+dass dem Mann \alert{den Garaus} niemand \alert{macht}
 }
 \ex[]{
-Niemand macht ihm den Garaus.
+Niemand \alert{macht} ihm \alert{den Garaus}.
 }
 \zl
 
@@ -198,8 +213,8 @@ Verben in infiniten Nebensätzen und in durch eine Konjunktion eingeleiteten
 finiten Nebensätzen stehen immer am Ende\\
 (von Ausklammerungen ins Nachfeld abgesehen):
 \eal
-\ex Der Clown versucht, Kurt-Martin die Ware \blaubf{zu geben}.
-\ex dass der Clown Kurt-Martin die Ware \blaubf{gibt}
+\ex Der Clown versucht, Kurt-Martin die Ware \alert{zu geben}.
+\ex dass der Clown Kurt-Martin die Ware \alert{gibt}
 \zl
 }
 
@@ -265,32 +280,32 @@ Struktur ist in (\mex{0}) und (\mex{-2}) genau gleich.
 
 \eal
 \ex[]{
-dass Hans seinen Profit letztes Jahr mehr als verdreifachte
+dass Hans seinen Profit letztes Jahr \alert{mehr als verdreifachte}
 }
 \ex[]{
-Hans hat seinen Profit letztes Jahr mehr als verdreifacht.
+Hans hat seinen Profit letztes Jahr \alert{mehr als verdreifacht}.
 }
 \ex[*]{
-Hans verdreifachte seinen Profit letztes Jahr mehr als.
+Hans \alert{verdreifachte} seinen Profit letztes Jahr \alert{mehr als}.
 }
 \zl
 
 \pause
 
-\citealt{Hoehle91b}, \citealt[\page 62]{Haider93a}: Über Rückbildung entstandene Verben können oft
+\citet{Hoehle91b}, \citet[\page 62]{Haider93a}: Über Rückbildung entstandene Verben können oft
 nicht getrennt/umgestellt werden:
 \eal
 \ex[]{
-weil sie das Stück heute uraufführen%\\
+weil sie das Stück heute \alert{uraufführen}%\\
 %     because they the play today play.for.the.first.time\\
 %\glt `because they premiered the play today'
 }
 \ex[*]{
-Sie uraufführen heute das Stück.%\\
+Sie \alert{uraufführen} heute das Stück.%\\
 %     they play.for.the.first.time  today the play\\
 }
 \ex[*]{
-Sie führen heute das Stück urauf.%\\
+Sie \alert{führen} heute das Stück \alert{urauf}.%\\
 %     they guide today the play  {\sc prefix}.{\sc part}\\
 }
 \zl
@@ -307,7 +322,7 @@ Zu einem Überblick siehe \citew{MuellerGermanHandbook}.
 \begin{itemize}
 \item \rot{Negation} verbindet sich mit der \blau<1>{VP}:
 \ea
-\gll  at   Jens \rot{ikke} [\sub{VP} {\blau{læser}} \blau<1>{bogen}]\\
+\gll  at   Jens \rot{ikke} [\sub{VP} {\blau<1>{læser}} \blau<1>{bogen}]\\
       dass Jens nicht      {}        liest          Buch.{\sc def}\\
 \glt `dass Jens das Buch nicht liest'
 %      that Jens not  {} reads   book.{\sc def}\\
@@ -377,12 +392,12 @@ Analyse:
 %% %\draw (-3,-5) to[grid with coordinates] (4,0);
 %% \Tree[.S
 %%         [.{V \sliste{ S/\!/V }} 
-%%           [.V liest$_k$ ] ]
+%%           [.V liest$_j$ ] ]
 %%         [.{S$/\!/$V}
 %%            [.NP Jens ]
 %%            [.{V$'$$\!/\!/$V}
 %%              [.NP \edge[roof]; {das Buch} ]
-%%              [.{V$\!/\!/$V} \_$_k$ ] ] ] ]
+%%              [.{V$\!/\!/$V} \_$_j$ ] ] ] ]
 %% \draw[semithick,<->,color=green] (3.1,-3.9) ..controls +(south east:.5) and +(south west:.5)..(2.7,-3.9);
 %% \draw[semithick,<->,color=green] (3.5,-3.7) ..controls +(east:.5) and +(east:.5)..(2.8,-2.5);
 %% \draw[semithick,<->,color=green] (2.8,-2.3) ..controls +(east:.5) and +(east:.5)..(1.7,-1.1);
@@ -396,12 +411,12 @@ Analyse:
 sm edges
 [S
   [{V \sliste{ S$/\!/$V }} 
-    [V [liest$_k$] ] ]
+    [V [liest$_j$] ] ]
        [{S$/\!/$V}
            [NP [Jens] ]
            [{V$'$$\!/\!/$V}
              [NP [das Buch, roof] ]
-             [{\mybox[v1]{V}$\!/\!/$\mybox[v2]{V}} [\_$_k$] ] ] ] ] ]
+             [{\mybox[v1]{V}$\!/\!/$\mybox[v2]{V}} [\_$_j$] ] ] ] ] ]
 %\draw[semithick,<->,color=green] (v1.south)--(v2.south);
 %% \draw[semithick,<->,color=green] (3.1,-3.9) ..controls +(south east:.5) and +(south west:.5)..(2.7,-3.9);
 %% \draw[semithick,<->,color=green] (3.5,-3.7) ..controls +(east:.5) and +(east:.5)..(2.8,-2.5);
@@ -422,14 +437,14 @@ sm edges
 sm edges
 [S
         [{V \sliste{ S$/\!/$V }} 
-          [V [lacht$_k$] ] ]
+          [V [lacht$_j$] ] ]
         [{S$/\!/$V}
            [NP [er] ]
            [{V$'$$\!/\!/$V}
              [Adv [nicht] ]
              [{V$'$$\!/\!/$V}
                [Adv [absichtlich] ]
-               [{V$\!/\!/$V} [\_$_k$] ] ] ] ] ]
+               [{V$\!/\!/$V} [\_$_j$] ] ] ] ] ]
 \end{forest}
 }
 
@@ -444,11 +459,11 @@ sm edges
 sm edges
 [S
         [{V \sliste{ S$/\!/$V }} 
-          [V [læser$_k$] ] ]
+          [V [læser$_j$] ] ]
         [{S$/\!/$V}
            [NP [Jens] ]
            [{VP$\!/\!/$V}
-             [{V$\!/\!/$V} [\_$_k$] ] 
+             [{V$\!/\!/$V} [\_$_j$] ] 
              [NP [bogen] ] ] ] ]
 \end{forest}}
 
@@ -459,20 +474,21 @@ sm edges
 \frame[shrink]{
 \frametitle{Verbumstellung im Dänischen mit Negation}
 
+~\vfill
 \centerfit{\begin{forest}
 sm edges
 [S
         [{V \sliste{ S$/\!/$V }} 
-          [V [læser$_k$] ] ]
+          [V [læser$_j$] ] ]
         [{S$/\!/$V}
            [NP [Jens] ]
            [{VP$\!/\!/$V}
              [Adv [ikke] ]
              [{VP$\!/\!/$V}
-               [{V$\!/\!/$V} [\_$_k$] ] 
+               [{V$\!/\!/$V} [\_$_j$] ] 
                [NP [bogen] ] ] ] ] ]
 \end{forest}}
-
+\vfill
 
 }
 

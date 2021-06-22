@@ -1,10 +1,10 @@
 %% -*- coding:utf-8 -*-
-\newcommand{\danish}{\jambox{(\ili{Danish})}}
-\newcommand{\dutch}{\jambox{(\ili{Dutch})}}
-\newcommand{\english}{\jambox{(\ili{English})}}
-\newcommand{\german}{\jambox{(\ili{German})}}
-\newcommand{\yiddish}{\jambox{(\ili{Yiddish})}}
-\newcommand{\icelandic}{\jambox{(\ili{Icelandic})}}
+\newcommand{\danish}{\jambox{(\ili{Dänisch})}}
+\newcommand{\dutch}{\jambox{(\ili{Niederländisch})}}
+\newcommand{\english}{\jambox{(\ili{Englisch})}}
+\newcommand{\german}{\jambox{(\ili{Deutsch})}}
+\newcommand{\yiddish}{\jambox{(\ili{Jiddisch})}}
+\newcommand{\icelandic}{\jambox{(\ili{Isländisch})}}
 
 
 \let\mc=\multicolumn
@@ -30,3 +30,8 @@
 \newtoggle{einfsprachwiss-exclude}\toggletrue{einfsprachwiss-exclude}
 \newtoggle{einfsprachwiss-include}\togglefalse{einfsprachwiss-include}
 
+
+
+% To center and ignore the bar at the node in trees. I use the \rlap directly to avoid confusion
+% with the AVM \1.
+\newcommand\1{\rlap{$'$}}

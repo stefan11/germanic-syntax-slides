@@ -1,10 +1,164 @@
 %% -*- coding:utf-8 -*-
 
-\subtitle{Eingebettete Sätze}
+\subtitle{Eingebettete Sätze, Expletiva und Satztypenmarkierung}
 
-\section{Eingebettete Sätze}
+\section{Eingebettete Sätze, Expletiva und Satztypenmarkierung}
 
 \huberlintitlepage[22pt]
+
+
+
+\frame{
+\frametitle{Literaturhinweis}
+
+
+
+Zu diesem Abschnitt gibt es das Kapitel~8 in \citew{MuellerGermanic}.
+
+Müller, Stefan, \citeyear{MuellerGermanic}. \emph{Germanic Syntax}. Berlin: Language Science
+Press. In Vorbereitung. 
+
+}
+
+
+
+\subsection{Konjunktional eingeleitete Nebensätze}
+
+\frame{
+\frametitle{Deutsch: eingebettete Sätze sind VL}
+
+\begin{itemize}
+\item Deutsch, Niederländisch, \ldots: V-letzt:
+
+\ea
+Ich weiß, dass Aicke das Buch heute gelesen hat.
+\z
+
+\pause
+Stellung der anderen Konstituenten ist frei:
+\eal
+\ex Ich weiß, dass das Buch Aicke heute gelesen hat.
+\ex Ich weiß, dass das Buch heute Aicke gelesen hat.
+\zl
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Englisch: eingebettete Sätze SVO}
+
+
+\begin{itemize}
+\item Englisch: eingebettete Sätze SVO
+\ea[]{
+I  know that Kim has read the book yesterday.
+}
+\z
+
+%% \pause
+%% Andere Stellungen sind nicht möglich:
+%% \eal
+%% \ex[*]{
+%% I know that has Max read the book yesterday.
+%% }
+%% \ex[*]{
+%% I know that yesterday Max has read the book.
+%% }
+%% \zl
+
+\end{itemize}
+
+}
+
+
+
+\frame[shrink=5]{
+\frametitle{Dänisch: eingebettete Sätze SVO oder V2}
+
+
+\begin{itemize}
+\item Dänisch: eingebettete Sätze SVO oder V2
+\ea[]{
+\gll Jeg  ved, at   Gert ikke  har læst  bogen          {i dag}.\\
+     ich weiß dass Gert nicht hat gelesen Buch.{\sc def} heute\\\jambox{(SVO)}
+}
+\z
+Negation hilft, Verbstellung zu bestimmen:
+\ea[]{
+\gll Jeg  ved, at   Gert har ikke  læst  bogen          {i dag}.\\
+     ich weiß dass Gert hat nicht gelesen Buch.{\sc def} heute\\\jambox{(V2)}
+}
+\z
+
+\pause
+Andere Konstituenten in Initial-Stellungen sind möglich, \dash klares V2:
+\eal
+\ex[]{
+\gll Jeg  ved, at   {i dag} har Gert ikke læst bogen.\\
+     ich weiß dass heute   hat Gert nicht gelesen Buch.{\sc def}\\
+}
+\ex[]{
+\gll Jeg ved, at   bogen          har Gert ikke  læst {i dag}.\\
+     ich weiß dass Buch.{\sc def} hat Gert nicht gelesen heute\\
+}
+\zl
+
+%% \ex[*]{
+%% \gll Jeg  ved, at   {i dag} Gert har læst bogen.\\
+%%      ich weiß dass heute   Gert hat gelesen Buch.{\sc def}\\
+%% }
+%%
+%% \ex[*]{
+%% \gll Jeg  ved, at   bogen          Gert har læst {i dag}.\\
+%%      ich weiß dass Buch.{\sc def} Gert hat gelesen heute\\
+%% }
+%% \zl
+%%
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Jiddisch, Isländisch: eingebettete Sätze sind V2}
+
+% Isländisch: Wikipedia (en)
+
+\begin{itemize}
+\item Jiddish: eingebettete Sätze sind V2 \citep[]{Diesing90a}:
+\eal
+\ex
+\gll Ikh meyn  az   haynt hot Max geleyent dos bukh.\footnotemark\\
+     ich   denke dass heute hat Max gelesen   das Buch\\
+\footnotetext{\citew[\page 58]{Diesing90a}.}
+\glt `Ich denke, dass Max heute das Buch gelesen hat.'
+
+\ex% check!
+\gll Ikh meyn  az   dos bukh hot Max geleyent.\\
+     ich denke dass das Buch hat Max gelesen\\
+
+\zl
+
+\pause
+Isländisch:
+\ea 
+\gll Engum         datt í hug,  að   vert  væri að reyna til     að kynnast honum.\footnotemark\\
+     no.one.\DAT{} fell to mind that worth was  to try   \PREP{} to know    him\\%\icelandic
+\footnotetext{\citew[\page 75]{Maling90a-u}.}
+\glt `It didn't occur to anyone that it was worth trying to get to know him.'
+\z
+
+
+
+\end{itemize}
+
+}
+
+
+
+
+
 
 \subsection{Sätze mit Komplementierer}
 
@@ -24,6 +178,10 @@ sm edges
            ] ] ]
 \end{forest}}
 
+\vfill
+Komplementierer verlangt nicht umgestelltes Verb
+
+\vfill
 
 }
 
@@ -46,9 +204,11 @@ sm edges
           [{NP[\type{acc}]} [him] ] ] ] ]
 \end{forest}}
 
+\vfill
 
+Komplementierer verlangt nicht umgestelltes Verb
 
-
+\vfill
 
 }
 
@@ -58,12 +218,12 @@ sm edges
 
 
 
-\centerfit{\scalebox{.6}{\begin{forest}
+\centerfit{\scalebox{.7}{\begin{forest}
 sm edges
 [CP
         [C [az;dass] ]
         [S
-          [{Adv} [haynt$_i$;heute] ]
+          [{Adv$_i$} [haynt;heute] ]
           [{S/Adv}
             [{V \sliste{ S/$\!$/V }} 
               [V [hot$_k$;hat] ] ]
@@ -85,14 +245,310 @@ sm edges
 
 
 
-\ea
-\gll Ikh meyn  az   haynt hot Max geleyent dos bukh.\footnotemark\\
-     ich   denke dass heute hat Max gelesen   das Buch\\
-\footnotetext{\citew[p.\,58]{Diesing90a}.}
-\glt `Ich denke, dass Max heute das Buch gelesen hat.'
-\z
+% \ea
+% \gll Ikh meyn  az   haynt hot Max geleyent dos bukh.\footnotemark\\
+%      ich   denke dass heute hat Max gelesen   das Buch\\
+% \footnotetext{\citew[p.\,58]{Diesing90a}.}
+% \glt `Ich denke, dass Max heute das Buch gelesen hat.'
+% \z
 
 }
+
+
+
+\subsection{Interrogativnebensätze}
+
+
+\frame{
+\frametitle{Deutsch: Interrogativnebensätze \emph{w} + VL}
+
+\begin{itemize}
+\item Deutsch, Niederländisch, \ldots: \emph{w} + V-letzt:
+
+\eal
+\ex Ich weiß, wer heute das Buch gelesen hat.
+\ex Ich weiß, was Aicke heute gelesen hat.
+\zl
+
+Interrogativnebensätze beginnen mit einer \emph{w}-Phrase.
+
+\pause
+\item Die \emph{w}-Phrase kann von weit her kommen:
+\ea
+Ich weiß nicht, [\gruen{über welches Thema}]$_i$ sie versprochen hat,\\
+{}[[einen Vortrag \_$_i$] zu halten].
+\z
+
+\pause
+\item Stellung der anderen Konstituenten ist frei:
+\eal
+\ex Ich weiß, was keiner diesem Eichhörnchen geben würde.
+\ex Ich weiß, was diesem Eichhörnchen keiner geben würde.
+\zl
+
+
+\end{itemize}
+
+}
+
+
+
+\frame{
+
+\frametitle{Dänisch, Englisch: Interrogativnebensätze  \emph{w} + SVO}
+
+
+\begin{itemize}
+\item Dänisch: Interrogativnebensätze sind \emph{w} + SVO
+
+\eal
+\ex
+\gll Jeg ved, hvad Gert har givet ham.\\
+     ich weiß was Gert  hat gegeben ihm\\
+\glt `Ich weiß, was Gert ihm gegeben hat.'
+\ex
+\gll Jeg ved, hvem Gert har givet   bogen.\\
+     ich weiß wem  Gert hat gegeben Buch.{\sc def}\\
+\glt `Ich weiß, wem Gert das Buch gegeben hat.'
+\zl
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Jiddish: Interrogativnebensätze \emph{w} + V2}
+
+\begin{itemize}
+\item Jiddish: Interrogativnebensätze \emph{w} + V2 \citep[Abschnitte~4.1, 4.2]{Diesing90a}
+
+%% \ea
+%% %\ex
+%% \label{vosmaks}
+%% \gll Ikh veys nit   [vos Max hot gegesn].\footnotemark\\
+%%      ich weiß nicht \hspaceThis{[}was Max hat gegessen\\
+%% \footnotetext{\citew[S.\,68]{Diesing90a}.}
+%% \glt `Ich weiß nicht, was Max gegessen hat.'
+
+%% %% \ex%check
+%% %% \gll Ikh veys nit   [vos              hot Max gegesn].\footnotemark\\
+%% %%      ich weiß nicht \hspaceThis{[}was heute hat Max gegessen\\
+%% %% \footnotetext{\citew[S.\,68]{Diesing90a}.}
+%% %% \glt `Ich weiß nicht, was Max heute gegessen hat.'
+
+
+\ea
+\gll Ir veyst efsher [avu            do    voynt Roznblat   der goldshmid]?\footnotemark\\
+     Sie wissen vielleicht  \spacebr{}wo da wohnt Roznblat der Goldschmied\\
+\glt `Wissen Sie vielleicht, wo Roznblat der Goldschmied wohnt?' 
+\footnotetext{
+\citew[S.\,65]{Diesing90a}. Zitiert aus Olsvanger, \emph{Royte Pomerantsn}, 1949
+}
+\z
+\end{itemize}
+
+}
+
+
+\frame{
+\frametitle{Die Analyse: Voranstellung der \emph{w}-Phrase}
+
+\begin{itemize}
+\item Analyse: \emph{w}-Phrase ist extrahiert (\slasch). Wie Vorfeldbesetzung.
+
+Ansonsten Verbletzt und restliche Syntax ganz parallel.
+
+\ea
+Ich weiß, [\gruen{woüber}]$_i$ [ \trace$_i$ sie spricht].
+\z
+
+
+\centerline{\begin{forest}
+sm edges
+[{S[\slasch \sliste{ }]}
+  [PP\ibox{1} [worüber]]
+  [{S[\slasch \sliste{ \ibox{1} }]}
+    [{PP\ibox{1}[\slasch \sliste{ \ibox{1} }]} [\trace]]
+    [V\rlap{$'$}
+      [NP [sie]]
+      [V [spricht]]]]]
+\end{forest}}
+
+\end{itemize}
+
+
+
+}
+
+
+\frame{
+\frametitle{Die \emph{w}-Phrase}
+
+\begin{itemize}
+\item Kleines Detail: Die vorangestellte \emph{w}-Phrase kann ein einzelnes Fragepronomen oder auch
+  komplex sein:
+\eal
+\ex Ich weiß, [\gruen{woüber}]$_i$ [ \trace$_i$ sie spricht].
+\ex Ich weiß, [\gruen{über welches Thema}]$_i$ [ \trace$_i$ sie spricht].
+\zl
+\pause
+\item derselbe Trick wie mit \slasch:\\
+      Information über \emph{w}-Element wird im Baum nach oben gegeben. \textsc{que}-Merkmal.
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{\textsc{que}-Perkolation}
+
+\vfill
+\centerline{\begin{forest}
+sm edges
+[{S[\textsc{que} \sliste{ }, \slasch \sliste{ }]}
+  [{PP\ibox{1}[\textsc{que} \sliste{ \ibox{2} }]} 
+     [P [über]]
+     [{NP[\textsc{que} \sliste{ \ibox{2} }]}
+       [{Det[\textsc{que} \sliste{ \ibox{2} }]} [welches]]
+       [N [Thema]]]]
+  [{S[\slasch \sliste{ \ibox{1} }]}
+    [{PP\ibox{1}[\slasch \sliste{ \ibox{1} }]} [\trace]]
+    [V\rlap{$'$}
+      [NP [sie]]
+      [V [spricht]]]]]
+\end{forest}}
+
+\vfill
+Information über \emph{w}-Wort \iboxb{2} wird nach oben gereicht.
+
+Semantische Information, damit man weiß, wonach gefragt wurde.
+\vfill
+
+
+}
+
+
+
+\frame{
+\frametitle{Schema für Interrogtivnebensätze}
+
+\vfill
+\centerline{
+\begin{forest}
+[{H[\textsc{que} \sliste{ }, \slasch \sliste{ }]}
+  [\ibox{1}{[\textsc{que} \sliste{ \etag{} }]}]
+  [H{[\slasch \sliste{ \ibox{1} }]} ]]
+\end{forest}
+}
+
+\vfill
+
+Schema ist ähnlich dem Füller-Kopf-Schema.
+
+Zusätzlich wird Element in \textsc{que} gefordert.
+
+Für das Deutsche:\\
+V2-Sätze haben Verb in Initialstellung,
+Interrogativnebensätze in Finalstellung.
+
+\vfill
+
+
+}
+
+
+
+\subsection{Expletiva zur Satztypmarkierung}
+
+\frame{
+\frametitle{Expletiva zur Satztypmarkierung}
+
+\begin{itemize}
+\item Germanische Sprachen benutzen Expletiva, um Satztypen kenntlich zu machen,
+      falls keine andere Konstituente die entsprechende Position füllt.
+\pause
+\item Deutsch V2-Hauptsätze
+
+\eal
+\ex Drei Reiter ritten zum Tor hinaus.
+\ex \rot{Es} ritten drei Reiter zum Tor hinaus.
+\zl
+\end{itemize}
+
+
+}
+
+\frame{
+\frametitle{Dänisch: \emph{w}-Sätze mit extrahiertem Subjekt}
+
+\begin{itemize}
+\item Dänisch: \emph{w} + SVO\\
+      Bei Subjektextraktion muss Extraktion explizit kenntlich gemacht werden:
+\eal
+\ex[]{
+\gll Politiet ved ikke, \gruen{hvem} \rot{der}   havde placeret bomben.\\
+     Polizei.{\sc def} weiß nicht wer {\sc expl} hat plaziert Bombe.{\sc def}\\
+\glt `Die Polizei weiß nicht, wer eigentlich die Bombe plaziert hat.'
+}
+\ex[*]{
+\gll Politiet ved ikke, \gruen{hvem} havde placeret bomben.\\
+     Polizei.{\sc def} weiß nicht wer hat plaziert Bombe.{\sc def}\\
+}
+\zl
+
+\pause
+
+Expletivum macht Extraktion sichtbar:
+\eal
+\ex[*]{ 
+\gll [\gruen{hvem}$_i$     [\trace$_i$ havde placeret bomben]]\\
+     \spacebr{}wer {}          hat   plaziert Bombe.\textsc{def}\\\danish
+}
+\ex[]{
+\gll [\gruen{hvem}$_i$     [\rot{der}                    havde \trace$_i$ placeret bomben]]\\
+     \spacebr{}who \spacebr{}\textsc{expl} hat   {}         plaziert Bombe.\textsc{def}\\
+}
+\zl
+\pause
+\item Expletivum ist in der Subjektposition
+
+
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Jiddish: \emph{w}-Sätze mit extrahiertem Subjekt}
+
+\begin{itemize}
+\item Jiddish: Interrogativnebensätze \emph{w} + V2\\
+%% \ea
+%% \label{vosmaks}
+%% \gll Ikh veys nit   [vos Max hot gegesn].\footnotemark\\
+%%      ich weiß nicht \hspaceThis{[}was Max hat gegessen\\
+%% \footnotetext{\citew[S.\,68]{Diesing90a}.}
+%% \glt `Ich weiß nicht, was Max gegessen hat.'
+%% \z
+%% \pause
+%% \item 
+  Wenn %das Subjekt extrahiert wird und 
+kein anderes Element ins Vorfeld soll, muss dort ein \emph{es} stehen:
+
+\eal
+\ex[]{
+\gll ikh hob  zi  gefregt \gruen{ver} \rot{es}         iz beser  far ir\\
+     I   have her asked   who {\sc expl} is better for her\\
+\glt `I have asked her who is better for her.'}
+\ex[]{
+\gll ikh hob  im  gefregt \gruen{vemen} \rot{es}        kenen ale dayne khaverim\\
+     I   have him asked   whom {\sc expl} know  all your friends\\
+\glt `I asked him whom all your friends know.'}
+\zl
+
+\end{itemize}
+
+}
+
 
 
 \subsection{Positionionale Expletiva}
@@ -115,7 +571,52 @@ Es ritten drei Reiter zum Tor hinaus.
 }
 
 
-\subsection{Interrogativnebensätze}
+\subsection{Lexikonregel zur Einführung der Expletiva}
+
+\frame{
+\frametitle{Lexikonregel zur Einführung der Expletiva}
+
+
+\ea
+\label{positional-expl-lr}
+\ms{
+head & verb\\
+arg-st & \ibox{1}\\
+} $\mapsto$
+\ms{
+head & verb\\
+arg-st & \sliste{ NP[\type{lnom}]$_{\textit{expl}}$ } $\oplus$ \ibox{1}\\
+}
+\z
+\begin{itemize}
+\item Lexikonregel hängt vorn ein Expletivum mit lexikalischem Nominativ an die \argstl \citep{MOe2011a}.
+
+\pause
+
+\item Da der Kasus lexikalisch ist, bleiben alle anderen Kasuszuweisungen unberührt.
+\pause
+\item Von der Position ist das Expletivum in den SVO-Sprachen ein Subjekt,\\
+      weil es das erste Element ist.
+
+\pause
+\item Kongruenz mit der ersten NP mit strukturellem Kasus\\
+      (richtig für isländische Subjekte/Objekte und klassische deutsche Subjekte). 
+
+
+\pause
+\item Insgesamt lizenzieren unsere Grammatiken jetzt zu viel:
+\begin{itemize}
+\item Deutsch, Jiddish: Expletiva im Mittelfeld
+\item Dänisch: Immer noch Extraktion aus der Subjektposition
+\end{itemize}
+\end{itemize}
+
+
+
+}
+
+
+\subsection{Interrogativnebensätze mit \emph{w}-Subjekt}
 
 \frame{
 \frametitle{Deutsch: \emph{w} + SOV}
@@ -201,10 +702,16 @@ dass es noch drei Männer arbeiten
 }
 \zl
 \pause
-\item Beschränkung, die verlangt, dass diese Elemente extrahiert sein müssen.
+\item Beschränkung, die verlangt, dass diese Elemente extrahiert sein müssen:
+
+\ea
+\ms{
+arg-st & \sliste{ NP\ibox{1}[\slasch \sliste{ \ibox{1} }] } $\oplus$ \etag\\
+}
+\z
 
 \pause
-\item Aber:
+\item Aber Extraktion darf nicht über Satzgrenzen hinweg erfolgen:
 \ea[*]{
 Es$_i$ glaube ich, dass \_$_i$ noch drei Männer arbeiten.
 }
@@ -219,9 +726,23 @@ Es$_i$ glaube ich, dass \_$_i$ regnet.
 
 \end{itemize}
 
+}
 
+\subsection{Zusammenfassung}
 
+\frame{
+\frametitle{Zusammenfassung}
 
+\begin{itemize}[<+->]
+\item Analyse der Nebensätze mit Komplementierer: SVO oder V2 %= \textsc{inv}$+$/$-$
+\item Analyse der Interrogativnebenätze über Fernabhängigkeiten:\\
+      \emph{w}-Phrase + V2/SVO/VL
+\item \emph{w}-Phrase kann komplex sein und \emph{w}-Wort tief eingebettet.
+\item Derselbe Trick: Perkolation von Merkmalen (\textsc{que}).
+\item Expletiva können Vorfeld oder Subjektstelle füllen,\\
+      um Struktur sichtbar/durchschaubarer zu machen.
+\item Einführung des Expletivums als erstes Element auf der \argstl.
+\end{itemize}
 
-
+\pause\pause\pause
 }

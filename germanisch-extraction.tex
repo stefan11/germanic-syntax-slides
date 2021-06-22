@@ -154,22 +154,22 @@ sm edges
 %% \end{tikzpicture}}}
 
 
-\centerfit{\scalebox{.7}{%
+\centerfit{\scalebox{.8}{%
 \begin{forest}
 sm edges
 [S
-  [\alert{NP} [Chris] ]
-  [S/\alert{NP}
+  [\gruen{NP} [Chris] ]
+  [S/\gruen{NP}
     [NP [we] ] 
-    [VP/\alert{NP}  
+    [VP/\gruen{NP}  
        [V [think] ]
-       [CP/\alert{NP}
+       [CP/\gruen{NP}
          [C [that] ]
-         [S/\alert{NP}
+         [S/\gruen{NP}
             [NP [David] ] 
-            [VP/\alert{NP}  
+            [VP/\gruen{NP}  
                [V [saw] ]
-               [NP/\alert{NP} [\trace ] ] ] ] ] ] ] ]
+               [NP/\gruen{NP} [\trace ] ] ] ] ] ] ] ]
 %% \draw[connect] (NP/NP.north east)  [bend right] to (VP/NP.south east);
 %% \draw[connect] (VP/NP.north east)  [bend right] to (S/NP.south east);
 %% \draw[connect] (S/NP.north east)   [bend right] to (CP/NP.south east);
@@ -184,6 +184,7 @@ sm edges
 \frame{
 \frametitle{Schema für Füller-Kopf-Strukturen}
 
+\vfill
 \centerline{
 \begin{forest}
 [{H}
@@ -192,6 +193,7 @@ sm edges
 \end{forest}
 }
 
+\vfill
 
 
 }
@@ -227,15 +229,15 @@ sm edges
 \begin{forest}
 sm edges
 [S
-  [\alert<2>{NP$_i$} [das Buch, roof] ]
-  [S/\alert<2>{NP}
-     [V \sliste{ S\alert<1>{$/\!/$V} } 
-        [\alert<1>{V} [liest$_j$] ] ]
-     [S\alert<1>{$/\!/$V}\!\alert<2>{/NP}
-        [NP\alert<2>{/NP} [\trace$_i$] ]
-        [V$'$\alert<1>{$\!/\!/$V}
+  [\gruen<2>{NP$_i$} [das Buch, roof] ]
+  [S/\gruen<2>{NP}
+     [V \sliste{ S\gruen<1>{$/\!/$V} } 
+        [\gruen<1>{V} [liest$_j$] ] ]
+     [S\gruen<1>{$/\!/$V}\!\gruen<2>{/NP}
+        [NP\gruen<2>{/NP} [\trace$_i$] ]
+        [V$'$\gruen<1>{$\!/\!/$V}
            [NP [Conny] ]
-           [V\alert<1>{$\!/\!/$V} [\_$_j$] ] ] ] ] ] ]
+           [V\gruen<1>{$\!/\!/$V} [\_$_j$] ] ] ] ] ] ]
 %% \draw[connect] (NP/NP) [bend right] to (S//V\!/NP.south east);
 %% \draw[connect] (S//V\!/NP.north east) [bend right] to (S/NP.east);
 %% \draw[connect] (S/NP.north east) [bend right] to (NP);

@@ -32,7 +32,7 @@ public: germanisch-slides.pdf germanisch-handout.pdf germanisch-handout-1up.pdf
 
 
 # germanisch-handout-1up.pdf
-o-public: germanisch-slides.pdf germanisch-handout.pdf 01-germanisch-handout-ueberblick.pdf 02-germanisch-handout-phaenomene.pdf 03-germanisch-handout-psg-xbar.pdf 04-germanisch-handout-valenz-scrambling.pdf 05-germanisch-handout-verbalkomplex.pdf 06-germanisch-handout-verbstellung.pdf 07-germanisch-handout-passiv.pdf
+o-public: germanisch-slides.pdf germanisch-handout.pdf 01-germanisch-handout-ueberblick.pdf 02-germanisch-handout-phaenomene.pdf 03-germanisch-handout-psg-xbar.pdf 04-germanisch-handout-valenz-scrambling.pdf 05-germanisch-handout-verbalkomplex.pdf 06-germanisch-handout-verbstellung.pdf 07-germanisch-handout-passiv.pdf 08-germanisch-handout-satztypen.pdf
 	scp -p $? hpsg.hu-berlin.de:/home/stefan/public_html/PS/
 
 

@@ -1,7 +1,7 @@
 STYLE-PATH= ${HOME}/Library/texmf/tex/latex/
 LANGSCI-PATH=~/Documents/Dienstlich/Projekte/LangSci/Git-HUB/latex/
 
-SOURCE= $(wildcard *.tex)
+SOURCE= $(wildcard *.tex) $(wildcard geteilte-Folien/*.tex)
 
 %.pdf: %.tex $(SOURCE) 
 	xelatex $*
@@ -59,7 +59,7 @@ install:
 	cp -p ${STYLE-PATH}unified-biblatex/stmue-langsci-unified.cbx styles/
 	cp -p ${STYLE-PATH}Ling/article-ex.sty           styles/
 	cp -p ${STYLE-PATH}Ling/merkmalstruktur.sty      styles/
-	cp -p ${STYLE-PATH}Ling/my-xspace.sty            styles/
+	cp -p ${STYLE-PATH}my-xspace.sty            styles/
 	cp -p ${STYLE-PATH}Ling/my-ccg-ohne-colortbl.sty styles/
 	cp -p ${STYLE-PATH}Ling/forest.sty               styles/
 	cp -p ${STYLE-PATH}Ling/my-gb4e-slides.sty       styles/

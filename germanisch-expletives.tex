@@ -80,13 +80,13 @@ I  know that Kim has read the book yesterday.
 \begin{itemize}
 \item Dänisch: eingebettete Sätze SVO oder V2
 \ea[]{
-\gll Jeg  ved, at   Gert ikke  har læst  bogen          {i dag}.\\
+\gll Jeg  ved, at   Gert \rot{ikke}  har læst  bogen          {i dag}.\\
      ich weiß dass Gert nicht hat gelesen Buch.{\sc def} heute\\\jambox{(SVO)}
 }
 \z
 Negation hilft, Verbstellung zu bestimmen:
 \ea[]{
-\gll Jeg  ved, at   Gert har ikke  læst  bogen          {i dag}.\\
+\gll Jeg  ved, at   Gert har \rot{ikke}  læst  bogen          {i dag}.\\
      ich weiß dass Gert hat nicht gelesen Buch.{\sc def} heute\\\jambox{(V2)}
 }
 \z
@@ -363,7 +363,19 @@ Ich weiß, [\gruen{worüber}]$_i$ [ \trace$_i$ sie spricht].
 \z
 
 
-\centerline{\begin{forest}
+\hfill
+\begin{forest}
+sm edges
+[S
+  [PP [worüber]]
+  [S/PP
+    [PP/PP [\trace]]
+    [V\rlap{$'$}
+      [NP [sie]]
+      [V [spricht]]]]]
+\end{forest}
+\hfill
+\begin{forest}
 sm edges
 [{S[\slasch \sliste{ }]}
   [PP\ibox{1} [worüber]]
@@ -372,7 +384,8 @@ sm edges
     [V\rlap{$'$}
       [NP [sie]]
       [V [spricht]]]]]
-\end{forest}}
+\end{forest}
+\hfill\mbox{}
 
 \end{itemize}
 
@@ -443,7 +456,7 @@ Semantische Information, damit man weiß, wonach gefragt wurde.
 
 \vfill
 
-Schema ist ähnlich dem Füller-Kopf-Schema.
+Schema ähnelt dem Füller-Kopf-Schema.
 
 Zusätzlich wird Element in \textsc{que} gefordert.
 
@@ -662,7 +675,7 @@ sm edges
 [S
        [{NP[\snom]} [hvem;wer] ]
        [{S/NP[\snom]}
-         [{NP[\lnom]} [det;\textsc{expl}] ]
+         [{NP[\lnom]} [der;\textsc{expl}] ]
          [{VP/NP[\snom]}
            [{V$'$/NP[\snom]}
              [V [læser;liest] ]

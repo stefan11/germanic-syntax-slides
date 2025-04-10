@@ -483,13 +483,13 @@ Drei Möglichkeiten für Dativargumente:
 \item Wenn man den Dativ als lexikalischen Kasus behandelt,
       muss man beim Dativpassiv eine Umwandlung von lex.\ in str.\ Kasus annehmen.
 \pause
-\item Haiders Beispiele in (\mex{1}) sind dann sofort erklärt \citeyearpar[S.\,20]{Haider86}:
+\item Haiders \citeyearpar[20]{Haider86} Beispiele sind dann sofort erklärt. Analoge Beispiele:
 \eal
 \ex[]{\iw{streicheln}
 Er       streichelt \blau{den Hund}.
 }
 \ex[]{
-\blau{Der Hund} wurde gestreichelt.
+\blau{Der Hund} wird gestreichelt.
 }
 \ex[]{
 sein Streicheln \blau{des    Hundes}
@@ -499,7 +499,7 @@ sein Streicheln \blau{des    Hundes}
 Er hilft \blau{den Kindern}.
 }
 \ex[]{
-\blau{Den Kindern} wurde geholfen.
+\blau{Den Kindern} wird geholfen.
 }
 \ex[]{
 das Helfen \blau{der Kinder} (Kinder nur Agens)
@@ -537,7 +537,7 @@ und \emph{unterstützen} muss sich unterscheiden.
 $\to$ Dativ bei \emph{helfen} wird als lexikalisch eingeordnet,\\
       aber Dativ bei \emph{geben} als strukturell.
 
-Vorhersage: Dativpassiv ist mit diesen Verben nicht möglich.
+Vorhersage: Dativpassiv ist mit Verben mit lexikalischem Dativ nicht möglich.
 
 \end{itemize}
 }
@@ -1327,11 +1327,11 @@ weil noch getanzt wurde
 \ex 
 \gll at \blau{der} bliver danset\\
      dass {\sc expl} wird getanzt\\
-\glt `dass getanzt wurde'
+\glt `dass getanzt wird'
 \ex
 \gll at \blau{der} danses\\
      dass {\sc expl} tanzen.{\sc pres}.{\sc pass}\\
-\glt `dass getanzt wurde'
+\glt `dass getanzt wird'
 \zl
 
 \pause
@@ -1760,6 +1760,22 @@ arg-st & \ibox{3} \\
 
 }
 
+\frame{
+\frametitle{Ergebnis der Lexikonregelanwendung für das Dänische}
+
+\begin{tabular}[t]{@{}l@{ }l@{ }l}
+  &                        & \textsc{arg-st}\\[2mm]
+%a.&ankomme (unacc):       & \liste{}                         & \liste{NP[\type{str}]}\\[2mm]
+a.&danset/-s   (tanzen, unerg):     & \liste{}\\[2mm]
+%c.&auf"|fallen (unacc): & \liste{}                         & \liste{NP[\type{str}], NP[\type{ldat}]}\\[2mm]
+b.&læst/-s      (lesen, trans):   &  \liste{NP[\type{str}]$_j$ } \\[2mm]
+c.&givet/-s      (geben, ditrans): & \liste{NP[\type{str}]$_j$, NP[\type{str}]$_k$ } \\[2mm]
+  &                         & \liste{NP[\type{str}]$_k$, NP[\type{str}]$_j$ } \\[2mm]
+d.&hjulpet/-s    (helfen, trans):   & \liste{NP[\type{str}]$_j$ }                    \\
+\end{tabular}
+
+}
+
 %% \frame{
 %% \frametitle{Doppelobjektkonstruktionen im Isländischen}
 
@@ -1797,6 +1813,61 @@ arg-st & \ibox{3} \\
 
 %% }
 
+
+\subsection{Isländisch: Schräge Subjekte}
+
+\frame{
+\frametitle{Isländisch}
+
+\begin{itemize}
+\item Kasusverteilung wie im Deutschen:
+\ea\label{da-repr-hm-English}
+%\resizebox{\linewidth}{!}{%
+\begin{tabular}[t]{@{}l@{ }l@{ }l@{ }l@{ }l@{}}
+  &                     & {\sc arg-st}\\[2mm]
+b.&dansa   (unerg):     & \liste{NP[\type{str}]}\\[2mm]
+%c.&auf"|fallen (unacc): & \liste{}                         & \liste{NP[\type{str}], NP[\type{ldat}]}\\[2mm]
+c.&lesa    (trans):   & \liste{NP[\type{str}], NP[\type{str}]}\\[2mm]
+d.&gefa    (ditrans): & \liste{NP[\type{str}], \blaubf{NP[\type{ldat}]}, \blaubf{NP[\type{str}]}}\\[2mm]
+e.&hjálpa  (trans):   & \liste{NP[\type{str}], \blaubf{NP[\type{ldat}]}}\\
+\end{tabular}
+%}
+\z
+\item Unpersönliches Passiv mit \emph{tanzen} gleich,\\
+      aber \emph{helfen} bildet kein unpersönliches Passiv sondern ein persönliches.
+\pause
+\item \emph{geben} erlaubt zwei Varianten:\\
+      Dativ wird zu schrägem Subjekt, Akkusativ wird zum Subjekt.
+
+\end{itemize}
+
+
+}
+
+
+\frame{
+\frametitlefit{Isländisch: Schräge Subjekte und Doppelobjektkonstruktionen}
+
+\begin{itemize}
+\item erste NP wird zum Subjekt, auch NPen mit lexikalischem Kasus\\\citep[\page 147--148]{Wechsler95a-u}
+
+\ea\label{da-repr-hm-Danish}
+%\resizebox{\linewidth}{!}{%
+\begin{tabular}[t]{@{}l@{ }l@{ }l@{ }l@{ }l@{~~~~~}l@{}}
+  &                        & {\sc arg-st}                     & \spr   & \comps\\[2mm]
+%a.&ankomme (unacc):       & \liste{}                         & \liste{NP[\type{str}]}\\[2mm]
+a.& dansað    (unerg):     & \liste{}                        & \liste{ } & \liste{} \\[2mm]
+%c.&auf"|fallen (unacc): & \liste{}                         & \liste{NP[\type{str}], NP[\type{ldat}]}\\[2mm]
+b.& lesið     (trans):   &  \liste{NP[\type{str}]$_j$ }         & \liste{NP[\type{str}]$_j$ } & \eliste\\[2mm]
+c.& gefið      (ditrans): & \liste{NP[\type{ldat}]$_j$, NP[\type{str}]$_k$ } & \liste{NP[\type{ldat}]$_j$ } & \liste{NP[\type{str}]$_k$ }\\[2mm]
+  &                      & \liste{NP[\type{str}]$_k$, NP[\type{ldat}]$_j$ } & \liste{NP[\type{str}]$_k$ } & \liste{NP[\type{ldat}]$_j$ }\\[2mm]
+d.& hjálpað    (trans):   & \liste{NP[\type{ldat}]$_j$ }                  & \liste{NP[\type{ldat}]$_j$ } & \liste{}\\
+\end{tabular}
+%}
+\z
+\end{itemize}
+
+}
 
 
 \subsection{Unpersönliches Passiv}
@@ -1918,58 +1989,60 @@ d.&hjulpet/-s    (trans):   & \liste{NP[\type{str}]$_j$ }                      &
 %% phenomenon of passive rather elegantly: Passive is the suppression of the most prominent argument.
 
 
-\subsection{Isländisch: Schräge Subjekte}
+\subsection{Mapping auf \comps in OV-Sprachen}
 
 \frame{
-\frametitle{Isländisch}
+\frametitle{Mapping auf \comps in OV-Sprachen}
 
-\begin{itemize}
-\item Kasusverteilung wie im Deutschen:
-\ea\label{da-repr-hm-English}
-%\resizebox{\linewidth}{!}{%
-\begin{tabular}[t]{@{}l@{ }l@{ }l@{ }l@{ }l@{}}
-  &                     & {\sc arg-st}\\[2mm]
-b.&dansa   (unerg):     & \liste{NP[\type{str}]}\\[2mm]
-%c.&auf"|fallen (unacc): & \liste{}                         & \liste{NP[\type{str}], NP[\type{ldat}]}\\[2mm]
-c.&lesa    (trans):   & \liste{NP[\type{str}], NP[\type{str}]}\\[2mm]
-d.&gefa    (ditrans): & \liste{NP[\type{str}], \blaubf{NP[\type{ldat}]}, \blaubf{NP[\type{str}]}}\\[2mm]
-e.&hjálpa  (trans):   & \liste{NP[\type{str}], \blaubf{NP[\type{ldat}]}}\\
+Alle Elemente von \argst werden auf \comps gemappt:
+
+\begin{tabular}[t]{@{}l@{ }l@{~~}l@{ }l@{~~}l@{}}
+  &                              & \textsc{arg-st} & \spr & \comps\\[2mm]
+a.&getanzt:  & \liste{}        & \liste{} & \liste{}\\[2mm]
+b.&gelesen:    & \liste{ NP[\type{str}] } & \liste{} & \liste{ NP[\type{str}] }\\[2mm]
+c.&geschenkt: & \liste{ NP[\type{ldat}], NP[\type{str}] } & \liste{} & \liste{ NP[\type{ldat}], NP[\type{str}] }\\[2mm]
+d.&geholfen:  & \liste{ NP[\type{ldat}] } & \liste{} & \liste{ NP[\type{ldat}] }\\
 \end{tabular}
-%}
-\z
-\item Unpersönliches Passiv mit \emph{tanzen} gleich,\\
-      aber \emph{helfen} bildet kein unpersönliches Passiv sondern ein persönliches.
-\pause
-\item \emph{geben} erlaubt zwei Varianten:\\
-      Dativ wird zu schrägem Subjekt, Akkusativ wird zum Subjekt.
-
-\end{itemize}
 
 
 }
 
 
-\frame{
-\frametitlefit{Isländisch: Schräge Subjekte und Doppelobjektkonstruktionen}
+\frame[shrink=10]{
+\frametitle{Alle Argumente des Partizips können vorangestellt werden}
 
-\begin{itemize}
-\item erste NP wird zum Subjekt, auch NPen mit lexikalischem Kasus\\\citep[\page 147--148]{Wechsler95a-u}
+\savespace
+\smallexamples
 
-\ea\label{da-repr-hm-Danish}
-%\resizebox{\linewidth}{!}{%
-\begin{tabular}[t]{@{}l@{ }l@{ }l@{ }l@{ }l@{~~~~~}l@{}}
-  &                        & {\sc arg-st}                     & \spr   & \comps\\[2mm]
-%a.&ankomme (unacc):       & \liste{}                         & \liste{NP[\type{str}]}\\[2mm]
-a.& dansað    (unerg):     & \liste{}                        & \liste{ } & \liste{} \\[2mm]
-%c.&auf"|fallen (unacc): & \liste{}                         & \liste{NP[\type{str}], NP[\type{ldat}]}\\[2mm]
-b.& lesið     (trans):   &  \liste{NP[\type{str}]$_j$ }         & \liste{NP[\type{str}]$_j$ } & \eliste\\[2mm]
-c.& gefið      (ditrans): & \liste{NP[\type{ldat}]$_j$, NP[\type{str}]$_k$ } & \liste{NP[\type{ldat}]$_j$ } & \liste{NP[\type{str}]$_k$ }\\[2mm]
-  &                      & \liste{NP[\type{str}]$_k$, NP[\type{ldat}]$_j$ } & \liste{NP[\type{str}]$_k$ } & \liste{NP[\type{ldat}]$_j$ }\\[2mm]
-d.& hjálpað    (trans):   & \liste{NP[\type{ldat}]$_j$ }                  & \liste{NP[\type{ldat}]$_j$ } & \liste{}\\
-\end{tabular}
-%}
-\z
-\end{itemize}
+Komplemente können vorangestellt werden:
+\eal
+\ex  Den        Wählern Märchen erzählen sollte man besser nicht.\\
+\ex  Den        Wählern erzählen sollte man solche Märchen     nicht.\\
+\ex  Märchen     erzählen sollte man den        Wählern nicht.\\
+\zl
+\pause
+Das Subjekt aber normalerweise nicht:
+\eal
+\ex[*]{
+Dieser Mann erzählen sollte den Wählern solche Geschichten besser nicht.\\
+}
+\ex[*]{ 
+Dieser      Mann den Wählern       erzählen sollte solche Geschichten besser nicht.\\
+}
+\ex[*]{
+Dieser      Mann solche Geschichten erzählen sollte den        Wählern besser nicht.\\
+}
+\zl
+\pause
+Bei Partizipien können beide Objekte der Aktivform vorangestellt werden:
+\eal
+\ex 
+Diesen      Plan den        Wählern gegeben hat er nicht.\\
+\ex 
+Dieser Plan den Wählern gegeben wurde damals nicht.\\
+\zl
+
+PVP siehe: \citew{Mueller96a}, \citew[Chapter~2.2.2]{Mueller2002b} oder \citew[Chapter~15.2]{MuellerLehrbuch4}.
 
 }
 
@@ -2364,45 +2437,50 @@ Die Passive in (\mex{0}a,c) sind unpersönliche Passive.
 
 }
 
-\frame[shrink=10]{
-\frametitle{Analye des Fernpassivs}
+\frame[shrink=15]{
+\frametitle{Analyse des Fernpassivs}
 
-
-\centerline{\scalebox{1}{
-%\centerfit{%
+\centerline{\scalebox{.8}{
 \begin{forest}
 sm edges
 [V\feattab{
               \vform \type{fin},\\
-              \comps \ibox{1} } 
-        [{\ibox{3} V\feattab{
+              \comps \highlight{\ibox{1}}<4> } 
+        [{\ibox{2} V\feattab{
               \vform \type{ppp},\\
-              \subj  \ibox{1},\\
-              \comps \eliste }} 
-           [{\highlight{\ibox{2} V}<1>\feattab{
-              \highlight{\vform \type{inf}}<1>,\\
-              \subj  \highlight{\sliste{ NP[\str] }}<2,3>, \\ 
-              \comps \highlight{\ibox{1} \sliste{ NP[\str] }}<2,3> }} [zu reparieren] ]
+              \da    \sliste{ NP[\str]$_i$ },\\
+              \comps \highlight{\ibox{1}}<4> }} 
+           [{\highlight{\ibox{3} V}<1>\feattab{
+              \vform \type{inf},\\
+              \subj  \highlight{\sliste{ NP[\str]$_i$ }}<2>, \\ 
+              \comps \highlight{\ibox{1} \sliste{ NP[\str]$_j$ }}<2> }} [zu reparieren;to repair] ]
            [V\feattab{
+              \phon \phonliste{ versucht }\\
               \vform \type{ppp},\\
-              \subj  \ibox{1},\\
-              \comps \sliste{ \ibox{2} } } [versucht] ] ]
+              \da    \ibox{4},\\
+              \comps \highlight{\ibox{1} $\oplus$ \sliste{ \ibox{3} }}<3>,\\
+              \argst \highlight{\ibox{1} $\oplus$ \sliste{ \ibox{3} }}<3> } 
+              [V\feattab{
+%              \phon \phonliste{ versuch }\\
+              \vform \type{ppp},\\
+              \da    \highlight{\ibox{4} \sliste{ NP[\str]$_i$ }}<3>,\\
+              \argst \highlight{\highlight{\ibox{4}}<3> $\oplus$ \ibox{1}}<2> $\oplus$ \sliste{ \highlight{\ibox{3}}<1> } } [versuch-;try] ] ] ]
         [V\feattab{
               \vform \type{fin},\\
               \comps \ibox{1} $\oplus$ \sliste{
-                \ibox{3} }} [wurde] ] 
-]
-\end{forest}}
-}
+                \ibox{2} }} [wurde;\textsc{aux}] ] ]
+\end{forest}}}
 
 
 \begin{itemize}
-\item \emph{versuchen} zieht Argumente von \emph{reparieren} an: \argstw \sliste{ NP[\str], NP[\str], V[\type{inf}] }
+\item \emph{versuchen} bettet Infinitiv mit \emph{zu} ein.
+\pause
+\item \emph{versuchen} zieht Argumente von \emph{reparieren} an: \argstw \sliste{ NP[\str]$_i$, NP[\str]$_j$, V[\type{inf}] }
 \pause
 \item Passiv-LR unterdrückt erstes Argument: \emph{versucht} hat
-\argstw \sliste{ NP[\str], V[\type{inf}] } 
+\argstw \sliste{ NP[\str]$_j$, V[\type{inf}] } 
 \pause
-\item \emph{zu reparieren versucht}: \argstw \sliste{ NP[\str] } und
+\item \emph{zu reparieren versucht}: \argstw \sliste{ NP[\str]$_j$ } und
 \emph{zu reparieren versucht wurde} auch
 \end{itemize}
 

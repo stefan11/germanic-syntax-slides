@@ -98,12 +98,12 @@ Wen$_i$ glaubst du, daß ich \_$_i$ gesehen habe.\footnote{
 \begin{forest}
 sm edges
 [S
-  [\alert<3>{NP} [Chris] ]
-  [S/\alert<2>{NP} 
+  [\gruen<3>{NP} [Chris] ]
+  [S/\gruen<2>{NP} 
     [NP [David] ] 
-    [VP/\alert<2>{NP}  
+    [VP/\gruen<2>{NP}  
       [V [saw] ]
-      [NP/\alert<1>{NP} [\trace] ] ] ] ]
+      [NP/\gruen<1>{NP} [\trace] ] ] ] ]
 %% todo to do
 %% \draw[connect] (NP/NP.north east) [bend right] to (VP/NP.south east);
 %% \draw[connect] (VP/NP.north east) [bend right] to (S/NP.south east);
@@ -257,7 +257,7 @@ sm edges
 \begin{forest}
 sm edges
 [S
-   [NP$_i$ [bogen;Buch.def ] ]
+   [NP$_i$ [bogen;Buch.\textsc{def} ] ]
       [S/NP
          [V \sliste{ S$/\!/$V }
            [V [læser$_j$;liest] ] ]
@@ -323,8 +323,10 @@ Die Sätze sehen gleich aus, haben aber eine ganz andere Struktur:
 
 
 \frame{
+\frametitle{Strukturen für Englisch, Dänisch, Deutsch}
 
 
+~\vfill
 \scalebox{.8}{%
 \begin{forest}
 sm edges
@@ -342,12 +344,12 @@ sm edges
    [NP$_i$ [Conny;Conny] ]
       [S/NP
          [V \sliste{ S$/\!/$V }
-           [V [læser$_j$;reads] ] ]
+           [V [læser$_j$;liest] ] ]
            [S$/\!/$V\!/NP
              [NP/NP [\trace$_i$ ] ]
              [VP$\!/\!/$V
                [V$\!/\!/$V  [\_$_j$] ]
-               [NP [en bog;a book,baseline,roof] ] ] ] ] ] 
+               [NP [en bog;ein Buch,baseline,roof] ] ] ] ] ] 
 %% \draw[connect] (NP/NP.north east) [bend right] to (V/V.south east);
 %% \draw[connect] (V/V.north east) [bend right] to (S//V\!/NP.south east);
 %% \draw[connect] (S//V\!/NP.north east) [bend right] to (S/NP.east);
@@ -369,7 +371,7 @@ sm edges
                [V$\!/\!/$V  [\_$_j$] ] ] ] ] ] 
 \end{forest}}}
 
-
+\vfill
 
 }
 

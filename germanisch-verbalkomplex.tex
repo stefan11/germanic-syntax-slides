@@ -221,17 +221,25 @@ sm edges
 \subsection{Argumentanziehung im Detail}
 
 \frame{
-
+\frametitle{Subjekte von nicht-finiten Verben}
 
 \ea
 \emph{lesen} infinite Form:\\
 \ms{
-subj  & \sliste{ NP[\type{nom}] }\\
+subj  & \sliste{ NP[\type{nom}] }\\[1mm]
 comps & \sliste{ NP[\type{acc}] }\\
 }
 \z
 
 Subjekte können nur mit finiten Verben kombiniert werden:
+\eal
+\ex[]{
+Kim hat Sandy versprochen, [das Buch zu lesen].
+}
+\ex[*]{
+Kim hat Sandy versprochen, [sie das Buch zu lesen].
+}
+\zl
 \eal
 \judgewidth{?*}
 \ex[]{
@@ -252,13 +260,17 @@ Subjekte können nur mit finiten Verben kombiniert werden:
 }
 \zl
 
-\pause
+}
+
+\frame{
+\frametitle{Lexikoneintrag für Hilfsverb}
+
 \ea
 \emph{werden} infinite Form:\\
 \ms{
-subj  & \blau<4>{\ibox{1}}\\
-comps & \blau<4>{\ibox{2}} $\oplus$ \sliste{ V[\blau<2>{\vform \type{bse}}, \blau<3>{\textsc{lex}+}, 
-                                   \subj \blau<4>{\ibox{1}}, \comps \blau<4>{\ibox{2}}] }\\
+subj  & \blau<3>{\ibox{1}}\\
+comps & \blau<3>{\ibox{2}} $\oplus$ \sliste{ V[\blau<1>{\vform \type{bse}}, \blau<2>{\textsc{lex}+}, 
+                                   \subj \blau<3>{\ibox{1}}, \comps \blau<3>{\ibox{2}}] }\\
 }
 \z
 

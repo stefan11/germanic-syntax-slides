@@ -61,18 +61,25 @@ install:
 	cp -p ${STYLE-PATH}Ling/merkmalstruktur.sty      styles/
 	cp -p ${STYLE-PATH}my-xspace.sty            styles/
 	cp -p ${STYLE-PATH}Ling/my-ccg-ohne-colortbl.sty styles/
-	cp -p ${STYLE-PATH}Ling/forest.sty               styles/
 	cp -p ${STYLE-PATH}Ling/my-gb4e-slides.sty       styles/
 	cp -p ${STYLE-PATH}Ling/cgloss.sty               styles/
 	cp -p ${STYLE-PATH}Ling/jambox.sty               styles/
 	cp -p ${LANGSCI-PATH}langsci-forest-setup.sty    .
+	cp -p ${STYLE-PATH}Ling/forest.sty               .
+	cp -p ${STYLE-PATH}Ling/forest-lib-edges.sty     .
+	cp -p ${STYLE-PATH}Ling/forest-lib-linguistics.sty .
+	cp -p ${STYLE-PATH}Ling/xparse-arglist.sty .
 
+
+
+mount:
+	/usr/local/bin/bindfs ~/Documents/Dienstlich/Lehre/Folien/HU/geteilte-Folien ~/Documents/Dienstlich/Lehre/Folien/HU/Germanisch/Vorlesung/geteilte-Folien
 
 
 clean:
 	find . -name \*\.bak -exec \rm {} \;
 	find . -name \*~ -exec \rm {} \;
-	rm -f *.bak *.toc *.bbl *.blg *~ *.log *.aux *.*pk *.cut *.tmp *.out *.nav *.snm *.aux.copy *.bcf *.for *.run.xml
+	rm -f *.bak *.toc *.bbl *.blg *~ *.log *.aux *.*pk *.cut *.tmp *.out *.nav *.snm *.aux.copy *.bcf *.for *.run.xml geteilte-Folien/*.aux
 
 
 realclean: clean

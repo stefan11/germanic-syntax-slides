@@ -73,187 +73,11 @@ Bei (\mex{0}a) fehlt etwas, bei (\mex{0}b) ist etwas zu viel.
 
 }
 
-\frame{
-\frametitle{Valenz in der Chemie und in der Linguistik}
+\exewidth{(235)}
+
+\input{geteilte-Folien/argumente-adjunkte.tex}
 
 
-\citet{Tesniere59a-de} übernimmt das Konzept der Valenz aus der Chemie:
-
-
-\vfill
-
-\centerline{
-\begin{forest}
-[O
-  [H] 
-  [H] ]
-\end{forest}
-\hspace{5em}
-\begin{forest}
-[kennen
- [Aicke]
- [Conny] ]
-\end{forest}
-}
-
-\vfill
-
-}
-
-\frame{
-\frametitle{Argumente}
-
-NPen in (\mex{1}) sind Argumente der jeweiligen Verben:
-\eal
-\ex[]{
-%\gll
-\dass der        Delphin den        Menschen erwartet\\
-%     \that{}  the.\NOM{} dolphin den.\ACC{} human   expects\\
-%\glt `that the dolphin expects the human'
-}
-\ex[]{
-%\gll 
-{}[dass] der        Delphin dem        Kind  den        Ball gibt\\
-%     \that{}  the.\NOM{} dolphin the.\DAT{} child the.\ACC{} ball gives\\
-%\glt `that the dolphin gives the child the ball'
-}
-\zl
-
-Meistens füllen syntaktische Argumente auch eine semantische Rolle (\zb Gebender, Agens, Actor,
-\ldots).\nocite{Dowty91a,VanValin99a-u}
-
-\citet[Chapter~48]{Tesniere2015a-u}: 
-
-Theaterszene: Was wird minimal gebraucht, um einen Geben-Vorgang zu spielen?
-
-\begin{itemize}
-\item einen Geber*in
-\item etwas Gegebenes
-\item einen Empfänger*in
-\end{itemize}
-
-}
-
-\frame{
-\frametitle{Adjunkte}
-
-\begin{itemize}
-\item Zusätzlich zu den Argumenten können Adjunkte im Satz vorkommen:
-
-\eal
-\ex
-%\gll
-\dass{} der        Delphin dem        Kind  \alert{schnell} den        Ball gibt\\
-% \that{} the.\NOM{} dolphin the.\DAT{} child quickly the.\ACC{} ball gives\\
-%\glt `that the dolphin gives the child the ball quickly'
-\ex that the dolphin gives the child the ball \alert{quickly}
-\zl
-
-\pause
-
-\item Adjunkte tragen zusätzliche Information bei, füllen aber keine semantische Rolle.
-
-\end{itemize}
-
-}
-
-\frame{
-\frametitle{Optionale Argumente}
-
-Argumente können fast immer weggelassen werden, wenn der Kontext entsprechende Information enthält.
-
-\eal
-\ex 
-%\gll 
-Sie gibt Geld.
-%     she gives money\\
-%\glt `She gives money.'
-\ex 
-%\gll 
-Sie gibt den Armen.
-%     she gives the poor\\
-%\glt `She gives to the poor.'
-\ex\label{ex-sie-gibt} 
-%\gll 
-Sie gibt.
-%     she gives\\
-\ex 
-%\gll 
-Gib!
-%     give\\
-\zl
-
-Im Kontext eines Skat-Spiels ist klar, was gegeben wird und wer die Empfänger sind.
-
-Bei einigen wenigen Verben kann man die Argumente nicht weglassen:
-\eal
-\ex verschlingen
-\ex erwarten
-\zl
-
-Argumente können optional sein, Adjunkte sind es immer.
-
-
-}
-
-\frame{
-\frametitle{Chemie und optionale Elemente}
-
-Die Analogie zu chemischen Verbindungen ist hilfreich, aber die optionalen Argumente sind verwirrend:
-\eal
-\ex Kirby helps Sandy.
-\ex Kirby helps.
-\zl
-
-\hfill
-\begin{forest}
-[O
-  [H] 
-  [H] ]
-\end{forest}
-\hspace{5em}
-\begin{forest}
-[helps
- [Kirby]
- [Sandy] ]
-\end{forest}
-\hfill\mbox{}
-
-Lösung: Unterscheidung zwischen syntaktischer und semantischer Valenz.
-
-Die Theateranalogie hilft uns, semantische Argumente zu finden,\\
-die Analogie zur Chemie taugt eher für syntaktische Argumente. 
-
-Man muss ein spezielles, syntaktisch einstelliges Verb für (\mex{0}b) annehmen.
-
-}
-
-\frame{
-\frametitle{Shoppen statt Drama}
-
-\begin{itemize}
-\item Vergleich mit Einkauf besser:\\
-Wir wollen Nudeln mit Tofu und Tomatensoße machen.
-
-Für Tomatensoße brauchen wir Zwiebeln.
-
-\item Alle Zutaten kommen auf die Einkaufsliste.
-
-\item Im Laden merken wir, dass es keinen Tofu gibt.
-
-\item Macht nichts, geht auch ohne: Tofu ist optional.
-
-\item Nudeln gibt es. 10.000 Sorten.
-
-\item Tomaten und Zwiebeln. Fertig.
-
-\item Ach. Gummibärchen. Wie? Standen nicht auf der Liste?
-
-Gummibären sind Adjunkte!
-
-\end{itemize}
-
-}
 
 \frame{
 \frametitle{Nudeln, Tomaten, Zwiebeln und Syntax}
@@ -333,10 +157,10 @@ sm edges
 [{S \eliste},visible on=6-
   [{NP[\type{nom}]},visible on=5- 
     [niemand,visible on=5-] ]
-  [{V$'$\sliste{ \blau<4>{NP[\type{nom}]} } },visible on=3-
+  [{V$'$\sliste{ \blau<4>{NP[\type{nom}] } } },visible on=3-
     [\blau<3>{NP[\type{acc}]}, visible on=2-
       [ihn,visible on=2-] ]
-    [{V \sliste{ \blau<4>{NP[\type{nom}]}, \blau<3>{NP[\type{acc}]}}} [kennt]] ] ]
+    [{V \sliste{ \blau<4>{NP[\type{nom}]}, \blau<3>{NP[\type{acc}]} }} [kennt]] ] ]
 \end{forest}}
 
 \vfill
@@ -426,7 +250,7 @@ sm edges
    [{NP[\type{acc}]} [ihn] ]
    [{V$'$\sliste{ NP[\type{acc}] } }
       [{NP[\type{nom}]} [niemand] ]
-      [{V \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt] ] ] ]
+      [{V \sliste{ NP[\type{nom}], NP[\type{acc}] }} [kennt] ] ] ]
 \end{forest}}
 \vfill
 \pause
@@ -477,7 +301,7 @@ sm edges
       \spr \sliste{ NP[\type{nom}] }, \comps \sliste{} }, name=VP
      [V\feattab{
          \spr \sliste{ NP[\type{nom}] },\\
-         \comps \sliste{ NP[\type{acc}]}} [knows] ]
+         \comps \sliste{ NP[\type{acc}] }} [knows] ]
         [{NP[\type{acc}]} [him] ] ] ]
 \node [right=4cm] at (S)
     {
@@ -496,7 +320,7 @@ sm edges
 \item Englisch ist eine SVO-Sprache:\\
       Komplemente rechts des Verbs, Subjekt links
 %\item Komplemente können nicht einfach umgestellt werden.
-\item Komplemente bilden mit dem Verb zusammen eine Phrase (VP = \comps \sliste{}).
+\item Verb bildet zusammen mit den Komplementen eine Phrase (VP = \comps \sliste{}).
 
       Diese wird mit dem Subjekt kombiniert.
 \end{itemize}
@@ -594,11 +418,11 @@ sm edges
 [{V[\spr \eliste, \comps \eliste]}, name=S
         [{NP[\type{nom}]} [niemand] ]
         [{V\feattab{
-              \spr \sliste{ }, \comps \sliste{ NP[\type{nom}] } }}, name = Vs
+              \spr \eliste, \comps \sliste{ NP[\type{nom}] } }}, name = Vs
           [{NP[\type{acc}]} [ihn] ] 
           [V\feattab{
               \spr \sliste{  },\\
-              \comps \sliste{ NP[\type{nom}], NP[\type{acc}]}} [kennt] ]
+              \comps \sliste{ NP[\type{nom}], NP[\type{acc}] }} [kennt] ]
 ] ]
 \node [right=4cm] at (S)
     {
@@ -632,7 +456,7 @@ Abkürzungen: \begin{tabular}[t]{@{}l@{ = }l}
 \item \ZB \xbar-Schemata oder Regel für Phrasenstrukturen oder Dependenzstrukturen.
 \item Regeln für HPSG:
 \ea\label{schema-head-spr-and-head-comps-preliminary}
-Specifier-Head Schema and Head-Complement Schema (preliminary)
+Specifier-Head Schema and Head-Complement Schema (vorläufig)
 \begin{tabular}[t]{@{}l@{ }l@{}}
 H[\spr \ibox{1}]   & $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{2} }, \comps \eliste]\hspace{1em}\ibox{2}  \\
 H[\comps \ibox{1}] & $\to$ H[\comps \sliste{ \ibox{2} } $\oplus$ \ibox{1}]\hspace{1em}\ibox{2} \\
@@ -912,7 +736,7 @@ sm edges
          \comps \sliste{ \ibox{2} NP[\type{acc}] }}, visible on=2- 
         [V\feattab{
            \spr \sliste{ \ibox{1} NP[\type{nom}] },\\
-           \comps \sliste{ \ibox{3} NP[\type{acc}], \ibox{2} NP[\type{acc}]}} [gave] ]
+           \comps \sliste{ \ibox{3} NP[\type{acc}], \ibox{2} NP[\type{acc}] }} [gave] ]
         [{\ibox{3} NP[\type{acc}]} [the child,roof] ] ]
      [{\ibox{2} NP[\type{acc}]}, visible on=3- 
        [a book,roof, visible on=3- ] ] ] ]
@@ -952,7 +776,7 @@ his his him gave the child a book
 \item Müssen \spr und \comps-Werte am Mutterknoten beschränken:
 
 \ea\label{schema-head-spr-and-head-comps}
-Specifier-Head Schema and Head-Complement Schema (final)
+Specifier-Head Schema und Head-Complement Schema (endgültig)
 \begin{tabular}[t]{@{}l@{~}l@{ }l@{}}
 a. & H[\spr \ibox{1}, \comps \alert{\ibox{2}}] & $\to$ H[\spr \ibox{1} $\oplus$ \sliste{ \ibox{3} }, \comps \alert{\ibox{2}} \eliste]\hspace{1em}\ibox{3}  \\
 b. & H[\spr \alert{\ibox{1}}, \comps \ibox{2}] & $\to$ H[\spr \alert{\ibox{1}}, \comps \ibox{2} $\oplus$ \sliste{ \ibox{3} }]\hspace{1em}\ibox{3} \\
@@ -991,7 +815,7 @@ b. & H[\spr \alert{\ibox{1}}, \comps \ibox{2}] & $\to$ H[\spr \alert{\ibox{1}}, 
 }
 
 
-\subsection{Scrambling and free VO/OV order}
+\subsection{Scrambling und freie VO/OV-Stellung}
 
 \frame{
 
@@ -1013,11 +837,11 @@ b. & H[\spr \alert{\ibox{1}}, \comps \ibox{2}] & $\to$ H[\spr \alert{\ibox{1}}, 
 \item Länge von \ibox{1} und \ibox{2} ist nicht beschränkt. Für ditransitives Verb:
 
 \eal
-\ex \rot{\eliste{}} $\oplus$ \sliste{ \gruen{NP[\type{nom}]} } $\oplus$ \blau{\sliste{ NP[\type{dat}], NP[\type{acc}] }}
+\ex \rot{\eliste{}} $\oplus$ \sliste{ \gruen{NP[\type{nom}] } } $\oplus$ \blau{\sliste{ NP[\type{dat}], NP[\type{acc}] }}
 \pause
-\ex \rot{\sliste{ NP[\type{nom}] }} $\oplus$ \sliste{ \gruen{NP[\type{dat}]} } $\oplus$ \blau{\sliste{ NP[\type{acc}] }} 
+\ex \rot{\sliste{ NP[\type{nom}] }} $\oplus$ \sliste{ \gruen{NP[\type{dat}] } } $\oplus$ \blau{\sliste{ NP[\type{acc}] }} 
 \pause
-\ex \rot{\sliste{ NP[\type{nom}], NP[\type{dat}] }} $\oplus$ \sliste{ \gruen{NP[\type{acc}]} } $\oplus$ \blau{\eliste} 
+\ex \rot{\sliste{ NP[\type{nom}], NP[\type{dat}] }} $\oplus$ \sliste{ \gruen{NP[\type{acc}] } } $\oplus$ \blau{\eliste} 
 \zl
 %So \ibox{3} in Figure~\ref{fig-head-comp-free} would be \npnom in (\mex{0}a), \npdat in (\mex{0}b) and \npacc in (\mex{0}c).
 
@@ -1057,6 +881,7 @@ dem Kind  ein Buch gibt\\
 \ex gives the child the book
 \zl
 
+\pause
 
 \item Töchter ohne Beschränkungen machen Unfug:
 
@@ -1089,7 +914,7 @@ dem Kind  ein Buch gibt\\
 
 % \begin{forest}
 % sm edges
-% [{V[\comps \sliste{ }]},s sep+=1em
+% [{V[\comps \eliste]},s sep+=1em
 %   [{V[\comps \sliste{ \ibox{1} }]}
 %     [\ibox{2} \npdat [dem Kind;the child,roof]]
 %     [{V[\comps \sliste{ \ibox{2}, \ibox{1} }]} [\ibox{3} \npnom [niemand;nobody]]
@@ -1099,7 +924,7 @@ dem Kind  ein Buch gibt\\
 
 % \begin{forest}
 % sm edges
-% [{V[\comps \sliste{ }]}
+% [{V[\comps \eliste]}
 %   [{V[\comps \sliste{ \ibox{1} }]},s sep+=1em
 %     [{V[\comps \sliste{ \ibox{2}, \ibox{1} }]} [\ibox{3} \npnom [niemand;nobody]]
 %        [{V[\comps \sliste{ \ibox{3}, \ibox{2}, \ibox{1} }]}  [vorliest;\textsc{part}.reads]]]
@@ -1110,7 +935,7 @@ dem Kind  ein Buch gibt\\
 \centerline{%
 \begin{forest}
 sm edges
-[{V[\comps \sliste{ }]}
+[{V[\comps \eliste]}
   [{V[\comps \sliste{ \ibox{1} }]},s sep+=1em
     [{V[\comps \sliste{ \ibox{2}, \ibox{1} }]} [\ibox{3} \npnom [niemand]]
        [{V[\comps \sliste{ \ibox{3}, \ibox{2}, \ibox{1} }]}  [vorliest]]]
@@ -1153,7 +978,7 @@ sm edges
 \ex essen
 \ex übergießen
 \ex bezichtigen
-\ex er
+\ex sie
 \ex der
 \zl
 \item Zeichnen Sie die Bäume für folgende Beispiele:
@@ -1203,7 +1028,7 @@ sm edges
 
 \ea
 \begin{tabular}[t]{@{}l@{}}
-Lexical item for \emph{brown}:\\
+Lexikoneintrag für \emph{brown}:\\
 \ms{
   phon & \phonliste{ brown }\\
   mod  & \nbar\\
@@ -1214,7 +1039,7 @@ Lexical item for \emph{brown}:\\
 sm edges
 [{\nbar}, baseline
   [{Adj[\textsc{mod} \ibox{2}]} [brown]]
-  [{\ibox{2} \nbar} [squirrel]]]
+  [{\ibox{2} \nbar}\hphantom{~\ibox{2}} [squirrel]]]
 \end{forest}\hfill\mbox{}
 \z
 
@@ -1263,7 +1088,7 @@ sm edges
         [{\ibox{3} V[\spr \eliste, \comps \eliste]}
           [{\ibox{1} NP[\type{nom}]} [Aicke] ]
           [V\feattab{
-              \spr \sliste{ }, \comps \sliste{ \ibox{1} } }
+              \spr \eliste, \comps \sliste{ \ibox{1} } }
             [{\ibox{2} NP[\type{acc}]} [das Buch, roof] ] 
             [V\feattab{
               \spr \sliste{  },\\
@@ -1291,10 +1116,10 @@ sm edges
 [{V[\spr \eliste, \comps \eliste]},s sep+=1.5em
           [{\ibox{1} NP[\type{nom}]} [Aicke] ]
           [V\feattab{
-              \spr \sliste{ }, \comps \sliste{ \ibox{1} } }, schema
+              \spr \eliste, \comps \sliste{ \ibox{1} } }, schema
             [{Adv[\textsc{mod} \ibox{3} V]} [morgen] ]
             [\ibox{3} V\feattab{
-                \spr \sliste{ }, \comps \sliste{ \ibox{1} } }
+                \spr \eliste, \comps \sliste{ \ibox{1} } }
               [{\ibox{2} NP[\type{acc}]} [das Buch, roof] ] 
               [V\feattab{
                 \spr \sliste{  },\\
@@ -1321,7 +1146,7 @@ sm edges
 [{V[\spr \eliste, \comps \eliste]}
     [{\ibox{1} NP[\type{nom}]} [Aicke] ]
       [V\feattab{
-         \spr \sliste{ }, \comps \sliste{ \ibox{1} } }, s sep+=1em
+         \spr \eliste, \comps \sliste{ \ibox{1} } }, s sep+=1em
          [{\ibox{2} NP[\type{acc}]} [das Buch, roof] ] 
            [V\feattab{
               \spr \sliste{  },\\
@@ -1405,7 +1230,7 @@ sm edges
 \vfill
 \centerline{%
 \begin{forest}
-[{H[\spr \rot<1>{\ibox{1}}, \comps \gruen<1>{\ibox{2}}]}
+[{H[\spr \rot<1>{\ibox{1}}, \comps \gruen<1>{\ibox{2}}] }
   [{[\textsc{mod} \ibox{3},  \gruen<3>{\spr \eliste}, \gruen<2>{\comps \eliste}]}]
   [{\ibox{3} H[\spr \rot<1>{\ibox{1}}, \comps  \gruen<1>{\ibox{2}}]}]]
 \end{forest}}
@@ -1477,6 +1302,41 @@ cont   & \ms[give]{
         }\\
 }}
 \z
+\end{itemize}
+
+
+}
+
+
+\subsection{Aufgaben / Übungen}
+
+
+\frame{
+\frametitle{Aufgaben}
+
+\begin{enumerate}
+\item Wiederholen Sie den Stoff im Buch.
+\item Beantworten Sie die Quick questions im Buch und lesen Sie nach, wenn Sie dazu nicht in der
+  Lage sein sollten.
+\item Sollte etwas unverständlich sein, fragen Sie bei den Tutor*innen oder bei mir per Mail nach.
+
+\item Lesen Sie in der aktuellen Duden-Grammatik den Abschnitt zu Valenz \citep[§1179--1182]{Duden2005}
+
+\end{enumerate}
+
+}
+
+\frame{
+\frametitle{Übungen}
+
+\begin{itemize}
+\item Lösen Sie die Übungen im Lehrbuch. 
+\item Die Übungen entsprechen dem, was in der Klausur von Ihnen gefordert
+wird. 
+\item Die Lösungen sind am Ende des Buches zu finden.
+\item Besuchen Sie das Tutorium zur Vertiefung und Übung der in der Vorlesung besprochenen Themen.
+
+\item Sollte etwas unklar sein, schreiben Sie mir eine Mail.
 \end{itemize}
 
 

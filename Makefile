@@ -1,14 +1,15 @@
 STYLE-PATH= ${HOME}/Library/texmf/tex/latex/
 LANGSCI-PATH=~/Documents/Dienstlich/Projekte/LangSci/Git-HUB/latex/
 
-SOURCE= $(wildcard *.tex) $(wildcard geteilte-Folien/*.tex)
+SOURCE := $(wildcard *.tex) $(wildcard geteilte-Folien/*.tex)
 
-%.pdf: %.tex $(SOURCE) 
-	xelatex $*
+#%.pdf: %.tex $(SOURCE) 
+%.pdf: %.tex *.tex geteilte-Folien/*.tex
+	lualatex $*
 	biber $*
-	xelatex $* 
+	lualatex $* 
 	biber $*
-	xelatex $* 
+	lualatex $* 
 
 
 slides: germanisch-slides.pdf
